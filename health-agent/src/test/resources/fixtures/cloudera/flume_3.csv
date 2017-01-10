@@ -1,0 +1,961 @@
+entityName,metricName,timestamp,value
+"Tanium staging flume","total_uptime_across_agents","2016-07-01T23:19:50.734Z",685637.6916370392
+"Tanium staging flume","total_uptime_across_agents","2016-07-01T23:20:50.734Z",685698.8053278923
+"Tanium staging flume","total_uptime_across_agents","2016-07-01T23:21:50.734Z",685757.6123979092
+"Tanium staging flume","total_uptime_across_agents","2016-07-01T23:22:50.734Z",685817.6022338867
+"Tanium staging flume","total_uptime_across_agents","2016-07-01T23:23:50.734Z",685877.9038078785
+"Tanium staging flume",uptime_across_agents,"2016-07-01T23:19:50.734Z",685637.6916370392
+"Tanium staging flume",uptime_across_agents,"2016-07-01T23:20:50.734Z",685698.8053278923
+"Tanium staging flume",uptime_across_agents,"2016-07-01T23:21:50.734Z",685757.6123979092
+"Tanium staging flume",uptime_across_agents,"2016-07-01T23:22:50.734Z",685817.6022338867
+"Tanium staging flume",uptime_across_agents,"2016-07-01T23:23:50.734Z",685877.9038078785
+"Tanium staging flume","events_critical_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","events_critical_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","events_critical_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","events_critical_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","events_critical_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",mem_virtual,"2016-07-01T23:19:50.000Z",1.6950771712E10
+"Agent (cluster5-srv6.e8sec.com)",mem_virtual,"2016-07-01T23:20:50.000Z",1.6950771712E10
+"Agent (cluster5-srv6.e8sec.com)",mem_virtual,"2016-07-01T23:21:50.000Z",1.6950771712E10
+"Agent (cluster5-srv6.e8sec.com)",mem_virtual,"2016-07-01T23:22:50.000Z",1.6950771712E10
+"Agent (cluster5-srv6.e8sec.com)",mem_virtual,"2016-07-01T23:23:50.000Z",1.6950771712E10
+"Agent (cluster5-srv6.e8sec.com)",mem_rss,"2016-07-01T23:19:50.000Z",2.218336256E9
+"Agent (cluster5-srv6.e8sec.com)",mem_rss,"2016-07-01T23:20:50.000Z",2.218336256E9
+"Agent (cluster5-srv6.e8sec.com)",mem_rss,"2016-07-01T23:21:50.000Z",2.218336256E9
+"Agent (cluster5-srv6.e8sec.com)",mem_rss,"2016-07-01T23:22:50.000Z",2.218336256E9
+"Agent (cluster5-srv6.e8sec.com)",mem_rss,"2016-07-01T23:23:50.000Z",2.218336256E9
+"Tanium staging flume","total_events_critical_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_events_critical_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_events_critical_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_events_critical_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_events_critical_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_duration","2016-07-01T23:19:50.000Z",43.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_duration","2016-07-01T23:20:50.000Z",39.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_duration","2016-07-01T23:21:50.000Z",40.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_duration","2016-07-01T23:22:50.000Z",48.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_duration","2016-07-01T23:23:50.000Z",43.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_status","2016-07-01T23:19:50.000Z",1.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_status","2016-07-01T23:20:50.000Z",1.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_status","2016-07-01T23:21:50.000Z",1.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_status","2016-07-01T23:22:50.000Z",1.0
+"Agent (cluster5-srv6.e8sec.com)","web_metrics_collection_status","2016-07-01T23:23:50.000Z",1.0
+"Tanium staging flume","events_informational_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","events_informational_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","events_informational_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","events_informational_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","events_informational_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_events_informational_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_events_informational_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_events_informational_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_events_informational_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_events_informational_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity,"2016-07-01T23:19:50.000Z",8.3672915968E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity,"2016-07-01T23:20:50.000Z",8.3672915968E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity,"2016-07-01T23:21:50.000Z",8.3672915968E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity,"2016-07-01T23:22:50.000Z",8.3672915968E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity,"2016-07-01T23:23:50.000Z",8.3672915968E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_used,"2016-07-01T23:19:50.000Z",2.1469261824E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_used,"2016-07-01T23:20:50.000Z",2.14692864E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_used,"2016-07-01T23:21:50.000Z",2.1469294592E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_used,"2016-07-01T23:22:50.000Z",2.146930688E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_used,"2016-07-01T23:23:50.000Z",2.1469323264E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_free,"2016-07-01T23:19:50.000Z",5.7946435584E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_free,"2016-07-01T23:20:50.000Z",5.7946411008E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_free,"2016-07-01T23:21:50.000Z",5.7946402816E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_free,"2016-07-01T23:22:50.000Z",5.7946390528E10
+"/var/log/flume-ng (cluster5-srv6.e8sec.com)",capacity_free,"2016-07-01T23:23:50.000Z",5.7946374144E10
+"Tanium staging flume","mem_virtual_across_agents","2016-07-01T23:19:50.734Z",1.6950771712E10
+"Tanium staging flume","mem_virtual_across_agents","2016-07-01T23:20:50.734Z",1.6950771712E10
+"Tanium staging flume","mem_virtual_across_agents","2016-07-01T23:21:50.734Z",1.6950771712E10
+"Tanium staging flume","mem_virtual_across_agents","2016-07-01T23:22:50.734Z",1.6950771712E10
+"Tanium staging flume","mem_virtual_across_agents","2016-07-01T23:23:50.734Z",1.6950771712E10
+"Tanium staging flume","total_mem_virtual_across_agents","2016-07-01T23:19:50.734Z",1.6950771712E10
+"Tanium staging flume","total_mem_virtual_across_agents","2016-07-01T23:20:50.734Z",1.6950771712E10
+"Tanium staging flume","total_mem_virtual_across_agents","2016-07-01T23:21:50.734Z",1.6950771712E10
+"Tanium staging flume","total_mem_virtual_across_agents","2016-07-01T23:22:50.734Z",1.6950771712E10
+"Tanium staging flume","total_mem_virtual_across_agents","2016-07-01T23:23:50.734Z",1.6950771712E10
+"Agent (cluster5-srv6.e8sec.com)","unexpected_exits_rate","2016-07-01T23:19:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","unexpected_exits_rate","2016-07-01T23:20:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","unexpected_exits_rate","2016-07-01T23:21:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","unexpected_exits_rate","2016-07-01T23:22:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","unexpected_exits_rate","2016-07-01T23:23:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_attempt_rate","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_attempt_rate","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_attempt_rate","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_attempt_rate","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_attempt_rate","2016-07-01T23:23:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_important_rate","2016-07-01T23:19:20.130Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_important_rate","2016-07-01T23:20:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_important_rate","2016-07-01T23:21:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_important_rate","2016-07-01T23:22:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_important_rate","2016-07-01T23:23:20.133Z",0.0
+"Tanium staging flume","events_important_rate","2016-07-01T23:19:20.130Z",0.0
+"Tanium staging flume","events_important_rate","2016-07-01T23:20:20.131Z",0.0
+"Tanium staging flume","events_important_rate","2016-07-01T23:21:20.131Z",0.0
+"Tanium staging flume","events_important_rate","2016-07-01T23:22:20.131Z",0.0
+"Tanium staging flume","events_important_rate","2016-07-01T23:23:20.133Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",oom_exits_rate,"2016-07-01T23:19:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",oom_exits_rate,"2016-07-01T23:20:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",oom_exits_rate,"2016-07-01T23:21:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",oom_exits_rate,"2016-07-01T23:22:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",oom_exits_rate,"2016-07-01T23:23:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_unknown_rate,"2016-07-01T23:20:01.484Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_unknown_rate,"2016-07-01T23:21:01.901Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_unknown_rate,"2016-07-01T23:22:03.142Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_unknown_rate,"2016-07-01T23:23:03.549Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_unknown_rate,"2016-07-01T23:24:03.991Z",0.0
+"Tanium staging flume",health_unknown_rate,"2016-07-01T23:20:01.484Z",0.0
+"Tanium staging flume",health_unknown_rate,"2016-07-01T23:21:01.901Z",0.0
+"Tanium staging flume",health_unknown_rate,"2016-07-01T23:22:03.142Z",0.0
+"Tanium staging flume",health_unknown_rate,"2016-07-01T23:23:03.549Z",0.0
+"Tanium staging flume",health_unknown_rate,"2016-07-01T23:24:03.991Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_attempt_rate","2016-07-01T23:19:50.000Z",0.13333333333333333
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_attempt_rate","2016-07-01T23:20:50.000Z",0.11666666666666667
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_attempt_rate","2016-07-01T23:21:50.000Z",0.13333333333333333
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_attempt_rate","2016-07-01T23:22:50.000Z",0.11666666666666667
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_attempt_rate","2016-07-01T23:23:50.000Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","events_informational_rate","2016-07-01T23:19:20.130Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_informational_rate","2016-07-01T23:20:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_informational_rate","2016-07-01T23:21:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_informational_rate","2016-07-01T23:22:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","events_informational_rate","2016-07-01T23:23:20.133Z",0.0
+"Tanium staging flume","events_informational_rate","2016-07-01T23:19:20.130Z",0.0
+"Tanium staging flume","events_informational_rate","2016-07-01T23:20:20.131Z",0.0
+"Tanium staging flume","events_informational_rate","2016-07-01T23:21:20.131Z",0.0
+"Tanium staging flume","events_informational_rate","2016-07-01T23:22:20.131Z",0.0
+"Tanium staging flume","events_informational_rate","2016-07-01T23:23:20.133Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_disabled_rate,"2016-07-01T23:20:01.484Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_disabled_rate,"2016-07-01T23:21:01.901Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_disabled_rate,"2016-07-01T23:22:03.142Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_disabled_rate,"2016-07-01T23:23:03.549Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_disabled_rate,"2016-07-01T23:24:03.991Z",0.0
+"Tanium staging flume",health_disabled_rate,"2016-07-01T23:20:01.484Z",0.0
+"Tanium staging flume",health_disabled_rate,"2016-07-01T23:21:01.901Z",0.0
+"Tanium staging flume",health_disabled_rate,"2016-07-01T23:22:03.142Z",0.0
+"Tanium staging flume",health_disabled_rate,"2016-07-01T23:23:03.549Z",0.0
+"Tanium staging flume",health_disabled_rate,"2016-07-01T23:24:03.991Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_size,"2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_size,"2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_size,"2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_size,"2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_size,"2016-07-01T23:23:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",alerts_rate,"2016-07-01T23:19:20.130Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",alerts_rate,"2016-07-01T23:20:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",alerts_rate,"2016-07-01T23:21:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",alerts_rate,"2016-07-01T23:22:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",alerts_rate,"2016-07-01T23:23:20.133Z",0.0
+"Tanium staging flume",alerts_rate,"2016-07-01T23:19:20.130Z",0.0
+"Tanium staging flume",alerts_rate,"2016-07-01T23:20:20.131Z",0.0
+"Tanium staging flume",alerts_rate,"2016-07-01T23:21:20.131Z",0.0
+"Tanium staging flume",alerts_rate,"2016-07-01T23:22:20.131Z",0.0
+"Tanium staging flume",alerts_rate,"2016-07-01T23:23:20.133Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",mem_swap,"2016-07-01T23:19:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",mem_swap,"2016-07-01T23:20:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",mem_swap,"2016-07-01T23:21:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",mem_swap,"2016-07-01T23:22:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",mem_swap,"2016-07-01T23:23:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_bad_rate,"2016-07-01T23:20:01.484Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_bad_rate,"2016-07-01T23:21:01.901Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_bad_rate,"2016-07-01T23:22:03.142Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_bad_rate,"2016-07-01T23:23:03.549Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",health_bad_rate,"2016-07-01T23:24:03.991Z",0.0
+"Tanium staging flume",health_bad_rate,"2016-07-01T23:20:01.484Z",0.0
+"Tanium staging flume",health_bad_rate,"2016-07-01T23:21:01.901Z",0.0
+"Tanium staging flume",health_bad_rate,"2016-07-01T23:22:03.142Z",0.0
+"Tanium staging flume",health_bad_rate,"2016-07-01T23:23:03.549Z",0.0
+"Tanium staging flume",health_bad_rate,"2016-07-01T23:24:03.991Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_capacity,"2016-07-01T23:19:50.000Z",1000000.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_capacity,"2016-07-01T23:20:50.000Z",1000000.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_capacity,"2016-07-01T23:21:50.000Z",1000000.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_capacity,"2016-07-01T23:22:50.000Z",1000000.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_capacity,"2016-07-01T23:23:50.000Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","health_concerning_rate","2016-07-01T23:20:01.484Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","health_concerning_rate","2016-07-01T23:21:01.901Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","health_concerning_rate","2016-07-01T23:22:03.142Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","health_concerning_rate","2016-07-01T23:23:03.549Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","health_concerning_rate","2016-07-01T23:24:03.991Z",0.0
+"Tanium staging flume","health_concerning_rate","2016-07-01T23:20:01.484Z",0.0
+"Tanium staging flume","health_concerning_rate","2016-07-01T23:21:01.901Z",0.0
+"Tanium staging flume","health_concerning_rate","2016-07-01T23:22:03.142Z",0.0
+"Tanium staging flume","health_concerning_rate","2016-07-01T23:23:03.549Z",0.0
+"Tanium staging flume","health_concerning_rate","2016-07-01T23:24:03.991Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_start_time,"2016-07-01T23:19:50.000Z",1.466729510972E12
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_start_time,"2016-07-01T23:20:50.000Z",1.466729510972E12
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_start_time,"2016-07-01T23:21:50.000Z",1.466729510972E12
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_start_time,"2016-07-01T23:22:50.000Z",1.466729510972E12
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_start_time,"2016-07-01T23:23:50.000Z",1.466729510972E12
+"Agent (cluster5-srv6.e8sec.com)",health_good_rate,"2016-07-01T23:20:01.484Z",1.000000000003695
+"Agent (cluster5-srv6.e8sec.com)",health_good_rate,"2016-07-01T23:21:01.901Z",0.9999999999983351
+"Agent (cluster5-srv6.e8sec.com)",health_good_rate,"2016-07-01T23:22:03.142Z",0.9999999999987226
+"Agent (cluster5-srv6.e8sec.com)",health_good_rate,"2016-07-01T23:23:03.549Z",1.0000000000020353
+"Agent (cluster5-srv6.e8sec.com)",health_good_rate,"2016-07-01T23:24:03.991Z",0.999999999996795
+"Tanium staging flume",health_good_rate,"2016-07-01T23:20:01.484Z",0.999999999995997
+"Tanium staging flume",health_good_rate,"2016-07-01T23:21:01.901Z",1.0000000000060427
+"Tanium staging flume",health_good_rate,"2016-07-01T23:22:03.142Z",0.9999999999987226
+"Tanium staging flume",health_good_rate,"2016-07-01T23:23:03.549Z",1.0000000000020353
+"Tanium staging flume",health_good_rate,"2016-07-01T23:24:03.991Z",0.999999999996795
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_stop_time,"2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_stop_time,"2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_stop_time,"2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_stop_time,"2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel",channel_stop_time,"2016-07-01T23:23:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_success_rate","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_success_rate","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_success_rate","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_success_rate","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_put_success_rate","2016-07-01T23:23:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_success_rate","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_success_rate","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_success_rate","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_success_rate","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","event_take_success_rate","2016-07-01T23:23:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",events_critical_rate,"2016-07-01T23:19:20.130Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",events_critical_rate,"2016-07-01T23:20:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",events_critical_rate,"2016-07-01T23:21:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",events_critical_rate,"2016-07-01T23:22:20.131Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",events_critical_rate,"2016-07-01T23:23:20.133Z",0.0
+"Tanium staging flume",events_critical_rate,"2016-07-01T23:19:20.130Z",0.0
+"Tanium staging flume",events_critical_rate,"2016-07-01T23:20:20.131Z",0.0
+"Tanium staging flume",events_critical_rate,"2016-07-01T23:21:20.131Z",0.0
+"Tanium staging flume",events_critical_rate,"2016-07-01T23:22:20.131Z",0.0
+"Tanium staging flume",events_critical_rate,"2016-07-01T23:23:20.133Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_complete_rate,"2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_complete_rate,"2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_complete_rate,"2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_complete_rate,"2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_complete_rate,"2016-07-01T23:23:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_underflow_rate,"2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_underflow_rate,"2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_underflow_rate,"2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_underflow_rate,"2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_underflow_rate,"2016-07-01T23:23:50.000Z",0.0
+"Tanium staging flume","total_read_bytes_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_read_bytes_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_read_bytes_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_read_bytes_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_read_bytes_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_success_rate","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_success_rate","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_success_rate","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_success_rate","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_success_rate","2016-07-01T23:23:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_attempt_rate","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_attempt_rate","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_attempt_rate","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_attempt_rate","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","event_drain_attempt_rate","2016-07-01T23:23:50.000Z",0.0
+"Tanium staging flume","total_web_metrics_collection_status_across_agents","2016-07-01T23:19:50.734Z",1.0
+"Tanium staging flume","total_web_metrics_collection_status_across_agents","2016-07-01T23:20:50.734Z",1.0
+"Tanium staging flume","total_web_metrics_collection_status_across_agents","2016-07-01T23:21:50.734Z",1.0
+"Tanium staging flume","total_web_metrics_collection_status_across_agents","2016-07-01T23:22:50.734Z",1.0
+"Tanium staging flume","total_web_metrics_collection_status_across_agents","2016-07-01T23:23:50.734Z",1.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_closed_rate","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_closed_rate","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_closed_rate","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_closed_rate","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_closed_rate","2016-07-01T23:23:50.000Z",0.0
+"Tanium staging flume","cpu_system_rate_across_agents","2016-07-01T23:19:50.734Z",1.666666666665151E-4
+"Tanium staging flume","cpu_system_rate_across_agents","2016-07-01T23:20:50.734Z",3.3333333333350387E-4
+"Tanium staging flume","cpu_system_rate_across_agents","2016-07-01T23:21:50.734Z",3.333333333330302E-4
+"Tanium staging flume","cpu_system_rate_across_agents","2016-07-01T23:22:50.734Z",1.6666666666698878E-4
+"Tanium staging flume","cpu_system_rate_across_agents","2016-07-01T23:23:50.734Z",3.333333333330302E-4
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_created_rate","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_created_rate","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_created_rate","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_created_rate","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_created_rate","2016-07-01T23:23:50.000Z",0.0
+"Tanium staging flume","read_bytes_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","read_bytes_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","read_bytes_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","read_bytes_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","read_bytes_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_cpu_system_rate_across_agents","2016-07-01T23:19:50.734Z",1.666666666665151E-4
+"Tanium staging flume","total_cpu_system_rate_across_agents","2016-07-01T23:20:50.734Z",3.3333333333350387E-4
+"Tanium staging flume","total_cpu_system_rate_across_agents","2016-07-01T23:21:50.734Z",3.333333333330302E-4
+"Tanium staging flume","total_cpu_system_rate_across_agents","2016-07-01T23:22:50.734Z",1.6666666666698878E-4
+"Tanium staging flume","total_cpu_system_rate_across_agents","2016-07-01T23:23:50.734Z",3.333333333330302E-4
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_empty_rate,"2016-07-01T23:19:50.000Z",0.11666666666666667
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_empty_rate,"2016-07-01T23:20:50.000Z",0.13333333333333333
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_empty_rate,"2016-07-01T23:21:50.000Z",0.11666666666666667
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_empty_rate,"2016-07-01T23:22:50.000Z",0.13333333333333333
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",batch_empty_rate,"2016-07-01T23:23:50.000Z",0.11666666666666667
+"Tanium staging flume","web_metrics_collection_status_across_agents","2016-07-01T23:19:50.734Z",1.0
+"Tanium staging flume","web_metrics_collection_status_across_agents","2016-07-01T23:20:50.734Z",1.0
+"Tanium staging flume","web_metrics_collection_status_across_agents","2016-07-01T23:21:50.734Z",1.0
+"Tanium staging flume","web_metrics_collection_status_across_agents","2016-07-01T23:22:50.734Z",1.0
+"Tanium staging flume","web_metrics_collection_status_across_agents","2016-07-01T23:23:50.734Z",1.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_failed_rate","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_failed_rate","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_failed_rate","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_failed_rate","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink","connection_failed_rate","2016-07-01T23:23:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_stop_time,"2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_stop_time,"2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_stop_time,"2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_stop_time,"2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_stop_time,"2016-07-01T23:23:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_start_time,"2016-07-01T23:19:50.000Z",1.466729510973E12
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_start_time,"2016-07-01T23:20:50.000Z",1.466729510973E12
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_start_time,"2016-07-01T23:21:50.000Z",1.466729510973E12
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_start_time,"2016-07-01T23:22:50.000Z",1.466729510973E12
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:hdfsSink",sink_start_time,"2016-07-01T23:23:50.000Z",1.466729510973E12
+"Tanium staging flume","health_bad_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","health_bad_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","health_bad_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","health_bad_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","health_bad_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_alerts_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_alerts_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_alerts_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_alerts_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_alerts_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_health_bad_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_health_bad_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_health_bad_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_health_bad_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_health_bad_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","channel_fill_percentage","2016-07-01T23:19:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","channel_fill_percentage","2016-07-01T23:20:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","channel_fill_percentage","2016-07-01T23:21:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","channel_fill_percentage","2016-07-01T23:22:50.000Z",0.0
+"flume2-AGENT-dd0c182923c56a95d54ca712188a53ef:memoryChannel","channel_fill_percentage","2016-07-01T23:23:50.000Z",0.0
+"Tanium staging flume","alerts_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","alerts_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","alerts_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","alerts_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","alerts_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","event_put_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","event_put_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","event_put_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","event_put_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","event_put_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_event_put_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_take_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.11666666666666667
+"flume2:tanium:memoryChannel","event_take_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.13333333333333333
+"flume2:tanium:memoryChannel","event_take_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.11666666666666667
+"flume2:tanium:memoryChannel","event_take_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.13333333333333333
+"flume2:tanium:memoryChannel","event_take_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","event_take_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","event_take_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","event_take_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","event_take_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","event_take_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.11666666666666667
+"Tanium staging flume","event_take_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.11666666666666667
+"Tanium staging flume","event_take_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.13333333333333333
+"Tanium staging flume","event_take_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.11666666666666667
+"Tanium staging flume","event_take_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.13333333333333333
+"Tanium staging flume","event_take_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.11666666666666667
+"flume2:tanium:memoryChannel","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.11666666666666667
+"flume2:tanium:memoryChannel","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.13333333333333333
+"flume2:tanium:memoryChannel","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.11666666666666667
+"flume2:tanium:memoryChannel","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.13333333333333333
+"flume2:tanium:memoryChannel","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.11666666666666667
+"Tanium staging flume","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.11666666666666667
+"Tanium staging flume","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.13333333333333333
+"Tanium staging flume","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.11666666666666667
+"Tanium staging flume","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.13333333333333333
+"Tanium staging flume","total_event_take_attempt_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.11666666666666667
+"Tanium staging flume","total_oom_exits_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_oom_exits_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_oom_exits_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_oom_exits_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_oom_exits_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_web_metrics_collection_duration_across_agents","2016-07-01T23:19:50.734Z",29.0
+"Tanium staging flume","total_web_metrics_collection_duration_across_agents","2016-07-01T23:20:50.734Z",43.0
+"Tanium staging flume","total_web_metrics_collection_duration_across_agents","2016-07-01T23:21:50.734Z",39.0
+"Tanium staging flume","total_web_metrics_collection_duration_across_agents","2016-07-01T23:22:50.734Z",40.0
+"Tanium staging flume","total_web_metrics_collection_duration_across_agents","2016-07-01T23:23:50.734Z",48.0
+"Agent (cluster5-srv6.e8sec.com)",uptime,"2016-07-01T23:19:50.000Z",685698.8053278923
+"Agent (cluster5-srv6.e8sec.com)",uptime,"2016-07-01T23:20:50.000Z",685757.6123979092
+"Agent (cluster5-srv6.e8sec.com)",uptime,"2016-07-01T23:21:50.000Z",685817.6022338867
+"Agent (cluster5-srv6.e8sec.com)",uptime,"2016-07-01T23:22:50.000Z",685877.9038078785
+"Agent (cluster5-srv6.e8sec.com)",uptime,"2016-07-01T23:23:50.000Z",685937.7419269085
+"flume2:tanium:memoryChannel","channel_size_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_size_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_size_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_size_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_size_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_size_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_size_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_size_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_size_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_size_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","channel_size_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","channel_size_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","channel_size_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","channel_size_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","channel_size_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_size_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_size_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_size_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_size_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_size_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_size_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_size_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_size_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_size_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_size_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_channel_size_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_channel_size_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_channel_size_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_channel_size_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_channel_size_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","oom_exits_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","oom_exits_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","oom_exits_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","oom_exits_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","oom_exits_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_capacity_across_flume_channels","2016-07-01T23:19:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","channel_capacity_across_flume_channels","2016-07-01T23:20:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","channel_capacity_across_flume_channels","2016-07-01T23:21:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","channel_capacity_across_flume_channels","2016-07-01T23:22:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","channel_capacity_across_flume_channels","2016-07-01T23:23:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","channel_capacity_across_flume_channels","2016-07-01T23:19:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","channel_capacity_across_flume_channels","2016-07-01T23:20:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","channel_capacity_across_flume_channels","2016-07-01T23:21:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","channel_capacity_across_flume_channels","2016-07-01T23:22:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","channel_capacity_across_flume_channels","2016-07-01T23:23:50.734Z",1000000.0
+"Tanium staging flume","channel_capacity_across_flume_channels","2016-07-01T23:19:50.734Z",1000000.0
+"Tanium staging flume","channel_capacity_across_flume_channels","2016-07-01T23:20:50.734Z",1000000.0
+"Tanium staging flume","channel_capacity_across_flume_channels","2016-07-01T23:21:50.734Z",1000000.0
+"Tanium staging flume","channel_capacity_across_flume_channels","2016-07-01T23:22:50.734Z",1000000.0
+"Tanium staging flume","channel_capacity_across_flume_channels","2016-07-01T23:23:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","total_channel_capacity_across_flume_channels","2016-07-01T23:19:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","total_channel_capacity_across_flume_channels","2016-07-01T23:20:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","total_channel_capacity_across_flume_channels","2016-07-01T23:21:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","total_channel_capacity_across_flume_channels","2016-07-01T23:22:50.734Z",1000000.0
+"flume2:tanium:memoryChannel","total_channel_capacity_across_flume_channels","2016-07-01T23:23:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_capacity_across_flume_channels","2016-07-01T23:19:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_capacity_across_flume_channels","2016-07-01T23:20:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_capacity_across_flume_channels","2016-07-01T23:21:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_capacity_across_flume_channels","2016-07-01T23:22:50.734Z",1000000.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_capacity_across_flume_channels","2016-07-01T23:23:50.734Z",1000000.0
+"Tanium staging flume","total_channel_capacity_across_flume_channels","2016-07-01T23:19:50.734Z",1000000.0
+"Tanium staging flume","total_channel_capacity_across_flume_channels","2016-07-01T23:20:50.734Z",1000000.0
+"Tanium staging flume","total_channel_capacity_across_flume_channels","2016-07-01T23:21:50.734Z",1000000.0
+"Tanium staging flume","total_channel_capacity_across_flume_channels","2016-07-01T23:22:50.734Z",1000000.0
+"Tanium staging flume","total_channel_capacity_across_flume_channels","2016-07-01T23:23:50.734Z",1000000.0
+"Tanium staging flume","web_metrics_collection_duration_across_agents","2016-07-01T23:19:50.734Z",29.0
+"Tanium staging flume","web_metrics_collection_duration_across_agents","2016-07-01T23:20:50.734Z",43.0
+"Tanium staging flume","web_metrics_collection_duration_across_agents","2016-07-01T23:21:50.734Z",39.0
+"Tanium staging flume","web_metrics_collection_duration_across_agents","2016-07-01T23:22:50.734Z",40.0
+"Tanium staging flume","web_metrics_collection_duration_across_agents","2016-07-01T23:23:50.734Z",48.0
+"Tanium staging flume",fd_max_across_agents,"2016-07-01T23:19:50.734Z",32768.0
+"Tanium staging flume",fd_max_across_agents,"2016-07-01T23:20:50.734Z",32768.0
+"Tanium staging flume",fd_max_across_agents,"2016-07-01T23:21:50.734Z",32768.0
+"Tanium staging flume",fd_max_across_agents,"2016-07-01T23:22:50.734Z",32768.0
+"Tanium staging flume",fd_max_across_agents,"2016-07-01T23:23:50.734Z",32768.0
+"Tanium staging flume","total_health_concerning_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_health_concerning_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_health_concerning_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_health_concerning_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_health_concerning_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",fd_max,"2016-07-01T23:19:50.000Z",32768.0
+"Agent (cluster5-srv6.e8sec.com)",fd_max,"2016-07-01T23:20:50.000Z",32768.0
+"Agent (cluster5-srv6.e8sec.com)",fd_max,"2016-07-01T23:21:50.000Z",32768.0
+"Agent (cluster5-srv6.e8sec.com)",fd_max,"2016-07-01T23:22:50.000Z",32768.0
+"Agent (cluster5-srv6.e8sec.com)",fd_max,"2016-07-01T23:23:50.000Z",32768.0
+"Agent (cluster5-srv6.e8sec.com)",fd_open,"2016-07-01T23:19:50.000Z",424.0
+"Agent (cluster5-srv6.e8sec.com)",fd_open,"2016-07-01T23:20:50.000Z",424.0
+"Agent (cluster5-srv6.e8sec.com)",fd_open,"2016-07-01T23:21:50.000Z",424.0
+"Agent (cluster5-srv6.e8sec.com)",fd_open,"2016-07-01T23:22:50.000Z",424.0
+"Agent (cluster5-srv6.e8sec.com)",fd_open,"2016-07-01T23:23:50.000Z",424.0
+"Agent (cluster5-srv6.e8sec.com)",cpu_system_rate,"2016-07-01T23:19:50.000Z",3.3333333333350387E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_system_rate,"2016-07-01T23:20:50.000Z",3.333333333330302E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_system_rate,"2016-07-01T23:21:50.000Z",1.6666666666698878E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_system_rate,"2016-07-01T23:22:50.000Z",3.333333333330302E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_system_rate,"2016-07-01T23:23:50.000Z",3.3333333333350387E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_user_rate,"2016-07-01T23:19:50.000Z",3.333333333330302E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_user_rate,"2016-07-01T23:20:50.000Z",5.000000000004927E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_user_rate,"2016-07-01T23:21:50.000Z",3.333333333330302E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_user_rate,"2016-07-01T23:22:50.000Z",1.666666666665151E-4
+"Agent (cluster5-srv6.e8sec.com)",cpu_user_rate,"2016-07-01T23:23:50.000Z",3.333333333330302E-4
+"Agent (cluster5-srv6.e8sec.com)",role_start_time,"2016-07-01T23:20:03.866Z",1.466729496622E12
+"Agent (cluster5-srv6.e8sec.com)",role_start_time,"2016-07-01T23:21:03.869Z",1.466729496622E12
+"Agent (cluster5-srv6.e8sec.com)",role_start_time,"2016-07-01T23:22:03.872Z",1.466729496622E12
+"Agent (cluster5-srv6.e8sec.com)",role_start_time,"2016-07-01T23:23:03.875Z",1.466729496622E12
+"Agent (cluster5-srv6.e8sec.com)",role_start_time,"2016-07-01T23:24:03.878Z",1.466729496622E12
+"Agent (cluster5-srv6.e8sec.com)","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_failed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_failed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_failed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_failed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_failed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_failed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","connection_failed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","connection_failed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","connection_failed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","connection_failed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","connection_failed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_failed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_failed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_failed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_failed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_failed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_created_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_created_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_created_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_created_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_created_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_connection_created_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_connection_created_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_connection_created_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_connection_created_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_connection_created_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_created_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_created_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_created_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_created_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_created_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","health_concerning_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","health_concerning_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","health_concerning_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","health_concerning_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","health_concerning_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",write_bytes_rate,"2016-07-01T23:19:50.000Z",341.3333333333333
+"Agent (cluster5-srv6.e8sec.com)",write_bytes_rate,"2016-07-01T23:20:50.000Z",341.3333333333333
+"Agent (cluster5-srv6.e8sec.com)",write_bytes_rate,"2016-07-01T23:21:50.000Z",341.3333333333333
+"Agent (cluster5-srv6.e8sec.com)",write_bytes_rate,"2016-07-01T23:22:50.000Z",341.3333333333333
+"Agent (cluster5-srv6.e8sec.com)",write_bytes_rate,"2016-07-01T23:23:50.000Z",341.3333333333333
+"Agent (cluster5-srv6.e8sec.com)","connection_created_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_created_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_created_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_created_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_created_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","connection_created_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","connection_created_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","connection_created_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","connection_created_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","connection_created_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_created_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_created_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_created_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_created_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_created_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",read_bytes_rate,"2016-07-01T23:19:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",read_bytes_rate,"2016-07-01T23:20:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",read_bytes_rate,"2016-07-01T23:21:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",read_bytes_rate,"2016-07-01T23:22:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",read_bytes_rate,"2016-07-01T23:23:50.000Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.13333333333333333
+"Tanium staging flume","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.13333333333333333
+"Tanium staging flume","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.11666666666666667
+"Tanium staging flume","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.13333333333333333
+"Tanium staging flume","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.11666666666666667
+"Tanium staging flume","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.13333333333333333
+"flume2:tanium:hdfsSink","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.13333333333333333
+"flume2:tanium:hdfsSink","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.11666666666666667
+"flume2:tanium:hdfsSink","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.13333333333333333
+"flume2:tanium:hdfsSink","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.11666666666666667
+"flume2:tanium:hdfsSink","total_batch_empty_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","batch_empty_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","batch_empty_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","batch_empty_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.13333333333333333
+"Agent (cluster5-srv6.e8sec.com)","batch_empty_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.11666666666666667
+"Agent (cluster5-srv6.e8sec.com)","batch_empty_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.13333333333333333
+"Tanium staging flume","batch_empty_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.13333333333333333
+"Tanium staging flume","batch_empty_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.11666666666666667
+"Tanium staging flume","batch_empty_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.13333333333333333
+"Tanium staging flume","batch_empty_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.11666666666666667
+"Tanium staging flume","batch_empty_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.13333333333333333
+"flume2:tanium:hdfsSink","batch_empty_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.13333333333333333
+"flume2:tanium:hdfsSink","batch_empty_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.11666666666666667
+"flume2:tanium:hdfsSink","batch_empty_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.13333333333333333
+"flume2:tanium:hdfsSink","batch_empty_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.11666666666666667
+"flume2:tanium:hdfsSink","batch_empty_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.13333333333333333
+"flume2:tanium:memoryChannel","event_take_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_take_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_take_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_take_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_take_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_take_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_take_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_take_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_take_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_take_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","event_take_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","event_take_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","event_take_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","event_take_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","event_take_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_take_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_take_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_take_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_take_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_take_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_take_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_event_take_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_event_take_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_event_take_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_event_take_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_event_take_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_complete_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_complete_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_complete_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_complete_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_complete_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","batch_complete_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","batch_complete_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","batch_complete_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","batch_complete_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","batch_complete_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_complete_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_complete_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_complete_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_complete_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_complete_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_health_disabled_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_health_disabled_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_health_disabled_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_health_disabled_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_health_disabled_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_complete_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","health_disabled_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","health_disabled_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","health_disabled_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","health_disabled_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","health_disabled_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","mem_rss_across_agents","2016-07-01T23:19:50.734Z",2.218336256E9
+"Tanium staging flume","mem_rss_across_agents","2016-07-01T23:20:50.734Z",2.218336256E9
+"Tanium staging flume","mem_rss_across_agents","2016-07-01T23:21:50.734Z",2.218336256E9
+"Tanium staging flume","mem_rss_across_agents","2016-07-01T23:22:50.734Z",2.218336256E9
+"Tanium staging flume","mem_rss_across_agents","2016-07-01T23:23:50.734Z",2.218336256E9
+"flume2:tanium:memoryChannel","event_put_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","event_put_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_put_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","event_put_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","event_put_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","event_put_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","event_put_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","event_put_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_event_put_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_put_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_event_put_success_rate_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_event_put_success_rate_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_event_put_success_rate_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_event_put_success_rate_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_event_put_success_rate_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_mem_rss_across_agents","2016-07-01T23:19:50.734Z",2.218336256E9
+"Tanium staging flume","total_mem_rss_across_agents","2016-07-01T23:20:50.734Z",2.218336256E9
+"Tanium staging flume","total_mem_rss_across_agents","2016-07-01T23:21:50.734Z",2.218336256E9
+"Tanium staging flume","total_mem_rss_across_agents","2016-07-01T23:22:50.734Z",2.218336256E9
+"Tanium staging flume","total_mem_rss_across_agents","2016-07-01T23:23:50.734Z",2.218336256E9
+"Agent (cluster5-srv6.e8sec.com)","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_mem_swap_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_mem_swap_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_mem_swap_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_mem_swap_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_mem_swap_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_attempt_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_closed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_closed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_closed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_closed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","connection_closed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","connection_closed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","connection_closed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","connection_closed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","connection_closed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","connection_closed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_closed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_closed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_closed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_closed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","connection_closed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_fd_max_across_agents","2016-07-01T23:19:50.734Z",32768.0
+"Tanium staging flume","total_fd_max_across_agents","2016-07-01T23:20:50.734Z",32768.0
+"Tanium staging flume","total_fd_max_across_agents","2016-07-01T23:21:50.734Z",32768.0
+"Tanium staging flume","total_fd_max_across_agents","2016-07-01T23:22:50.734Z",32768.0
+"Tanium staging flume","total_fd_max_across_agents","2016-07-01T23:23:50.734Z",32768.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_connection_closed_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_underflow_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_underflow_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_underflow_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_underflow_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","batch_underflow_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","batch_underflow_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","batch_underflow_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","batch_underflow_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","batch_underflow_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","batch_underflow_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_underflow_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_underflow_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_underflow_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_underflow_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","batch_underflow_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_batch_underflow_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_success_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_success_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_success_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_success_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","event_drain_success_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","event_drain_success_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","event_drain_success_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","event_drain_success_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","event_drain_success_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","event_drain_success_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_success_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_success_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_success_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_success_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","event_drain_success_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:hdfsSink","total_event_drain_success_rate_across_flume_sinks","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","mem_swap_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","mem_swap_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","mem_swap_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","mem_swap_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","mem_swap_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","unexpected_exits_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","unexpected_exits_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","unexpected_exits_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","unexpected_exits_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","unexpected_exits_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_events_important_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_events_important_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_events_important_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_events_important_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_events_important_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)",scm_role_state,"2016-07-01T23:20:03.866Z",3.0
+"Agent (cluster5-srv6.e8sec.com)",scm_role_state,"2016-07-01T23:21:03.869Z",3.0
+"Agent (cluster5-srv6.e8sec.com)",scm_role_state,"2016-07-01T23:22:03.872Z",3.0
+"Agent (cluster5-srv6.e8sec.com)",scm_role_state,"2016-07-01T23:23:03.875Z",3.0
+"Agent (cluster5-srv6.e8sec.com)",scm_role_state,"2016-07-01T23:24:03.878Z",3.0
+"Tanium staging flume","health_good_rate_across_agents","2016-07-01T23:19:50.734Z",0.9999999999987744
+"Tanium staging flume","health_good_rate_across_agents","2016-07-01T23:20:50.734Z",1.000000000003695
+"Tanium staging flume","health_good_rate_across_agents","2016-07-01T23:21:50.734Z",0.9999999999983351
+"Tanium staging flume","health_good_rate_across_agents","2016-07-01T23:22:50.734Z",0.9999999999987226
+"Tanium staging flume","health_good_rate_across_agents","2016-07-01T23:23:50.734Z",1.0000000000020353
+"Tanium staging flume","write_bytes_rate_across_agents","2016-07-01T23:19:50.734Z",341.3333333333333
+"Tanium staging flume","write_bytes_rate_across_agents","2016-07-01T23:20:50.734Z",341.3333333333333
+"Tanium staging flume","write_bytes_rate_across_agents","2016-07-01T23:21:50.734Z",341.3333333333333
+"Tanium staging flume","write_bytes_rate_across_agents","2016-07-01T23:22:50.734Z",341.3333333333333
+"Tanium staging flume","write_bytes_rate_across_agents","2016-07-01T23:23:50.734Z",341.3333333333333
+"Tanium staging flume","fd_open_across_agents","2016-07-01T23:19:50.734Z",424.0
+"Tanium staging flume","fd_open_across_agents","2016-07-01T23:20:50.734Z",424.0
+"Tanium staging flume","fd_open_across_agents","2016-07-01T23:21:50.734Z",424.0
+"Tanium staging flume","fd_open_across_agents","2016-07-01T23:22:50.734Z",424.0
+"Tanium staging flume","fd_open_across_agents","2016-07-01T23:23:50.734Z",424.0
+"Tanium staging flume","total_health_good_rate_across_agents","2016-07-01T23:19:50.734Z",0.9999999999987744
+"Tanium staging flume","total_health_good_rate_across_agents","2016-07-01T23:20:50.734Z",1.000000000003695
+"Tanium staging flume","total_health_good_rate_across_agents","2016-07-01T23:21:50.734Z",0.9999999999983351
+"Tanium staging flume","total_health_good_rate_across_agents","2016-07-01T23:22:50.734Z",0.9999999999987226
+"Tanium staging flume","total_health_good_rate_across_agents","2016-07-01T23:23:50.734Z",1.0000000000020353
+"Tanium staging flume","total_fd_open_across_agents","2016-07-01T23:19:50.734Z",424.0
+"Tanium staging flume","total_fd_open_across_agents","2016-07-01T23:20:50.734Z",424.0
+"Tanium staging flume","total_fd_open_across_agents","2016-07-01T23:21:50.734Z",424.0
+"Tanium staging flume","total_fd_open_across_agents","2016-07-01T23:22:50.734Z",424.0
+"Tanium staging flume","total_fd_open_across_agents","2016-07-01T23:23:50.734Z",424.0
+"Tanium staging flume","total_write_bytes_rate_across_agents","2016-07-01T23:19:50.734Z",341.3333333333333
+"Tanium staging flume","total_write_bytes_rate_across_agents","2016-07-01T23:20:50.734Z",341.3333333333333
+"Tanium staging flume","total_write_bytes_rate_across_agents","2016-07-01T23:21:50.734Z",341.3333333333333
+"Tanium staging flume","total_write_bytes_rate_across_agents","2016-07-01T23:22:50.734Z",341.3333333333333
+"Tanium staging flume","total_write_bytes_rate_across_agents","2016-07-01T23:23:50.734Z",341.3333333333333
+"Tanium staging flume","cpu_user_rate_across_agents","2016-07-01T23:19:50.734Z",3.3333333333397756E-4
+"Tanium staging flume","cpu_user_rate_across_agents","2016-07-01T23:20:50.734Z",3.333333333330302E-4
+"Tanium staging flume","cpu_user_rate_across_agents","2016-07-01T23:21:50.734Z",5.000000000004927E-4
+"Tanium staging flume","cpu_user_rate_across_agents","2016-07-01T23:22:50.734Z",3.333333333330302E-4
+"Tanium staging flume","cpu_user_rate_across_agents","2016-07-01T23:23:50.734Z",1.666666666665151E-4
+"Tanium staging flume","total_unexpected_exits_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_unexpected_exits_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_unexpected_exits_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_unexpected_exits_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_unexpected_exits_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_cpu_user_rate_across_agents","2016-07-01T23:19:50.734Z",3.3333333333397756E-4
+"Tanium staging flume","total_cpu_user_rate_across_agents","2016-07-01T23:20:50.734Z",3.333333333330302E-4
+"Tanium staging flume","total_cpu_user_rate_across_agents","2016-07-01T23:21:50.734Z",5.000000000004927E-4
+"Tanium staging flume","total_cpu_user_rate_across_agents","2016-07-01T23:22:50.734Z",3.333333333330302E-4
+"Tanium staging flume","total_cpu_user_rate_across_agents","2016-07-01T23:23:50.734Z",1.666666666665151E-4
+"Tanium staging flume","health_unknown_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","health_unknown_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","health_unknown_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","health_unknown_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","health_unknown_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_health_unknown_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_health_unknown_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_health_unknown_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_health_unknown_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_health_unknown_rate_across_agents","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","total_channel_fill_percentage_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_fill_percentage_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_fill_percentage_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_fill_percentage_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_fill_percentage_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"flume2:tanium:memoryChannel","channel_fill_percentage_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_fill_percentage_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_fill_percentage_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_fill_percentage_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_fill_percentage_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Agent (cluster5-srv6.e8sec.com)","channel_fill_percentage_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","channel_fill_percentage_across_flume_channels","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","channel_fill_percentage_across_flume_channels","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","channel_fill_percentage_across_flume_channels","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","channel_fill_percentage_across_flume_channels","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","channel_fill_percentage_across_flume_channels","2016-07-01T23:23:50.734Z",0.0
+"Tanium staging flume","events_important_rate_across_agents","2016-07-01T23:19:50.734Z",0.0
+"Tanium staging flume","events_important_rate_across_agents","2016-07-01T23:20:50.734Z",0.0
+"Tanium staging flume","events_important_rate_across_agents","2016-07-01T23:21:50.734Z",0.0
+"Tanium staging flume","events_important_rate_across_agents","2016-07-01T23:22:50.734Z",0.0
+"Tanium staging flume","events_important_rate_across_agents","2016-07-01T23:23:50.734Z",0.0

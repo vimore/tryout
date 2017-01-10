@@ -1,0 +1,15 @@
+{
+  "namespace": "com.securityx.flume.log.avro",
+  "type" : "record",
+  "name" : "Event",
+  "fields" : [ {
+    "name" : "headers",
+    "type" : {
+      "type" : "map",
+      "values" : "string"
+    }
+  }, {
+    "name" : "body",
+    "type" : "bytes"
+  } ]
+}

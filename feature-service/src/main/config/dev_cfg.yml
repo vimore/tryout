@@ -1,0 +1,252 @@
+haiku:
+    Out beyond ideas of wrongdoing,
+    and rightdoing there is a field.
+    I will meet you there.
+
+# Environment values are DEV or PROD
+environment: DEV
+
+#cluster1
+#zkQuorum: 10.10.30.51
+#solrQuorum: cluster1-srv1:2181,cluster1-srv2:2181,cluster1-srv3:2181,cluster1-srv4:2181,cluster1-srv5:2181/solr
+
+#cluster 4
+#zkQuorum: 10.10.80.81
+#solrQuorum: 10.10.80.81,10.10.80.82,10.10.80.83:2181/solr
+
+#cluster5
+#zkQuorum: cluster5-srv1
+#solrQuorum: cluster5-srv1:2181,cluster5-srv2:2181,cluster5-srv3:2181,cluster5-srv4:2181,cluster5-srv5:2181/solr
+
+#cluster6
+#zkQuorum: 10.10.80.151,10.10.80.152,10.10.80.158
+#solrQuorum: 10.10.80.151,10.10.80.152,10.10.80.158:2181/solr
+
+#ds cluster
+zkQuorum: 10.10.80.121
+solrQuorum: 10.10.80.121:2181/solr
+
+phoenix:
+  hbaseRpcTimeout: 720000
+  queryTimeoutMs: 720000
+#  schema: POC
+
+includeBeaconingBehaviors: false
+includeC2Behaviors: true
+
+mongoDB:
+ # connect to cluster6
+ #mongoServer: 10.10.80.158
+ # connect to ds cluster
+ mongoServer: 10.10.80.121
+ mongoPort: 27017
+ # the following options can be configured for Mongo, but have defaults that we expect to work for most installations.  All these
+ # options are milliseconds to wait for some operation before timing out
+ # maxWaitTime is the time to wait for a connection to be retrived from the connection pool
+# maxWaitTime: 1000
+ # connectionTimeout is the time to wait for getting a socket connection to the Mongo server
+# connectionTimeout: 5000
+ # socketTimeout is the time to wait for a response from the Mongo server
+# socketTimeout: 5000
+ # serverSelectionTimeout is the time to wait for to select a Mongo server
+# serverSelectionTimeout: 1000
+
+#suppressStatisticsForModels: "9, 10"
+
+investigationClient: VirusTotal
+investigationApiKey: 9c4a85f6601a91e61a71ed24c38298524d0a5b55e3d8e6e822b3ce91651ba507
+
+graphite:
+ enabled: true
+ host: graphite.server.name
+ port: 2003
+ outputPeriod: 1m
+
+#Entity Fusion Defaults:
+entityFusion:
+ backoffPeriodHours: 24
+
+#Thread Pool
+threadPool:
+ corePoolSize: 20
+ maxPoolSize: 20
+
+# HTTP-specific options.
+server:
+#  softNofileLimit: 1000
+#  hardNofileLimit: 1000
+  applicationConnectors:
+    - type: http
+      port: 9080
+#    - type: https
+#      port: 8443
+#      keyStorePath: example.keystore
+#      keyStorePassword: example
+#      validateCerts: false
+# this requires the alpn-boot library on the JVM's boot classpath
+#    - type: spdy3
+#      port: 8445
+#      keyStorePath: example.keystore
+#      keyStorePassword: example
+#      validateCerts: false
+  adminConnectors:
+    - type: http
+      port: 9081
+#    - type: https
+#      port: 8444
+#      keyStorePath: example.keystore
+#      keyStorePassword: example
+#      validateCerts: false
+  requestLog:
+      appenders:
+         - type: file
+           archive: true
+           archivedFileCount: 5
+           currentLogFilename: target/logs/request.log
+           archivedLogFilenamePattern: target/logs/http-test-%d.log
+           timeZone: UTC
+           logFormat:
+
+# Security Token for API Authentication
+securityToken:
+
+  # Expiration time in Number of Days
+  # Valid value is one of NONE, HS256, HS384, HS512, RS256, RS384, RS512, ES256, ES384, ES512, PS256, PS384, PS512
+  signatureAlgorithm: HS512
+
+  # Expiration time in Number of Days
+  expirationTime: 1
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  # Logger-specific levels.
+  loggers:
+    level: ALL
+    # Sets the level
+    com.securityx: ALL
+    org.apache.hadoop.ipc: INFO
+    org.apache.zookeeper: INFO
+    org.eclipse.jetty.io: INFO
+    org.apache.phoenix: ALL
+    io.dropwizard: ALL
+
+  appenders:
+  #- type: console
+      #  threshold: ALL
+      #  target: stderr
+
+    - type: file
+      # The file to which current statements will be logged.
+      currentLogFilename: target/logs/e8apiserver.log
+
+      # When the log file rotates, the archived log will be renamed to this and gzipped. The
+      # %d is replaced with the previous day (yyyy-MM-dd). Custom rolling windows can be created
+      # by passing a SimpleDateFormat-compatible format as an argument: "%d{yyyy-MM-dd-hh}".
+      archivedLogFilenamePattern: target/logs/e8apiserver-%d.log.gz
+
+      # The number of archived files to keep.
+      archivedFileCount: 5
+
+      # The timezone used to format dates. HINT: USE THE DEFAULT, UTC.
+      timeZone: UTC
+
+    - type: syslog
+      # The hostname of the syslog server to which statements will be sent.
+      # N.B.: If this is the local host, the local syslog instance will need to be configured to
+      # listen on an inet socket, not just a Unix socket.
+      host: localhost
+
+      # The syslog facility to which statements will be sent.
+      facility: local0
+
+# Settings for the CloudChamber service.
+cloudchamber:
+    host: cloudchamber.e8security.com
+    scheme: https
+    port: 443
+    userId: user2
+    emailId: user2@auth.com
+    X_HMAC_NONCE: 'X-HMAC-Nonce'
+    AUTHORIZATION: 'Authorization'
+    GEO_X_HMAC_NONCE: '1398322270633'
+    GEO_AUTHORIZATION: '3a57d231604f567b029184e28d3944c50f6ce4a1'
+    WHOIS_X_HMAC_NONCE: '1398322270633'
+    WHOIS_AUTHORIZATION: '3a57d231604f567b029184e28d3944c50f6ce4a1'
+    PROXY_HOST: 
+    PROXY_PORT: 
+    PROXY_USER: 
+    PROXY_PASSWORD: 
+    PROXY_SCHEME: 'https'
+
+# Configuration info for global status
+globalStatus:
+    # SQL "like" terms for distinguishing machine users from regular users
+    # A comma separated list of like terms to apply when querying
+    excludeUserLikeTerms: "%$"
+    excludeHostLikeTerms: ""
+
+# Configuartion for determining Risk Categories
+riskRanges:
+    # risk >= 0.0 and risk < 0.4
+    lowRisk:
+       min: 0.0
+       max: 0.4
+    # risk >= 0.4 and risk < 0.7
+    mediumRisk:
+       min: 0.4
+       max: 0.7
+    # risk >= 0.7 and risk <= 1.0
+    highRisk:
+       min: 0.7
+       max: 1.0
+
+vendors:
+  - name: PAN
+    enabled: true
+    displayLabel: Palo Alto Networks
+  - name: ArcSight
+    enabled: false
+    displayLabel: ArcSight
+
+# Settings for Impala Configuration.
+impala:
+    host: cluster5-srv2
+    port: 21050
+    # UseNativeQuery - Native Impala SQL is used and translation of SQL to Native Impala SQL is not performed
+    # PreparedMetaLimitZero - By default, the driver appends LIMIT 0 to the query to improve performance. Disable this option
+    # AuthMech - Authentication Mechanism is disalbed.
+    connectionUrl: 'jdbc:hive2://%s:%s/;auth=noSasl;LogLevel=6;LogPath=target/logs'
+    jdbcDriver: 'org.apache.hive.jdbc.HiveDriver'
+    databaseName: 'E8SEC'
+    webProxyParquetTable: 'WEB_PROXY_PARQUET'
+    iamParquetTable: 'IAM_PARQUET'
+
+metrics:
+   frequency: 1 minute
+   reporters:
+   - type: graphite
+     host: 10.10.30.84
+     port: 2003
+     prefix: "cluster1"
+#   - type: csv
+#     file: target/metrics/e8-api
+
+# File paths for other configuration files
+configurationConstants:
+   alertConfFilePath: src/main/config/alerts.yml
+   timeSeriesFilePath: src/main/config/timeSeries.yml
+   webAnomalyProfileNamesFilePath: src/main/config/webAnomalyProfiles.yml
+   securityEventTypesFilePath: src/main/config/securityEvents.yml
+   searchConfFilePath: src/main/config/searchConf.yml
+
+
+fixNullValue:
+    enable: true
+    nullValue: NULL_VALUE
+
+autoCompleteCacheDir: target/auto_complete_cache/
+

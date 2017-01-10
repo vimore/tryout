@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.securityx</groupId>
+    <artifactId>steel-thread</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>Steel thread modules (${project.version})</name>
+    <url>http://maven.apache.org</url>
+
+    <scm>
+      <connection>scm:git:git@github.com:SecurityX/steel-thread.git</connection>
+    </scm>
+
+    <properties>        
+        <joda.time.version>2.3</joda.time.version>
+        <log4j.version>1.2.16</log4j.version>
+        <junit.version>4.5</junit.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <prometheus.version>0.0.14</prometheus.version>
+    </properties>
+    <repositories>
+        <repository>
+            <id>cloudera</id>
+            <url>https://repository.cloudera.com/artifactory/cloudera-repos/</url>
+        </repository>
+    </repositories>
+    <!-- We manage dependencies here, these versions are inherited by all child projects -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- date-time library -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.time.version}</version>
+            </dependency>
+            <dependency>
+              <groupId>org.json</groupId>
+              <artifactId>json</artifactId>
+              <version>20151123</version>
+            </dependency>   
+        </dependencies>
+    </dependencyManagement>
+    <!-- Some default build plugin configuration -->
+    <build>
+
+     <resources>
+       <resource>
+         <directory>properties</directory>
+         <filtering>true</filtering>
+       </resource>
+     </resources>
+     <plugins>
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>buildnumber-maven-plugin</artifactId>
+            <version>1.1</version>
+            <executions>
+               <execution>
+                  <phase>validate</phase>
+                  <goals>
+                     <goal>create</goal>
+                  </goals>
+               </execution>
+            </executions>
+          </plugin>
+           <!-- Adding Timestamp to Builds-->
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>build-helper-maven-plugin</artifactId>
+              <version>1.9.1</version>
+              <executions>
+                  <execution>
+                      <id>timestamp-property</id>
+                      <goals>
+                          <goal>timestamp-property</goal>
+                      </goals>
+                      <configuration>
+                          <name>current.time</name>
+                          <pattern>yyyyMMddHHmmss</pattern>
+                          <timeZone>GMT-9</timeZone>
+                      </configuration>
+                  </execution>
+              </executions>
+          </plugin>
+           <!-- compile java version -->
+           <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <!--set encoding to something not platform dependent-->
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+           </plugin>
+           <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <!--set encoding to something not platform dependent-->
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.16 </version>
+                <!--<configuration>-->
+                    <!--<encoding>${project.build.sourceEncoding}</encoding>-->
+                <!--</configuration>-->
+            </plugin>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- Sub Project Modules to Build   -->
+    <profiles>
+        <profile>
+           <id>no-shaded-libs</id>
+            <modules>
+                <module>log-mef</module>
+                <module>log-mef-mapreduce</module>
+                <module>feature-service</module>
+                <module>flume-features</module>
+                <module>health-agent</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>all</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <modules>
+                <module>shaded-libs</module>
+                <module>log-mef</module>
+                <module>log-mef-mapreduce</module>
+                <module>feature-service</module>
+                <module>flume-features</module>
+                <module>health-agent</module>
+            </modules>
+        </profile>
+       
+        <!-- profile used to build/deploy the top-level project without building any modules -->
+        <profile>
+            <id>base</id>
+        </profile>
+         <profile>
+           <id>rpm</id>
+             <modules>
+               <module>feature-service</module>
+               <module>e8sec-api-server</module>
+             </modules>
+         </profile>
+    </profiles>
+  <distributionManagement>
+    <repository>
+      <id>steel-thread-release</id>
+      <name>steel-thread-release</name>
+      <url>http://192.168.12.13:8081/nexus/content/repositories/steel-thread-release/</url>
+    </repository>
+    <snapshotRepository>
+      <id>steel-thread-snapshots</id>
+      <name>steel-thread-snapshots</name>
+      <url>http://192.168.12.13:8081/nexus/content/repositories/steel-thread-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>
+

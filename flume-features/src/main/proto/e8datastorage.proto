@@ -1,0 +1,59 @@
+package com.e8security.datastorage.proto;
+
+
+
+option java_outer_classname = "E8MetaData";
+
+message FlumeEventMeta
+{
+    extensions 100 to max;
+
+    enum Type
+    {
+        syslog = 1;
+        packet = 2;
+        file = 3;
+    }
+
+    required Type type = 1;
+    required string hostname = 2;
+    
+}
+
+message SyslogMeta
+{
+    extend FlumeEventMeta
+    {
+        required SyslogMeta flumeEventMeta = 100; // Unique FlumeEventMeta extension number
+    }
+
+    // These fields can use the full number range.
+    optional string host = 1;
+    optional string facility = 2;
+    optional string severity = 3;
+}
+
+message PacketMeta
+{
+    extend FlumeEventMeta
+    {
+        required PacketMeta flumeEventMeta = 101; // Unique FlumeEventMeta extension number
+    }
+
+    // These fields can use the full number range.
+    
+}
+
+message FileMeta
+{
+    extend FlumeEventMeta
+    {
+        required FileMeta flumeEventMeta = 102; // Unique FlumeEventMeta extension number
+    }
+
+    // These fields can use the full number range.
+    optional string file = 1;
+    
+}
+
+

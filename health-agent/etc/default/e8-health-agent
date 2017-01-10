@@ -1,0 +1,6 @@
+E8_HEALTH_AGENT_SERVER_USER=e8admin
+E8_HEALTH_AGENT_SERVER_HOME=/opt/e8sec/e8sec-health-agent
+E8_HEALTH_AGENT_SERVER_JAR_PATH="$E8_HEALTH_AGENT_SERVER_HOME/lib/health-agent.jar"
+E8_HEALTH_AGENT_CONF_FILE="/etc/e8sec-health-agent/conf/prod_cfg.yml"
+E8_HEALTH_AGENT_LOG_DIR="/var/log/e8sec-health-agent"
+E8_HEALTH_AGENT_SERVER_NICENESS=10

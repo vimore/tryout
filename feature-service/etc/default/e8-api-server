@@ -1,0 +1,6 @@
+E8_API_SERVER_USER=e8admin
+E8_API_SERVER_HOME=/opt/e8sec/e8-api-server
+E8_API_SERVER_JAR_PATH="$E8_API_SERVER_HOME/lib/feature-service.jar"
+E8_API_CONF_FILE="/etc/e8-api-server/config.yml"
+E8_API_LOG_DIR="/var/log/e8-api-server"
+E8_API_SERVER_NICENESS=10

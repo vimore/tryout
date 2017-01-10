@@ -1,0 +1,17 @@
+Shaded libs
+This project contains third party class in a shaded package.
+
+
+Initial need has been raised by MefTLDNormalizedConstraint : a log-mef constraint helping to extract Top Level Domain if a valid dns domain is provided.
+TLD relies a list on entries and is maintained by ICANN and is regularly updated. Guava provides InternetDomainName class extracting TLD and containing a serialized version of the TLD list which is updated once every one to three months.
+
+In that case, why not just add last guava artifact as module of log-mef ? because an older (more or less 4 years old) version of the lib is used at hadoop layer and this version comes first when resolving class names. we want to use a recent TLD list !
+
+Shaded-libs content deals initially with
+    com.google.thirdparty.publicsuffix.PublicSuffixPatterns and related class translated to package com.securityx.shaded.google.thirdparty.publicsuffix
+    com.google.common.net.InternetDomainName translated to package com.securityx.shaded.google.common.net
+
+Tricks
+
+For IDEA : you must prevent idea to look into  this project for sources, instead use the maven dependency. to do so :
+Right-click on shaded-libs -> pom.xml in the project view in IntelliJ, choose "Maven" -> "Ignore Projects". Then do a "Maven" -> "Reimport" on the log-mef pom.xml.

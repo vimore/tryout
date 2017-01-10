@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workflow-app xmlns="uri:oozie:workflow:0.2" name="securityx-workflow-streaming-wf">
+    <start to="hdfs-scan"/>
+
+    <action name='hdfs-scan'>
+        <java>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <main-class>com.securityx.mef.dpi.mapreduce.SecurityPacketFilesInfo</main-class>
+            <capture-output/>
+        </java>
+        <ok to="load-decision" />
+        <error to="fail" />
+    </action>
+
+
+    <decision name="load-decision">
+        <switch>
+            <case to="load-node">${(wf:actionData('hdfs-scan')['HASFILES']) == "YES"}</case>
+            <case to="end">${(wf:actionData('hdfs-scan')['HASFILES']) == "NO"}</case>
+            <default to="fail" />
+        </switch>
+    </decision>
+
+    <action name="load-node">
+        <java>
+            <job-tracker>${jobTracker}</job-tracker>
+            <name-node>${nameNode}</name-node>
+            <configuration>
+                <property>
+                    <name>mapred.job.queue.name</name>
+                    <value>${queueName}</value>
+                </property>
+            </configuration>
+            <main-class>com.securityx.mef.dpi.mapreduce.TestOuputAction</main-class>
+            <arg> ${wf:actionData('hdfs-scan')['INPUTFILES']} </arg>
+        </java>
+        <ok to="end" />
+        <error to="fail" />
+    </action>
+
+
+    <kill name="fail">
+        <message>Failed, error message[${wf:errorMessage(wf:lastErrorNode())}]</message>
+    </kill>
+
+    <end name="end"/>
+
+
+</workflow-app>

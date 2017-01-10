@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>steel-thread</artifactId>
+        <groupId>com.securityx</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <prerequisites>
+        <maven>3.0.0</maven>
+    </prerequisites>
+
+    <groupId>com.securityx</groupId>
+    <artifactId>e8sec-health-agent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>rpm</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <build.number>1</build.number>
+        <maven.rpm.plugin.version>2.1.2</maven.rpm.plugin.version>
+        <e8.basedir>/etc/e8sec-health-agent</e8.basedir>
+        <!-- <e8.versioninfo>/etc/e8-configs</e8.versioninfo> -->
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>rpm-maven-plugin</artifactId>
+            <version>2.1.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>rpm-maven-plugin</artifactId>
+                <version>2.1.2</version>
+                <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <id>generate-rpm</id>
+                        <goals>
+                            <goal>rpm</goal>
+                        </goals>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <license>Copyright 2015,2016 E8 Security</license>
+                    <name>e8sec-health-agent</name>
+                    <version>${project.version}</version>
+                    <release></release>
+                    <distribution>E8 System Health Agent</distribution>
+                    <url>http://www.e8security.com/</url>
+                    <packager>E8Security BuildSystem http://www.e8security.com</packager>
+                    <needarch>x86_64</needarch>
+                    <prefix>${e8.basedir}</prefix>
+                    <group>HealthAgent/Jars</group>
+                    <vendor>E8 Security</vendor>
+                    <summary>E8 Security Health Agent</summary>
+                    <description>Provides E8 Security Health Agent</description>
+                    <defineStatements>
+                        <defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
+                    </defineStatements>
+                    <mappings>
+                        <mapping>
+                            <directory>${e8.basedir}/conf</directory>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>resources/config/prod_cfg.yml</location>
+                                </source>
+                                <source>
+                                    <location>resources/config/e8-health-agent-logrotate.conf</location>
+                                </source>
+                            </sources>
+                        </mapping>
+                        <mapping>
+                            <directory>${e8.basedir}/lib</directory>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>target/health-agent-2.0.0.jar</location>
+                                </source>
+                            </sources>
+                        </mapping>
+                        <mapping>
+                            <directory>${e8.basedir}/etc</directory>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>etc/init.d/e8sec-health-agent</location>
+                                </source>
+                            </sources>
+                        </mapping>
+                        <mapping>
+                            <directory>${e8.basedir}/etc/default</directory>
+                            <username>root</username>
+                            <groupname>root</groupname>
+                            <sources>
+                                <source>
+                                    <location>etc/default/e8-health-agent</location>
+                                </source>
+                            </sources>
+                        </mapping>
+                    </mappings>
+                    <postinstallScriptlet>
+                        <scriptFile>etc/scripts/post-install.sh</scriptFile>
+                        <fileEncoding>utf-8</fileEncoding>
+                    </postinstallScriptlet>
+                    <preinstallScriptlet>
+                        <scriptFile>etc/scripts/pre-install.sh</scriptFile>
+                        <fileEncoding>utf-8</fileEncoding>
+                    </preinstallScriptlet>
+                    <preremoveScriptlet>
+                        <scriptFile>etc/scripts/pre-remove.sh</scriptFile>
+                        <fileEncoding>utf-8</fileEncoding>
+                    </preremoveScriptlet>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>e8-health-agent-release</id>
+            <name>e8api-health-agent-release</name>
+            <url>http://192.168.12.13:8081/nexus/content/repositories/e8-health-agent-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>e8-health-agent</id>
+            <name>e8-health-agent</name>
+            <url>http://192.168.12.13:8081/nexus/content/repositories/e8-health-agent/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>thirdparty</id>
+            <url>http://10.10.30.224:8081/nexus/content/repositories/thirdparty</url>
+            <name>E8 Security Local Repository</name>
+        </repository>
+    </repositories>
+</project>

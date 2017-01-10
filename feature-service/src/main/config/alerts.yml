@@ -1,0 +1,31 @@
+# Alerts
+alertDestinations:
+-
+  id: 0
+  name: SMTP
+-
+  id: 1
+  name: SPLUNK
+-
+  id: 2
+  name: ArcSight
+
+cefConfig:
+  cefVersion: 0.0
+  deviceVersion: 2.0.0
+  vendor: E8
+  product: EntityAnalytics
+
+emailSenderConfiguration:
+  emailTemplateFilePath: src/main/config/email.vm
+  oneEmailPerEntity: false   # If this is set true, one alert-email will be sent per entity instead of one bulk-email
+
+##
+# This is to override the schedule set by the user from the UI.
+# override = true would mean, the api server would ignore what the user sets in UI and
+# the configuration is controlled from this config file
+##
+alertSchedulerConfiguration:
+  overrideUser: false
+  schedule: HOURLY   #can be HOURLY, DAILY, WEEKLY
+  queryDuration: 24  # in Hours

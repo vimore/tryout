@@ -1,0 +1,1837 @@
+# Killchain
+killchain:
+-
+  id: 0
+  name: RECON
+-
+  id: 1
+  name: EXPLOIT
+-
+  id: 2
+  name: CONTROL
+-
+  id: 3
+  name: MOVE
+-
+  id: 4
+  name: ACTION
+-
+  id: 5
+  name: EXFILTRATE
+
+
+
+# Models
+models:
+-
+  id: 0
+  name: Network Beacon
+  basedOn: host
+-
+  id: 1
+  name: Network Coordinated Behavior
+  basedOn: host
+-
+  id: 2
+  name: Web Peer Anonalies
+  basedOn: host
+-
+  id: 3
+  name: AD Peer Anomalies
+  basedOn: user
+-
+  id: 4
+  name: Network Anomaly Profile
+  basedOn: host
+-
+  id: 5
+  name: Tanium
+  basedOn: host
+-
+  id: 6
+  name: AD Anomaly Profile
+  basedOn: user
+-
+  id: 7
+  name: AD Novelty Detector
+  basedOn: user
+-
+  id: 8
+  name: Command and Control
+  basedOn: host
+-
+  id: 9
+  name: Endpoint Local NOX
+  basedOn: host
+-
+  id: 10
+  name: Endpoint Global NOX
+  basedOn: host
+
+
+#Entity Cards:
+entityCards:
+-
+  id: 1
+  name: Card 1           # TODO: Naming the card
+-
+  id: 2
+  name: Card 2
+-
+  id: 3
+  name: Card 3
+-
+  id: 4
+  name: Card 4
+-
+  id: 5
+  name: Card 5
+-
+  id: 6
+  name: Card 6
+-
+  id: 7
+  name: Card 7  ## used by novelty detector
+-
+  id: 8
+  name: Card 8  ## used by c2
+
+
+
+# Security Event Types
+securityEventTypes:
+-
+  #### AD Peer Security Event Types
+  securityEventTypeId: 0
+  killchainId: 3
+  featureLabel: "features_4769_service_scanning_success"
+  typePrefix: IAM
+  eventType: Credential Misuse
+  eventDescription: This user has an unusual number of Kerberos authentication ticket requests to an unusual number of services
+  shortDescription: This user has an unusual number of Kerberos authentication ticket requests to an unusual number of services
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 1
+  killchainId: 3
+  featureLabel: "features_4769_shared_dest_user"
+  typePrefix: IAM
+  eventType: Credential Misuse
+  eventDescription: This user authenticated from an unusual number of hosts
+  shortDescription: This user authenticated from an unusual number of hosts
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 2
+  killchainId: 3
+  featureLabel: "features_4769_redundant_requests"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user has requested an unusual number of Kerberos service tickets
+  shortDescription: This user has requested an unusual number of Kerberos service tickets
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 3
+  killchainId: 3
+  featureLabel: "features_4769_service_scanning_failure"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user failed an unusual number of time when requesting a Kerberos service tickets
+  shortDescription: This user failed an unusual number of time when requesting a Kerberos service tickets
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 4
+  killchainId: 3
+  featureLabel: "features_4769_shared_dest_user_failure"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user account failed to request Kerberos service tickets from multiple hosts
+  shortDescription: This user account failed to request Kerberos service tickets from multiple hosts
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 5
+  killchainId: 3
+  featureLabel: "features_4769_fumbling_user"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user account failed to authenticate using Kerberos on multiple hosts
+  shortDescription: This user account failed to authenticate using Kerberos on multiple hosts
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 6
+  killchainId: 3
+  featureLabel: "features_4624_shared_dest_user_manysrchost"
+  typePrefix: IAM
+  eventType: Credential Misuse
+  eventDescription: This user authenticated from an unusual number of hosts
+  shortDescription: This user authenticated from an unusual number of hosts
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 7
+  killchainId: 3
+  featureLabel: "features_4624_shared_dest_user_manysrcuser"
+  typePrefix: IAM
+  eventType: Credential Misuse
+  eventDescription: This user authenticated using an unusual number of account name
+  shortDescription: This user authenticated using an unusual number of account name
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 8
+  killchainId: 3
+  featureLabel: "features_4624_highly_active_dest_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user successfully authenticated an unusual number of times
+  shortDescription: This user successfully authenticated an unusual number of times
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 9
+  killchainId: 3
+  featureLabel: "features_4624_shared_source_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user authenticated from an unusual number of hosts
+  shortDescription: This user authenticated from an unusual number of hosts
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 10
+  killchainId: 3
+  featureLabel: "features_4624_dest_user_scanning_success"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user account has been used to authenticate from an unusual number of hosts
+  shortDescription: This user account has been used to authenticate from an unusual number of hosts
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 11
+  killchainId: 3
+  featureLabel: "features_4624_highly_active_source_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user authenticated an unusual number of times
+  shortDescription: This user authenticated an unusual number of times
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 12
+  killchainId: 1
+  featureLabel: "features_4625_shared_dest_user_failure_manysrchost"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate from multiple hosts, an unusual number of times
+  shortDescription: This user failed to authenticate from multiple hosts, an unusual number of times
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 13
+  killchainId: 1
+  featureLabel: "features_4625_shared_dest_user_failure_manysrcuser"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate an unusual number of times
+  shortDescription: This user failed to authenticate an unusual number of times
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 14
+  killchainId: 1
+  featureLabel: "features_4625_highly_active_dest_user_failure"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate an unusual number of times
+  shortDescription: This user failed to authenticate an unusual number of times
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 15
+  killchainId: 1
+  featureLabel: "features_4625_shared_source_user_failure"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate an unusual number of hosts
+  shortDescription: This user failed to authenticate an unusual number of hosts
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 16
+  killchainId: 1
+  featureLabel: "features_4625_dest_user_scanning_failure"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate using an unusual number of credentials
+  shortDescription: This user failed to authenticate using an unusual number of credentials
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 17
+  killchainId: 1
+  featureLabel: "features_4625_source_user_bruteforce"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate an unusual number of times
+  shortDescription: This user failed to authenticate an unusual number of times
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 18
+  killchainId: 3
+  featureLabel: "features_4768_shared_dest_user"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user has attempts to request Kerberos authentication tickets from multiple hosts
+  shortDescription: This user has attempts to request Kerberos authentication tickets from multiple hosts
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 19
+  killchainId: 3
+  featureLabel: "features_4768_redundant_requests"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user has been granted an unusual number of Kerberos authentication tickets
+  shortDescription: This user has been granted an unusual number of Kerberos authentication tickets
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 20
+  killchainId: 1
+  featureLabel: "features_4768_shared_dest_user_failure"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user account has multiple failed attempts from an unusual number of hosts to retrieve Kerberos authentication tickets
+  shortDescription: This user account has multiple failed attempts from an unusual number of hosts to retrieve Kerberos authentication tickets
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 21
+  killchainId: 1
+  featureLabel: "features_4768_bruteforce_dest_user"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user has made an unusual number of failed attempts to retrieve Kerberos authentication tickets
+  shortDescription: This user has made an unusual number of failed attempts to retrieve Kerberos authentication tickets
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 22
+  killchainId: 3
+  featureLabel: "features_4672_highly_active_superuser"
+  typePrefix: IAM
+  eventType: Privileged Access Anomaly
+  eventDescription: This user authenticated an unusual number of times as a privileged user
+  shortDescription: This user authenticated an unusual number of times as a privileged user
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 23
+  killchainId: 3
+  featureLabel: "features_4648_shared_dest_user_manysrcuser"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate from an unusual number of user account using alternative credentials
+  shortDescription: This user attempted to authenticate from an unusual number of user account using alternative credentials
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 24
+  killchainId: 3
+  featureLabel: "features_4648_promiscuous_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 25
+  killchainId: 3
+  featureLabel: "features_4648_shared_dest_user_manysrchost"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate from an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate from an unusual number of hosts using alternative credentials
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 26
+  killchainId: 3
+  featureLabel: "features_4648_redundant_dest_user_logon"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate using alternative credentials which was more than usual
+  shortDescription: This user attempted to authenticate using alternative credentials which was more than usual
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 27
+  killchainId: 3
+  featureLabel: "features_4648_dest_user_scanning_success"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate an unusual number of times using alternative credentials
+  shortDescription: This user attempted to authenticate an unusual number of times using alternative credentials
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 28
+  killchainId: 3
+  featureLabel: "features_4648_host_scanning_success"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 29
+  killchainId: 3
+  featureLabel: "features_4648_shared_source_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate from an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate from an unusual number of hosts using alternative credentials
+  model: 3
+  cardId: 1
+-
+  securityEventTypeId: 30
+  killchainId: 3
+  featureLabel: "features_4648_redundant_source_user_logon"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  model: 3
+  cardId: 1
+-
+  #### Web Peer Security Event Types
+  securityEventTypeId: 0
+  killchainId: 2
+  featureLabel: "high connections"
+  typePrefix: Web
+  eventType: High Number of Connections
+  eventDescription: This host made an unusual number of connections
+  shortDescription: This host made an unusual number of connections
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 1
+  killchainId: 1
+  featureLabel: "high number of denied connections"
+  typePrefix: Web
+  eventType: Denied Connections
+  eventDescription: This host made an unusual number of denied connections
+  shortDescription: This host made an unusual number of denied connections
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 2
+  killchainId: 5
+  featureLabel: "high number of uncategorized connections"
+  typePrefix: Web
+  eventType: New/Uncategorized Connections
+  eventDescription: This host made an unusual number of connections to uncategorized websites
+  shortDescription: This host made an unusual number of connections to uncategorized websites
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 3
+  killchainId: 2
+  featureLabel: "high number of malware/spyware connections"
+  typePrefix: Web
+  eventType: Malware Connections
+  eventDescription: This host made an unusual number of connections to suspicious or malicious websites
+  shortDescription: This host made an unusual number of connections to suspicious or malicious websites
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 4
+  killchainId: 2
+  featureLabel: "high distinct non-standard dest ports"
+  typePrefix: Web
+  eventType: Unusual Port Activity
+  eventDescription: This host accessed an unusual number of non-standard TCP ports
+  shortDescription: This host accessed an unusual number of non-standard TCP ports
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 5
+  killchainId: 2
+  featureLabel: "high count of non-standard dest ports"
+  typePrefix: Web
+  eventType: Unusual Port Activity
+  eventDescription: This host made an unusual number of connections having non-standard destination TCP ports
+  shortDescription: This host made an unusual number of connections having non-standard destination TCP ports
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 6
+  killchainId: 5
+  featureLabel: "high uploads"
+  typePrefix: Web
+  eventType: High Uploads
+  eventDescription: This host uploaded an unusually large amount of data
+  shortDescription: This host uploaded an unusually large amount of data
+  model: 2
+  cardId: 3
+-
+  securityEventTypeId: 7
+  killchainId: 4
+  featureLabel: "high downloads"
+  typePrefix: Web
+  eventType: Downloads
+  eventDescription: This host downloaded an unusually large amount of data
+  shortDescription: This host downloaded an unusually large amount of data
+  model: 2
+  cardId: 3
+-
+  securityEventTypeId: 8
+  killchainId: 0
+  featureLabel: "high connections with non-standard requestMethods"
+  typePrefix: Web
+  eventType: Anomalous HTTP Methods
+  eventDescription: This host made an unusual number of connections using non-standard HTTP methods
+  shortDescription: This host made an unusual number of connections using non-standard HTTP methods
+  model: 2
+  cardId: 4
+-
+  securityEventTypeId: 9
+  killchainId: 0
+  featureLabel: "high number of distinct requestMethods"
+  typePrefix: Web
+  eventType: Anomalous HTTP Methods
+  eventDescription: This host connected using an unusual number of non-standard HTTP methods
+  shortDescription: This host connected using an unusual number of non-standard HTTP methods
+  model: 2
+  cardId: 4
+-
+  securityEventTypeId: 10
+  killchainId: 2
+  featureLabel: "high traffic with anomalous useragents"
+  typePrefix: Web
+  eventType: Anomalous User Agent
+  eventDescription: This host made an unusual number of connections using unusual User-Agents
+  shortDescription: This host made an unusual number of connections using unusual User-Agents
+  model: 2
+  cardId: 4
+-
+  securityEventTypeId: 11
+  killchainId: 2
+  featureLabel: "too many useragents"
+  typePrefix: Web
+  eventType: Anomalous User Agent
+  eventDescription: This host used an unusual number of User-Agents
+  shortDescription: This host used an unusual number of User-Agents
+  model: 2
+  cardId: 4
+-
+  securityEventTypeId: 12
+  killchainId: 0
+  featureLabel: "high number of distinct denied destinations"
+  typePrefix: Web
+  eventType: Denied Destinations
+  eventDescription: This host attempted to access an unusual number of denied websites
+  shortDescription: This host attempted to access an unusual number of denied websites
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 13
+  killchainId: 2
+  featureLabel: "high number of distinct uncategorized destinations"
+  typePrefix: Web
+  eventType: New/Uncategorized Destinations
+  eventDescription: This host accessed an unusual number of uncategorized websites
+  shortDescription: This host accessed an unusual number of uncategorized websites
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 14
+  killchainId: 2
+  featureLabel: "high number of distinct malware destinations"
+  typePrefix: Web
+  eventType: Malware Destinations
+  eventDescription: This host accessed an unusual number of suspicious or malicious websites
+  shortDescription: This host accessed an unusual number of suspicious or malicious websites
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 15
+  killchainId: 1
+  featureLabel: "high number of distinct destinations"
+  typePrefix: Web
+  eventType: High Number of Destinations
+  eventDescription: This host accessed an unusual number of websites
+  shortDescription: This host accessed an unusual number of websites
+  model: 2
+  cardId: 5
+-
+  securityEventTypeId: 16
+  killchainId: 5
+  featureLabel: "high post uploads"
+  typePrefix: Web
+  eventType: High Post Uploads
+  eventDescription: This host uploaded an unusually large amount of data via POST requests
+  shortDescription: This host uploaded an unusually large amount of data via POST requests
+  model: 2
+  cardId: 3
+-
+  securityEventTypeId: 17
+  killchainId: 4
+  featureLabel: "high post downloads"
+  typePrefix: Web
+  eventType: Downloads
+  model: 2
+  eventDescription: This host downloaded an unusually large amount of data via POST requests
+  shortDescription: This host downloaded an unusually large amount of data via POST requests
+  cardId: 3
+-
+  securityEventTypeId: 18
+  killchainId: 2
+  featureLabel: "high number of clienterrors"
+  typePrefix: Web
+  eventType: Communication Errors
+  eventDescription: This host made an unusual number of connections that resulted in client errors
+  shortDescription: This host made an unusual number of connections that resulted in client errors
+  model: 2
+  cardId: 3
+-
+  securityEventTypeId: 19
+  killchainId: 2
+  featureLabel: "high number of servererrors"
+  typePrefix: Web
+  eventType: Communication Errors
+  eventDescription: This host made an unusual number of connections that resulted in server errors
+  shortDescription: This host made an unusual number of connections that resulted in server errors
+  model: 2
+  cardId: 3
+-
+  securityEventTypeId: 20
+  killchainId: 2
+  featureLabel: "high number of client error destinations"
+  typePrefix: Web
+  eventType: Communication Errors
+  eventDescription: This host accessed an unusual number of websites that report client errors
+  shortDescription: This host accessed an unusual number of websites that report client errors
+  model: 2
+  cardId: 3
+-
+  securityEventTypeId: 21
+  killchainId: 2
+  featureLabel: "high number of server error destinations"
+  typePrefix: Web
+  eventType: Communication Errors
+  eventDescription: This host accessed an unusual number of websites that report server errors
+  shortDescription: This host accessed an unusual number of websites that report server errors
+  model: 2
+  cardId: 3
+-
+  #### AD behavior Anomaly Security Event Types
+
+  securityEventTypeId: 0
+  killchainId: 3
+  featureLabel: "features_4769_service_scanning_success"
+  typePrefix: IAM
+  eventType: Credential Misuse
+  eventDescription: This user has an unusual number of Kerberos authentication ticket requests to an unusual number of services
+  shortDescription: This user has an unusual number of Kerberos authentication ticket requests to an unusual number of services
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 1
+  killchainId: 3
+  featureLabel: "features_4769_shared_dest_user"
+  typePrefix: IAM
+  eventType: Credential Misuse
+  eventDescription: This user authenticated from an unusual number of hosts
+  shortDescription: This user authenticated from an unusual number of hosts
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 2
+  killchainId: 3
+  featureLabel: "features_4769_redundant_requests"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user has requested an unusual number of Kerberos service tickets
+  shortDescription: This user has requested an unusual number of Kerberos service tickets
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 3
+  killchainId: 3
+  featureLabel: "features_4769_service_scanning_failure"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user failed an unusual number of time when requesting a Kerberos service tickets
+  shortDescription: This user failed an unusual number of time when requesting a Kerberos service tickets
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 4
+  killchainId: 3
+  featureLabel: "features_4769_shared_dest_user_failure"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user account has failed attempts to request Kerberos service tickets from multiple hosts
+  shortDescription: This user account has failed attempts to request Kerberos service tickets from multiple hosts
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 5
+  killchainId: 3
+  featureLabel: "features_4769_fumbling_user"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user account has failed attempts to authenticate using Kerberos on multiple hosts
+  shortDescription: This user account has failed attempts to authenticate using Kerberos on multiple hosts
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 6
+  killchainId: 3
+  featureLabel: "features_4624_shared_dest_user_manysrchost"
+  typePrefix: IAM
+  eventType: Credential Misuse
+  eventDescription: This user authenticated from an unusual number of hosts
+  shortDescription: This user authenticated from an unusual number of hosts
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 7
+  killchainId: 3
+  featureLabel: "features_4624_shared_dest_user_manysrcuser"
+  typePrefix: IAM
+  eventType: Credential Misuse
+  eventDescription: This user authenticated using an unusual number of account name
+  shortDescription: This user authenticated using an unusual number of account name
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 8
+  killchainId: 3
+  featureLabel: "features_4624_highly_active_dest_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user successfully authenticated an unusual number of times
+  shortDescription: This user successfully authenticated an unusual number of times
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 9
+  killchainId: 3
+  featureLabel: "features_4624_shared_source_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user authenticated from an unusual number of hosts
+  shortDescription: This user authenticated from an unusual number of hosts
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 10
+  killchainId: 3
+  featureLabel: "features_4624_dest_user_scanning_success"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user account has been used to authenticate from an unusual number of hosts
+  shortDescription: This user account has been used to authenticate from an unusual number of hosts
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 11
+  killchainId: 3
+  featureLabel: "features_4624_highly_active_source_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user authenticated an unusual number of times
+  shortDescription: This user authenticated an unusual number of times
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 12
+  killchainId: 1
+  featureLabel: "features_4625_shared_dest_user_failure_manysrchost"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate from multiple hosts, an unusual number of times
+  shortDescription: This user failed to authenticate from multiple hosts, an unusual number of times
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 13
+  killchainId: 1
+  featureLabel: "features_4625_shared_dest_user_failure_manysrcuser"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate an unusual number of times
+  shortDescription: This user failed to authenticate an unusual number of times
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 14
+  killchainId: 1
+  featureLabel: "features_4625_highly_active_dest_user_failure"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate an unusual number of times
+  shortDescription: This user failed to authenticate an unusual number of times
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 15
+  killchainId: 1
+  featureLabel: "features_4625_shared_source_user_failure"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate an unusual number of hosts
+  shortDescription: This user failed to authenticate an unusual number of hosts
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 16
+  killchainId: 1
+  featureLabel: "features_4625_dest_user_scanning_failure"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate using an unusual number of credentials
+  shortDescription: This user failed to authenticate using an unusual number of credentials
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 17
+  killchainId: 1
+  featureLabel: "features_4625_source_user_bruteforce"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user failed to authenticate an unusual number of times
+  shortDescription: This user failed to authenticate an unusual number of times
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 18
+  killchainId: 3
+  featureLabel: "features_4768_shared_dest_user"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user has attempts to request Kerberos authentication tickets from multiple hosts
+  shortDescription: This user has attempts to request Kerberos authentication tickets from multiple hosts
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 19
+  killchainId: 3
+  featureLabel: "features_4768_redundant_requests"
+  typePrefix: IAM
+  eventType: Anomalous Service Use
+  eventDescription: This user has been granted an unusual number of Kerberos authentication tickets
+  shortDescription: This user has been granted an unusual number of Kerberos authentication tickets
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 20
+  killchainId: 1
+  featureLabel: "features_4768_shared_dest_user_failure"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user account has multiple failed attempts from an unusual number of hosts to retrieve Kerberos authentication tickets
+  shortDescription: This user account has multiple failed attempts from an unusual number of hosts to retrieve Kerberos authentication tickets
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 21
+  killchainId: 1
+  featureLabel: "features_4768_bruteforce_dest_user"
+  typePrefix: IAM
+  eventType: Brute Force Activity
+  eventDescription: This user has made an unusual number of failed attempts to retrieve Kerberos authentication tickets
+  shortDescription: This user has made an unusual number of failed attempts to retrieve Kerberos authentication tickets
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 22
+  killchainId: 3
+  featureLabel: "features_4672_highly_active_superuser"
+  typePrefix: IAM
+  eventType: Privileged Access Anomaly
+  eventDescription: This user authenticated an unusual number of times as a privileged user
+  shortDescription: This user authenticated an unusual number of times as a privileged user
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 23
+  killchainId: 3
+  featureLabel: "features_4648_shared_dest_user_manysrcuser"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate from an unusual number of user account using alternative credentials
+  shortDescription: This user attempted to authenticate from an unusual number of user account using alternative credentials
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 24
+  killchainId: 3
+  featureLabel: "features_4648_promiscuous_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 25
+  killchainId: 3
+  featureLabel: "features_4648_shared_dest_user_manysrchost"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate from an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate from an unusual number of hosts using alternative credentials
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 26
+  killchainId: 3
+  featureLabel: "features_4648_redundant_dest_user_logon"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate using alternative credentials which was more than usual
+  shortDescription: This user attempted to authenticate using alternative credentials which was more than usual
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 27
+  killchainId: 3
+  featureLabel: "features_4648_dest_user_scanning_success"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate an unusual number of times using alternative credentials
+  shortDescription: This user attempted to authenticate an unusual number of times using alternative credentials
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 28
+  killchainId: 3
+  featureLabel: "features_4648_host_scanning_success"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 29
+  killchainId: 3
+  featureLabel: "features_4648_shared_source_user"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate from an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate from an unusual number of hosts using alternative credentials
+  model: 6
+  cardId: 1
+-
+  securityEventTypeId: 30
+  killchainId: 3
+  featureLabel: "features_4648_redundant_source_user_logon"
+  typePrefix: IAM
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  shortDescription: This user attempted to authenticate to an unusual number of hosts using alternative credentials
+  model: 6
+  cardId: 1
+-
+  ## Web behavior anomalies
+  securityEventTypeId: 0
+  killchainId: 2
+  featureLabel: "high connections"
+  typePrefix: Web
+  eventType: High Number of Connections
+  eventDescription: This host made an unusual number of connections
+  shortDescription: This host made an unusual number of connections
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 1
+  killchainId: 1
+  featureLabel: "high number of denied connections"
+  typePrefix: Web
+  eventType: Denied Connections
+  eventDescription: This host made an unusual number of denied connections
+  shortDescription: This host made an unusual number of denied connections
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 2
+  killchainId: 5
+  featureLabel: "high number of uncategorized connections"
+  typePrefix: Web
+  eventType: New/Uncategorized Connections
+  eventDescription: This host made an unusual number of connections to uncategorized websites
+  shortDescription: This host made an unusual number of connections to uncategorized websites
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 3
+  killchainId: 2
+  featureLabel: "high number of malware/spyware connections"
+  typePrefix: Web
+  eventType: Malware Connections
+  eventDescription: This host made an unusual number of connections to suspicious or malicious websites
+  shortDescription: This host made an unusual number of connections to suspicious or malicious websites
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 4
+  killchainId: 2
+  featureLabel: "high distinct non-standard dest ports"
+  typePrefix: Web
+  eventType: Unusual Port Activity
+  eventDescription: This host accessed an unusual number of non-standard TCP ports
+  shortDescription: This host accessed an unusual number of non-standard TCP ports
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 5
+  killchainId: 2
+  featureLabel: "high count of non-standard dest ports"
+  typePrefix: Web
+  eventType: Unusual Port Activity
+  eventDescription: This host made an unusual number of connections having non-standard destination TCP ports
+  shortDescription: This host made an unusual number of connections having non-standard destination TCP ports
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 6
+  killchainId: 5
+  featureLabel: "high uploads"
+  typePrefix: Web
+  eventType: High Uploads
+  eventDescription: This host uploaded an unusually large amount of data
+  shortDescription: This host uploaded an unusually large amount of data
+  model: 4
+  cardId: 3
+-
+  securityEventTypeId: 7
+  killchainId: 4
+  featureLabel: "high downloads"
+  typePrefix: Web
+  eventType: Downloads
+  eventDescription: This host downloaded an unusually large amount of data
+  shortDescription: This host downloaded an unusually large amount of data
+  model: 4
+  cardId: 3
+-
+  securityEventTypeId: 8
+  killchainId: 0
+  featureLabel: "high connections with non-standard requestMethods"
+  typePrefix: Web
+  eventType: Anomalous HTTP Methods
+  eventDescription: This host made an unusual number of connections using non-standard HTTP methods
+  shortDescription: This host made an unusual number of connections using non-standard HTTP methods
+  model: 4
+  cardId: 4
+-
+  securityEventTypeId: 9
+  killchainId: 0
+  featureLabel: "high number of distinct requestMethods"
+  typePrefix: Web
+  eventType: Anomalous HTTP Methods
+  eventDescription: This host connected using an unusual number of non-standard HTTP methods
+  shortDescription: This host connected using an unusual number of non-standard HTTP methods
+  model: 4
+  cardId: 4
+-
+  securityEventTypeId: 10
+  killchainId: 2
+  featureLabel: "high traffic with anomalous useragents"
+  typePrefix: Web
+  eventType: Anomalous User Agent
+  eventDescription: This host made an unusual number of connections using unusual User-Agents
+  shortDescription: This host made an unusual number of connections using unusual User-Agents
+  model: 4
+  cardId: 4
+-
+  securityEventTypeId: 11
+  killchainId: 2
+  featureLabel: "too many useragents"
+  typePrefix: Web
+  eventType: Anomalous User Agent
+  eventDescription: This host used an unusual number of User-Agents
+  shortDescription: This host used an unusual number of User-Agents
+  model: 4
+  cardId: 4
+-
+  securityEventTypeId: 12
+  killchainId: 0
+  featureLabel: "high number of distinct denied destinations"
+  typePrefix: Web
+  eventType: Denied Destinations
+  eventDescription: This host attempted to access an unusual number of denied websites
+  shortDescription: This host attempted to access an unusual number of denied websites
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 13
+  killchainId: 2
+  featureLabel: "high number of distinct uncategorized destinations"
+  typePrefix: Web
+  eventType: New/Uncategorized Destinations
+  eventDescription: This host accessed an unusual number of uncategorized websites
+  shortDescription: This host accessed an unusual number of uncategorized websites
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 14
+  killchainId: 2
+  featureLabel: "high number of distinct malware destinations"
+  typePrefix: Web
+  eventType: Malware Destinations
+  eventDescription: This host accessed an unusual number of suspicious or malicious websites
+  shortDescription: This host accessed an unusual number of suspicious or malicious websites
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 15
+  killchainId: 1
+  featureLabel: "high number of distinct destinations"
+  typePrefix: Web
+  eventType: High Number of Destinations
+  eventDescription: This host accessed an unusual number of websites
+  shortDescription: This host accessed an unusual number of websites
+  model: 4
+  cardId: 5
+-
+  securityEventTypeId: 16
+  killchainId: 5
+  featureLabel: "high post uploads"
+  typePrefix: Web
+  eventType: High Post Uploads
+  eventDescription: \"High\" volume of POST out bytes is potentially an indicator of exfiltration
+  shortDescription: Source host has uploaded a large amount of data via POST requests
+  model: 4
+  cardId: 3
+-
+  securityEventTypeId: 17
+  killchainId: 4
+  featureLabel: "high post downloads"
+  typePrefix: Web
+  eventType: Downloads
+  eventDescription: \"High\" volume of in bytes is unusual, but not necessarily due to compromised host
+  shortDescription: Source host has downloaded a large amount of data via POST requests
+  model: 4
+  cardId: 3
+-
+  securityEventTypeId: 18
+  killchainId: 2
+  featureLabel: "high number of clienterrors"
+  typePrefix: Web
+  eventType: Communication Errors
+  eventDescription: This host made an unusual number of connections that resulted in client errors
+  shortDescription: This host made an unusual number of connections that resulted in client errors
+  shortDescription: High number of client errors
+  model: 4
+  cardId: 3
+-
+  securityEventTypeId: 19
+  killchainId: 2
+  featureLabel: "high number of servererrors"
+  typePrefix: Web
+  eventType: Communication Errors
+  eventDescription: This host made an unusual number of connections that resulted in server errors
+  shortDescription: This host made an unusual number of connections that resulted in server errors
+  model: 4
+  cardId: 3
+-
+  securityEventTypeId: 20
+  killchainId: 2
+  featureLabel: "high number of client error destinations"
+  typePrefix: Web
+  eventType: Communication Errors
+  eventDescription: This host accessed an unusual number of websites that report client errors
+  shortDescription: This host accessed an unusual number of websites that report client errors
+  model: 4
+  cardId: 3
+-
+  securityEventTypeId: 21
+  killchainId: 2
+  featureLabel: "high number of server error destinations"
+  typePrefix: Web
+  eventType: Communication Errors
+  eventDescription: This host accessed an unusual number of websites that report server errors
+  shortDescription: This host accessed an unusual number of websites that report server errors
+  model: 4
+  cardId: 3
+-
+  ## Beacons
+  securityEventTypeId: 0
+  killchainId: 2
+  featureLabel: "E8-WebProxy-Beacon-0"
+  typePrefix: Web
+  eventType: Beaconing
+  eventDescription: Source Host has displayed a suspicious repeated pattern of network traffic
+  shortDescription: Source Host has displayed a suspicious repeated pattern of network traffic
+  model: 0
+  cardId: 2
+-
+  ## Command and Control (C2)
+  securityEventTypeId: 0
+  killchainId: 2
+  featureLabel: "E8-WebProxy-C2-0"
+  typePrefix: Web
+  eventType: Command and Control
+  eventDescription: This host has displayed characteristics similar to those used in command and control activities to the destination hosts
+  shortDescription: This host has displayed characteristics similar to those used in command and control activities to the destination hosts
+  model: 8
+  cardId: 8
+-
+  ## Coordinated Activity
+  securityEventTypeId: 0
+  killchainId: 2
+  featureLabel: "high connections"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 1
+  killchainId: 2
+  featureLabel: "high number of denied connections"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 2
+  killchainId: 2
+  featureLabel: "high number of uncategorized connections"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 3
+  killchainId: 2
+  featureLabel: "high number of malware/spyware connections"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 4
+  killchainId: 2
+  featureLabel: "high distinct non-standard dest ports"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 5
+  killchainId: 2
+  featureLabel: "high count of non-standard dest ports"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 6
+  killchainId: 2
+  featureLabel: "high uploads"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 7
+  killchainId: 2
+  featureLabel: "high downloads"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 8
+  killchainId: 2
+  featureLabel: "high connections with non-standard requestMethods"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 9
+  killchainId: 2
+  featureLabel: "high number of distinct requestMethods"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 10
+  killchainId: 2
+  featureLabel: "high traffic with anomalous useragents"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 11
+  killchainId: 2
+  featureLabel: "too many useragents"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 12
+  killchainId: 2
+  featureLabel: "high number of client error connections"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  securityEventTypeId: 13
+  killchainId: 2
+  featureLabel: "high number of server error connections"
+  typePrefix: Web
+  eventType: Coordinated Activity
+  eventDescription: Bot-like connections to suspicious destinations
+  shortDescription: Bot-like connections to suspicious destinations
+  model: 1
+  cardId: 4
+-
+  #### Active Directory Novelty Detector
+  securityEventTypeId: 501
+  killchainId: 3
+  featureLabel: "features_4624_dstusr_logon_type"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user authenticated using an unusual method
+  shortDescription: This user authenticated using an unusual method
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 502
+  killchainId: 3
+  featureLabel: "features_4625_dstusr_logon_type"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user failed to authenticate for an unusual reason
+  shortDescription: This user failed to authenticate for an unusual reason
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 503
+  killchainId: 3
+  featureLabel: "features_4625_dstusr_logon_subStatus"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user failed to authenticate for an unusual reason
+  shortDescription: This user failed to authenticate for an unusual reason
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 504
+  killchainId: 3
+  featureLabel: "features_4625_dstusr_logon_status"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user failed to authenticate for an unusual reason
+  shortDescription: This user failed to authenticate for an unusual reason
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 505
+  killchainId: 3
+  featureLabel: "features_4768_dstusr_dstsvcid"
+  typePrefix: AD
+  eventType: Anomalous Service Use
+  eventDescription: This user has requested a Kerberos authentication ticket for the first time
+  shortDescription: This user has requested a Kerberos authentication ticket for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 506
+  killchainId: 3
+  featureLabel: "features_4768_dstusr_status"
+  typePrefix: AD
+  eventType: Anomalous Service Use
+  eventDescription: This user has caused this Kerberos authentication result code for the first time
+  shortDescription: This user has caused this Kerberos authentication result code for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 507
+  killchainId: 3
+  featureLabel: "features_4768_dstusr_dstsvcid_status"
+  typePrefix: AD
+  eventType: Anomalous Service Use
+  eventDescription: This user has caused this Kerberos authentication result code for this Kerberos authentication ticket for the first time
+  shortDescription: This user has caused this Kerberos authentication result code for this Kerberos authentication ticket for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 508
+  killchainId: 3
+  featureLabel: "features_4769_dstusr_dstsvcid"
+  typePrefix: AD
+  eventType: Anomalous Service Use
+  eventDescription: This user has requested a Kerberos service ticket for the first time
+  shortDescription: This user has requested a Kerberos service ticket for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 509
+  killchainId: 3
+  featureLabel: "features_4769_dstusr_status"
+  typePrefix: AD
+  eventType: Anomalous Service Use
+  eventDescription: This user has caused this Kerberos service ticket request result code for the first time
+  shortDescription: This user has caused this Kerberos service ticket request result code for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 510
+  killchainId: 3
+  featureLabel: "features_4769_dstusr_dstsvcid_status"
+  typePrefix: AD
+  eventType: Anomalous Service Use
+  eventDescription: This user has caused this Kerberos authentication result code for this Kerberos service ticket for the first time
+  shortDescription: This user has caused this Kerberos authentication result code for this Kerberos service ticket for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 511
+  killchainId: 3
+  featureLabel: "features_4769_dstusr_dstsvcid_status"
+  typePrefix: AD
+  eventType: Privileged Access Anomaly
+  eventDescription: This user has been granted privileges for the first time
+  shortDescription: This user has been granted privileges for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 512
+  killchainId: 3
+  featureLabel: "features_4648_dstusr_srcusername"
+  typePrefix: AD
+  eventType: Credential Misuse
+  eventDescription: This privileged user has been observed for the first time
+  shortDescription: This privileged user has been observed for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 513
+  killchainId: 3
+  featureLabel: "features_4648_dstusr_dstnmorip"
+  typePrefix: AD
+  eventType: Credential Misuse
+  eventDescription: This user accessed the server for the first time
+  shortDescription: This user accessed the server for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 514
+  killchainId: 3
+  featureLabel: "features_4648_dstusr_srcusername_dstnmorip"
+  typePrefix: AD
+  eventType: Credential Misuse
+  eventDescription: This user accessed the server using an unusual account name
+  shortDescription: This user accessed the server using an unusual account name
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 515
+  killchainId: 3
+  featureLabel: "features_4663_srcusr_destinationObjectType"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the object for the first time
+  shortDescription: This user attempted to access the object for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 516
+  killchainId: 3
+  featureLabel: "features_4663_srcusr_sourceProcessName"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the object with this process for the first time
+  shortDescription: This user attempted to access the object with this process for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 517
+  killchainId: 3
+  featureLabel: "features_4663_srcusr_desiredAccess"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the object with this permission for the first time
+  shortDescription: This user attempted to access the object with this permission for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 518
+  killchainId: 3
+  featureLabel: "features_4661_srcusr_destinationObjectType"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the object for the first time
+  shortDescription: This user attempted to access the object for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 519
+  killchainId: 3
+  featureLabel: "features_4661_srcusr_sourceProcessName"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the object with this process for the first time
+  shortDescription: This user attempted to access the object with this process for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 520
+  killchainId: 3
+  featureLabel: "features_4661_srcusr_desiredAccess"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the object with this permission for the first time
+  shortDescription: This user attempted to access the object with this permission for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 521
+  killchainId: 3
+  featureLabel: "features_4656_srcusr_destinationObjectType"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the object for the first time
+  shortDescription: This user attempted to access the object for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 522
+  killchainId: 3
+  featureLabel: "features_4656_srcusr_sourceProcessName"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the object with this process for the first time
+  shortDescription: This user attempted to access the object with this process for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 523
+  killchainId: 3
+  featureLabel: "features_4656_srcusr_desiredAccess"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access an object for the first time
+  shortDescription: This user attempted to access an object for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 524
+  killchainId: 3
+  featureLabel: "features_4723_dstusr_srcusr"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to change the account's password for the first time
+  shortDescription: This user attempted to change the account's password for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 525
+  killchainId: 3
+  featureLabel: "features_4724_dstusr_srcusr"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to reset the account's password for the first time
+  shortDescription: This user attempted to reset the account's password for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 526
+  killchainId: 3
+  featureLabel: "features_4738_dstusr_srcusr"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to change the account's settings for the first time
+  shortDescription: This user attempted to change the account's settings for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 527
+  killchainId: 3
+  featureLabel: "features_4738_dstusr_adScriptPath"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to change the account's settings using the script for the first time
+  shortDescription: This user attempted to change the account's settings using the script for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 528
+  killchainId: 3
+  featureLabel: "features_4738_dstusr_adProfilePath"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user has a new profile path attribute
+  shortDescription: This user has a new profile path attribute
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 529
+  killchainId: 3
+  featureLabel: "features_4738_dstusr_adUserWorkstation"
+  typePrefix: AD
+  eventType: Anomalous User Activity
+  eventDescription: This user attempted to change the account's settings for the first time
+  shortDescription: This user attempted to change the account's settings for the first time
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 530
+  killchainId: 3
+  featureLabel: "features_4727_srcusr_cef"
+  typePrefix: AD
+  eventType: Anomalous Account Management
+  eventDescription: This user created a security-enabled global group, the creation of a group by this user was unusual
+  shortDescription: This user created a security-enabled global group, the creation of a group by this user was unusual
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 531
+  killchainId: 3
+  featureLabel: "features_4728_dstusr_cef"
+  typePrefix: AD
+  eventType: Anomalous Account Management
+  eventDescription: A privileged user has added a user to a security-enabled global group
+  shortDescription: A privileged user has added a user to a security-enabled global group
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 532
+  killchainId: 3
+  featureLabel: "features_4729_dstusr_cef"
+  typePrefix: AD
+  eventType: Anomalous Account Management
+  eventDescription: This user was removed from a security-enabled global group
+  shortDescription: This user was removed from a security-enabled global group
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 533
+  killchainId: 3
+  featureLabel: "features_4731_srcusr_cef"
+  typePrefix: AD
+  eventType: Anomalous Account Management
+  eventDescription: This user created a security-enabled local group, the creation of a group by this user was unusual
+  shortDescription: This user created a security-enabled local group, the creation of a group by this user was unusual
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 534
+  killchainId: 3
+  featureLabel: "features_4732_dstusr_cef"
+  typePrefix: AD
+  eventType: Anomalous Account Management
+  eventDescription: A privileged user has added a user to a security-enabled local group
+  shortDescription: A privileged user has added a user to a security-enabled local group
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 535
+  killchainId: 3
+  featureLabel: "features_4733_dstusr_cef"
+  typePrefix: AD
+  eventType: Anomalous Account Management
+  eventDescription: This user was removed from a security-enabled local group
+  shortDescription: This user was removed from a security-enabled local group
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 536
+  killchainId: 3
+  featureLabel: "features_4756_dstusr_cef"
+  typePrefix: AD
+  eventType: Anomalous Account Management
+  eventDescription: A privileged user has added a user to a security-enabled universal group
+  shortDescription: A privileged user has added a user to a security-enabled universal group
+  model: 7
+  cardId: 7
+-
+  securityEventTypeId: 537
+  killchainId: 3
+  featureLabel: "features_5140_srcusr_sharename"
+  typePrefix: AD
+  eventType: Anomalous Object Access
+  eventDescription: This user attempted to access the shared object for the first time
+  shortDescription: This user attempted to access the shared object for the first time
+  model: 7
+  cardId: 7
+-
+  ## Local Endpoint Security Events
+  securityEventTypeId: 0
+  killchainId: 0
+  featureLabel: "Local Newly Observed Process"
+  typePrefix: Local Endpoint
+  eventType: Local Newly Observed Process
+  eventDescription: Local Newly Observed Process
+  shortDescription: Local Newly Observed Process
+  model: 9
+  cardId: 6
+-
+  ## TANIUM SECURITY EVENTS
+  securityEventTypeId: 0
+  killchainId: 0
+  featureLabel: "Global Newly Observed Process"
+  typePrefix: Global Endpoint
+  eventType: Global Newly Observed Process
+  eventDescription: Global Newly Observed Process
+  shortDescription: Global Newly Observed Process
+  model: 10
+  cardId: 6
+
+queryOperators:
+-
+  name: equals
+  id: 0
+-
+  name: contains
+  id: 1
+-
+  name: less than
+  id: 2
+-
+  name: less than equal
+  id: 3
+-
+  name: greater than
+  id: 4
+
+-
+  name: greater than equal
+  id: 5
+
+
+filterFields:
+-
+  name: sourceIp
+  id: 0
+  fieldName: IP_ADDRESS
+  type: String
+  operatorIds: [0,1,2,3,4,5]           ## all operations are possible for ip
+  defaultDisplay: true                 ##defaultDisplay: "false" implies that This filter will be not seen in the UI
+-
+  name: hostName
+  id: 1
+  fieldName: HOST_NAME
+  type: String
+  operatorIds: [0,1]           ## all operations are possible for ip
+  defaultDisplay: true
+-
+  name: userName
+  id: 2
+  fieldName: USER_NAME
+  type: String
+  operatorIds: [0,1]          ## all operations are possible for ip
+  defaultDisplay: true
+-
+  name: macAddress
+  id: 3
+  fieldName: MAC_ADDRESS
+  type: String
+  operatorIds: [0,1]          ## all operations are possible for ip
+  defaultDisplay: true
+-
+  name: risk
+  id: 4
+  fieldName: RISK_SCORE
+  type: Double
+  operatorIds: [0,2,3,4,5]            ## equals, less than, greater than
+  defaultDisplay: false
+-
+  name: killchainId
+  id: 5
+  fieldName: KILLCHAIN_ID
+  type: Int
+  operatorIds: [0]            ## equals
+  defaultDisplay: false
+-
+  name: modelId
+  id: 6
+  fieldName: MODEL_ID
+  type: Int
+  operatorIds: [0]            ## equals
+  defaultDisplay: false
+
+
+### This needs to redone correctly. Doing this specifc c2-Model-specific config for Orion
+c2ModelConfig:
+-
+  id: 0
+  featureKey: cond_every
+  featureDescription: Communication between source and destination could not be confirmed as web browser activity
+-
+  id: 1
+  featureKey: cond_caternary_ratio
+  featureDescription: Communication between source and destination has occurred with regularity
+-
+  id: 2
+  featureKey: cond_newness_ratio
+  featureDescription: Traffic between source and destination has begun recently
+-
+  id: 3
+  featureKey: cond_persistence_ratio
+  featureDescription: Traffic between source and destination has been observed over an extended period
+-
+  id: 4
+  featureKey: cond_sld_source_count
+  featureDescription: Destination host has received communication from very few clients
+-
+  id: 5
+  featureKey: cond_sld_lacking_infrastructure
+  featureDescription: Destination host does not show signs that it is part of a significant infrastructure
+-
+  id: 6
+  featureKey: cond_rank
+  featureDescription: Destination is not a commonly used website
+-
+  id: 7
+  featureKey: cond_sld_distinct_ua_count
+  featureDescription: Very few User-Agent strings have been associated with destination
+-
+  id: 8
+  featureKey: cond_riqr
+  featureDescription: Communication between source and destination has occurred at specific regular intervals

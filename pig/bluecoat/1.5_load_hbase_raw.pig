@@ -1,0 +1,33 @@
+bluecoat_proxy_records = LOAD '../../data/bluecoat_datetime.avro' USING AvroStorage();
+/* bluecoat_proxy_records: {
+        uuid: chararray,
+        vendor: chararray,
+        date_time: chararray,
+        date: chararray,
+        time: chararray,
+        time_taken: chararray,
+        c_ip: chararray,
+        sc_status: chararray,
+        s_action: chararray,
+        sc_bytes: int,
+        cs_bytes: int,
+        cs_method: chararray,
+        cs_uri_scheme: chararray,
+        cs_host: chararray,
+        cs_uri_path: chararray,
+        cs_uri_query: chararray,
+        cs_username: chararray,
+        s_hierarchy: chararray,
+        s_supplier_name: chararray,
+        rs_Content_Type: chararray,
+        cs_User_Agent: chararray,
+        sc_filter_result: chararray,
+        sc_filter_category: chararray,
+        x_virus_id: chararray,
+        s_ip: chararray,
+        s_sitename: chararray,
+        x_virus_details: chararray,
+        x_icap_error_code: chararray,
+        x_icap_error_details: chararray} */
+
+STORE bluecoat_proxy_records INTO 'hbase://e8' USING org.apache.pig.backend.hadoop.hbase.HBaseStorage('proxy_raw:vendor proxy_raw:date_time proxy_raw:date proxy_raw:time proxy_raw:time_taken proxy_raw:c_ip proxy_raw:sc_status proxy_raw:s_action proxy_raw:sc_bytes proxy_raw:cs_bytes proxy_raw:cs_method proxy_raw:cs_uri_scheme proxy_raw:cs_host proxy_raw:cs_uri_path proxy_raw:cs_uri_query proxy_raw:cs_username proxy_raw:s_heirarchy proxy_raw:s_supplier_name proxy_raw:rs_Content_Type proxy_raw:User_Agent proxy_raw:filter_result proxy_raw:filter_category proxy_raw:virus_id proxy_raw:s_ip proxy_raw:sitename proxy_raw:x_virus_details proxy_raw:icap_error_code proxy_raw:icap_error_details');

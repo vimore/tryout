@@ -1,0 +1,507 @@
+TaniumTimeSeriesCategories:
+- id: 201
+  name: Hosts
+  typeField: deviceNameOrIp
+  subcategories: []
+
+
+#HTTP TIME SERIES
+HttpTimeSeriesCategories:
+- id: 74
+  name: Http Response Codes  # cefSignatureId
+  typeField: cefSignatureId
+  subcategories:
+  - id: 75
+    name: 2xx OK
+    groupIds: ["200", "201", "202", "204", "206", "226"]
+  - id: 76
+    name: 3xx Redirect
+    groupIds: ["300", "301", "302", "303", "304", "307"]
+  - id: 77
+    name: 4xx Client Error
+    groupIds: ["400", "401", "403", "404", "406", "407", "408", "410"]
+  - id: 78
+    name: 5xx Server Error
+    groupIds: ["500", "502", "503", "504"]
+  - id: 79
+    name: WebDAV
+    groupIds: ["400", "401", "403", "404", "406", "407", "408", "410"]
+  - id: 80
+    name: CloudFlare
+    groupIds: ["520", "521", "522", "523", "524"]
+  - id: 81
+    name: Nginx
+    groupIds: ["494", "495", "496", "497", "499"]
+  - id: 82
+    name: Non-web/Tunnelled
+    groupIds: ["0"]
+  - id: 83
+    name: Rare
+    groupIds: ["203", "205", "402", "405", "409", "411", "412","413", "414", "415", "416", "417", "429","440", "451"]
+
+- id: 84
+  name: Device Action  # deviceAction
+  typeField: deviceAction
+  subcategories:
+  - id: 85
+    name: Cache Hit
+    groupIds: ["TCP_HIT", "TCP_RESCAN_HIT", "TCP_AUTH_HIT", "TCP_RESCAN_HIT_RST", "TCP_HIT_RST", "TCP_AUTH_HIT_RST"]
+  - id: 86
+    name: Cache Miss
+    groupIds: ["TCP_NC_MISS", "TCP_MISS", "TCP_PARTIAL_MISS", "TCP_ERR_MISS", "TCP_NC_MISS_RST", "TCP_MISS_RST", "TCP_AUTH_MISS", "TCP_PARTIAL_MISS_RST", "TCP_REFRESH_MISS_RST", "TCP_CLIENT_REFRESH_RST", "TCP_AUTH_MISS_RST"]
+  - id: 87
+    name: Denied
+    groupIds: ["TCP_SPLASHED", "TCP_DENIED", "FAILED", "TCP_AUTH_REDIRECT"]
+  - id: 88
+    name: Refresh
+    groupIds: ["TCP_CLIENT_REFRESH", "TCP_REFRESH_MISS" ]
+  - id: 89
+    name: Tunneled
+    groupIds: ["TCP_TUNNELED", "TUNNELED", "ALLOWED"]
+
+- id: 90
+  name: Destination Site Category  # deviceEventCategory
+  typeField: deviceEventCategory
+  subcategories:
+  - id: 91
+    name: Business
+    groupIds: ["Brokerage/Trading", "Business/Economy", "Computers/Internet", "Cultural Institutions",
+               "Education", "Email", "Financial Services", "Government/Legal", "Health", "Job Search/Careers",
+               "Military", "News/Media", "Newsgroups", "Real Estate", "Reference", "Search Engines/Portals",
+               "Shopping", "Society/Lifestyle", "Software Downloads", "Travel", "Vehicles", "Web Advertisements",
+               "Web Communications", "Web Hosting", "Art/Culture", "Audio/Video Clips",
+               "Charitable Organizations", "Chat (IM)/SMS", "Content Servers", "Entertainment",
+               "File Storage/Sharing", "Media Sharing", "Newsgroups/Forums", "Non-Viewable/Infrastructure",
+               "Software Downloads", "Technology/Internet", "Translation", "Web Ads/Analytics",
+               "Computer/Information Security", "Informational", "Internet Connected Devices",
+               "Internet Telephony", "Office/Business Applications", "Online Meetings"]
+  - id: 92
+    name: Personal
+    groupIds: ["Arts/Entertainment", "Auctions", "Chat/Instant Messaging",
+               "Gambling", "Games", "Humor/Jokes", "Intimate Apparel/Swimsuit",
+               "Personals/Dating", "Political/Activist Groups", "Religion",
+               "Restaurants/Dining/Food", "Sports/Recreation/Hobbies", "Streaming Media/MP3",
+               "Personal Sites", "Political/Social Advocacy", "Radio/Audio Streams",
+               "Social Networking", "Society/Daily Living", "Sports/Recreation",
+               "TV/Video Streams", "Alcohol", "Alternative Spirituality/Belief",
+               "E-Card/Invitations", "For Kids", "Sex Education",
+               "Sexual Expression", "Tobacco"]
+  - id: 93
+    name: Risky
+    groupIds: ["Adult/Mature Content", "Hacking/Proxy Avoidance", "Pay to Surf",
+               "Pornography", "Spyware Effects", "Spyware/Malware Sources",
+               "Violence/Hate/Racism", "Weapons", "Mixed Content/Potentially Adult",
+               "Placeholders", "Potentially Unwanted Software", "Suspicious",
+               "Child Pornography", "Controlled Substances", "Dynamic DNS Host",
+               "Extreme", "Hacking", "Malicious Outbound Data/Botnets",
+               "Malicious Sources/Malnets", "Marijuana", "Nudity",
+               "Peer-to-Peer (P2P)", "Phishing", "Piracy/Copyright Concerns",
+               "Proxy Avoidance", "Scam/Questionable/Illegal", "Spam"]
+- id: 94
+  name: Proxy Policy Action     # devicePolicyAction
+  typeField: devicePolicyAction
+  subcategories:
+  - id: 95
+    name: Proxied
+    groupIds: ["PROXIED", "TCP_CLIENT_REFRESH_MISS", "TCP_CLIENT_REFRESH_MISS",
+                   "TCP_HIT", "TCP_IMS_HIT", "TCP_MEM_HIT", "TCP_MISS", "TCP_REFRESH_MODIFIED",
+                   "TCP_REFRESH_UNMODIFIED"]
+  - id: 96
+    name: Denied
+    groupIds: [ "DENIED", "TCP_DENIED"]
+
+- id: 102
+  name: Http Request Method    #requestMethod
+  typeField: requestMethod
+  subcategories:
+  - id: 103
+    name: Common
+    groupIds: ['GET', 'POST', "HEAD", "OPTIONS"]
+  - id: 104
+    name: FTP
+    groupIds: [ "PROPFIND" ]
+  - id: 105
+    name: Tunnelled
+    groupIds: ["CONNECT"]
+  - id: 106
+    name: WebDav
+    groupIds: ["Subscribe", "Poll", "PROPFIND", "SEARCH", "BMOVE", "PUT"]
+
+- id: 97
+  name: Web Connection Type  #reqeustScheme
+  typeField: requestScheme
+  subcategories:
+  - id: 98
+    name: HTTP
+    groupIds: []
+  - id: 99
+    name: https
+    groupIds: []
+  - id: 100
+    name: ftp
+    groupIds: []
+  - id: 101
+    name: tcp
+    groupIds: []
+
+- id: 107
+  name: Http Content Type    #responseContentType
+  typeField: responseContentType
+  subcategories:
+  - id: 108
+    name: Text
+    groupIds: []
+  - id: 109
+    name: Application
+    groupIds: []
+  - id: 110
+    name: image
+    groupIds: []
+  - id: 111
+    name: Video
+    groupIds: []
+  - id: 112
+    name: Audio
+    groupIds: []
+  - id: 113
+    name: Multipart
+    groupIds: []
+  - id: 114
+    name: Other
+    groupIds: []
+
+
+##########AD TIME SERIES##############
+AdTimeSeriesCategories:
+- 
+  id: 1
+  name: Policy Change
+  subcategories:
+  - id: 2
+    name: Authorized Policy Change
+    groupIds: [4704, 4705]
+    
+  - id: 3
+    name: Authentication Policy Change
+    groupIds: [4717, 4718]
+- 
+  id: 4
+  name: Logon/Logoff
+  subcategories:
+  - id: 5
+    name: Logon
+    groupIds: [4624, 4625, 4648]
+    
+  - id: 6
+    name: Logoff
+    groupIds: [4634, 4647]
+    
+  - id: 7
+    name: Special Logon
+    groupIds: [4672]
+    
+- 
+  id: 8
+  name: Privilege Use
+  subcategories:
+  - id: 9
+    name: Sensitive Privilege Use
+    groupIds: [4673]
+    
+- 
+  id: 10
+  name: Account Management
+  subcategories:
+  - groupIds: [4720, 4722, 4723, 4724, 4725, 4726]
+    id: 11
+    name: User Account Management
+  - groupIds: [4741, 4742, 4743]
+    id: 12
+    name: Computer Account Management
+- 
+  id: 13
+  name: Account Logon
+  subcategories:
+  - groupIds: [4768, 4771]
+    id: 14
+    name: Kerberos Authentication Service
+  - groupIds: [4769]
+    id: 15
+    name: Kerberos Service Ticket Operations
+  - groupIds: [4776, 4777]
+    id: 16
+    name: Credential Validation
+
+AdTimeSeriesError:
+- id: 17
+  name: Clients entry in database has expired
+  groupIds: [4768, 4769, 4771]
+
+- id: 18
+  name: Server's entry in database has expired
+  groupIds: [4768, 4769, 4771]
+
+- id: 19
+  name: Requested protocol version number not supported
+  groupIds: [4768, 4769, 4771]
+
+- id: 20
+  name: Client's key encrypted in old master key
+  groupIds: [4768, 4769, 4771]
+
+- groupIds: [4768, 4769, 4771]
+  id: 21
+  name: Server's key encrypted in old master key
+
+- groupIds: [4768, 4769, 4771]
+  id: 22
+  name: Client not found in Kerberos database
+
+- groupIds: [4768, 4769, 4771]
+  id: 23
+  name: Server not found in Kerberos database
+
+- groupIds: [4768, 4769, 4771]
+  id: 24
+  name: Multiple principal entries in database
+
+- groupIds: [4768, 4769, 4771]
+  id: 25
+  name: The client or server has a null key
+
+- groupIds: [4768, 4769, 4771]
+  id: 26
+  name: Ticket not eligible for postdating
+
+- groupIds: [4768, 4769, 4771]
+  id: 27
+  name: Requested start time is later than end time
+
+- groupIds: [4768, 4769, 4771]
+  id: 28
+  name: KDC policy rejects request
+
+- groupIds: [4768, 4769, 4771]
+  id: 29
+  name: KDC cannot accommodate requested option
+
+- groupIds: [4768, 4769, 4771]
+  id: 30
+  name: KDC has no support for encryption type
+
+- groupIds: [4768, 4769, 4771]
+  id: 31
+  name: KDC has no support for checksum type
+
+- groupIds: [4768, 4769, 4771]
+  id: 32
+  name: KDC has no support for padata type
+
+- groupIds: [4768, 4769, 4771]
+  id: 33
+  name: KDC has no support for transited type
+
+- groupIds: [4768, 4769, 4771]
+  id: 34
+  name: Clients credentials have been revoked
+
+- groupIds: [4768, 4769, 4771]
+  id: 35
+  name: Credentials for server have been revoked
+
+- groupIds: [4768, 4769, 4771]
+  id: 36
+  name: TGT has been revoked
+
+- groupIds: [4768, 4769, 4771]
+  id: 37
+  name: Client not yet valid - try again later
+
+- groupIds: [4768, 4769, 4771]
+  id: 38
+  name: Server not yet valid - try again later
+
+- groupIds: [4768, 4769, 4771]
+  id: 39
+  name: User's password has expired
+
+- groupIds: [4768, 4769, 4771]
+  id: 40
+  name: Pre-authentication information was invalid
+
+- groupIds: [4768, 4769, 4771]
+  id: 41
+  name: Additional pre-authentication required
+
+- groupIds: [4768, 4769, 4771]
+  id: 42
+  name: Server principal valid for user-to-user only
+
+- groupIds: [4768, 4769, 4771]
+  id: 43
+  name: KDC Policy rejects transited path
+
+- groupIds: [4768, 4769, 4771]
+  id: 44
+  name: A service is not available
+
+- groupIds: [4768, 4769, 4771]
+  id: 45
+  name: Integrity check on decrypted field failed
+
+- groupIds: [4768, 4769, 4771]
+  id: 46
+  name: Ticket expired
+
+- groupIds: [4768, 4769, 4771]
+  id: 47
+  name: Ticket not yet valid
+
+- groupIds: [4768, 4769, 4771]
+  id: 48
+  name: Request is a replay
+
+- groupIds: [4768, 4769, 4771]
+  id: 49
+  name: The ticket isn't for us
+
+- groupIds: [4768, 4769, 4771]
+  id: 50
+  name: Ticket and authenticator don't match
+
+- groupIds: [4768, 4769, 4771]
+  id: 51
+  name: Clock skew too great
+
+- groupIds: [4768, 4769, 4771]
+  id: 52
+  name: Incorrect net address
+
+- groupIds: [4768, 4769, 4771]
+  id: 53
+  name: Protocol version mismatch
+
+- groupIds: [4768, 4769, 4771]
+  id: 54
+  name: Invalid msg type
+
+- groupIds: [4768, 4769, 4771]
+  id: 55
+  name: Message stream modified
+
+- groupIds: [4768, 4769, 4771]
+  id: 56
+  name: Message out of order
+
+- groupIds: [4768, 4769, 4771]
+  id: 57
+  name: Specified version of key is not available
+
+- groupIds: [4768, 4769, 4771]
+  id: 58
+  name: Service key not available
+
+- groupIds: [4768, 4769, 4771]
+  id: 59
+  name: Mutual authentication failed
+
+- groupIds: [4768, 4769, 4771]
+  id: 60
+  name: Incorrect message direction
+
+- groupIds: [4768, 4769, 4771]
+  id: 61
+  name: Alternative authentication method required
+
+- groupIds: [4768, 4769, 4771]
+  id: 62
+  name: Incorrect sequence number in message
+
+- groupIds: [4768, 4769, 4771]
+  id: 63
+  name: Inappropriate type of checksum in message
+
+- groupIds: [4768, 4769, 4771]
+  id: 64
+  name: Generic error
+
+- groupIds: [4768, 4769, 4771]
+  id: 65
+  name: Field is too long for this implementation
+
+- groupIds: [4625]
+  id: 62
+  name: user name does not exist
+
+- groupIds: [4625]
+  id: 63
+  name: user name is correct but the password is wrong
+
+- groupIds: [4625]
+  id: 64
+  name: user is currently locked out
+
+- groupIds: [4625]
+  id: 65
+  name: account is currently disabled
+
+- groupIds: [4625]
+  id: 66
+  name: user tried to logon outside his day of week or time of day restrictions
+
+- groupIds: [4625]
+  id: 67
+  name: workstation restriction
+
+- groupIds: [4625]
+  id: 68
+  name: account expiration
+
+- groupIds: [4625]
+  id: 69
+  name: expired password
+
+- groupIds: [4625]
+  id: 70
+  name: clocks between DC and other computer too far out of sync
+
+- groupIds: [4625]
+  id: 71
+  name: user is required to change password at next logon
+
+- groupIds: [4625]
+  id: 72
+  name: evidently a bug in Windows and not a risk
+
+- groupIds: [4625]
+  id: 73
+  name: The user has not been granted the requested logon type (aka logon right) at this machine
+
+#Localization for groups
+GroupIdToName: {
+  4672: Special privileges assigned to new logon,
+  4673: A privileged service was called,
+  4741: A computer account was created,
+  4742: A computer account was changed,
+  4743: A computer account was deleted,
+  4624: An account was successfully logged on,
+  4625: An account failed to log on,
+  4634: An account was logged off,
+  4704: A user right was assigned,
+  4768: A Kerberos authentication ticket (TGT) was requested,
+  4705: A user right was removed,
+  4769: A Kerberos service ticket was requested,
+  4771: Kerberos pre-authentication failed,
+  4647: User initiated logoff,
+  4776: The domain controller attempted to validate the credentials for an account,
+  4648: A logon was attempted using explicit credentials,
+  4777: The domain controller failed to validate the credentials for an account,
+  4717: System security access was granted to an account,
+  4718: System security access was removed from an account,
+  4720: A user account was created, 
+  4722: A user account was enabled,
+  4723: An attempt was made to change an account's password,
+  4724: An attempt was made to reset an accounts password,
+  4725: A user account was disabled,
+  4726: A user account was deleted
+  }

@@ -1,0 +1,1225 @@
+entityName,metricName,timestamp,value
+ZooKeeper,"total_uptime_across_servers","2016-07-01T23:23:50.734Z",2057904.2631750107
+ZooKeeper,"total_uptime_across_servers","2016-07-01T23:24:50.734Z",2058083.341921091
+ZooKeeper,"total_uptime_across_servers","2016-07-01T23:25:50.734Z",2058264.1447081566
+ZooKeeper,"total_uptime_across_servers","2016-07-01T23:26:50.734Z",2058444.2101283073
+ZooKeeper,"total_uptime_across_servers","2016-07-01T23:27:50.734Z",2058624.2600319386
+ZooKeeper,"outstanding_requests_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"outstanding_requests_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"outstanding_requests_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"outstanding_requests_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"outstanding_requests_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"uptime_across_servers","2016-07-01T23:23:50.734Z",685968.0877250036
+ZooKeeper,"uptime_across_servers","2016-07-01T23:24:50.734Z",686027.7806403637
+ZooKeeper,"uptime_across_servers","2016-07-01T23:25:50.734Z",686088.0482360522
+ZooKeeper,"uptime_across_servers","2016-07-01T23:26:50.734Z",686148.0700427691
+ZooKeeper,"uptime_across_servers","2016-07-01T23:27:50.734Z",686208.0866773129
+ZooKeeper,"total_outstanding_requests_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_outstanding_requests_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_outstanding_requests_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_outstanding_requests_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_outstanding_requests_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"data_size_across_servers","2016-07-01T23:23:50.734Z",5.473111E7
+ZooKeeper,"data_size_across_servers","2016-07-01T23:24:50.734Z",5.473111E7
+ZooKeeper,"data_size_across_servers","2016-07-01T23:25:50.734Z",5.473111E7
+ZooKeeper,"data_size_across_servers","2016-07-01T23:26:50.734Z",5.473111E7
+ZooKeeper,"data_size_across_servers","2016-07-01T23:27:50.734Z",5.4731344666666664E7
+ZooKeeper,"total_mem_virtual_across_servers","2016-07-01T23:23:50.734Z",2.2382292992E10
+ZooKeeper,"total_mem_virtual_across_servers","2016-07-01T23:24:50.734Z",2.2382292992E10
+ZooKeeper,"total_mem_virtual_across_servers","2016-07-01T23:25:50.734Z",2.2382292992E10
+ZooKeeper,"total_mem_virtual_across_servers","2016-07-01T23:26:50.734Z",2.2382292992E10
+ZooKeeper,"total_mem_virtual_across_servers","2016-07-01T23:27:50.734Z",2.2382292992E10
+"Server (cluster5-srv2.e8sec.com)",mem_virtual,"2016-07-01T23:23:37.000Z",7.323742208E9
+"Server (cluster5-srv2.e8sec.com)",mem_virtual,"2016-07-01T23:24:36.000Z",7.323742208E9
+"Server (cluster5-srv2.e8sec.com)",mem_virtual,"2016-07-01T23:25:36.000Z",7.323742208E9
+"Server (cluster5-srv2.e8sec.com)",mem_virtual,"2016-07-01T23:26:37.000Z",7.323742208E9
+"Server (cluster5-srv2.e8sec.com)",mem_virtual,"2016-07-01T23:27:37.000Z",7.323742208E9
+"Server (cluster5-srv1.e8sec.com)",mem_virtual,"2016-07-01T23:23:23.000Z",7.323742208E9
+"Server (cluster5-srv1.e8sec.com)",mem_virtual,"2016-07-01T23:24:23.000Z",7.323742208E9
+"Server (cluster5-srv1.e8sec.com)",mem_virtual,"2016-07-01T23:25:23.000Z",7.323742208E9
+"Server (cluster5-srv1.e8sec.com)",mem_virtual,"2016-07-01T23:26:23.000Z",7.323742208E9
+"Server (cluster5-srv1.e8sec.com)",mem_virtual,"2016-07-01T23:27:23.000Z",7.323742208E9
+"Server (cluster5-e8.e8sec.com)",mem_virtual,"2016-07-01T23:23:08.000Z",7.734808576E9
+"Server (cluster5-e8.e8sec.com)",mem_virtual,"2016-07-01T23:24:08.000Z",7.734808576E9
+"Server (cluster5-e8.e8sec.com)",mem_virtual,"2016-07-01T23:25:08.000Z",7.734808576E9
+"Server (cluster5-e8.e8sec.com)",mem_virtual,"2016-07-01T23:26:08.000Z",7.734808576E9
+"Server (cluster5-e8.e8sec.com)",mem_virtual,"2016-07-01T23:27:08.000Z",7.734808576E9
+"Server (cluster5-srv2.e8sec.com)",last_queued_epoch,"2016-07-01T23:23:35.453Z",57.0
+"Server (cluster5-srv2.e8sec.com)",last_queued_epoch,"2016-07-01T23:24:35.454Z",57.0
+"Server (cluster5-srv2.e8sec.com)",last_queued_epoch,"2016-07-01T23:25:35.455Z",57.0
+"Server (cluster5-srv2.e8sec.com)",last_queued_epoch,"2016-07-01T23:27:05.456Z",57.0
+"Server (cluster5-srv1.e8sec.com)",last_queued_epoch,"2016-07-01T23:23:35.453Z",57.0
+"Server (cluster5-srv1.e8sec.com)",last_queued_epoch,"2016-07-01T23:24:35.454Z",57.0
+"Server (cluster5-srv1.e8sec.com)",last_queued_epoch,"2016-07-01T23:25:35.455Z",57.0
+"Server (cluster5-srv1.e8sec.com)",last_queued_epoch,"2016-07-01T23:27:05.456Z",57.0
+ZooKeeper,current_epoch_rate,"2016-07-01T23:23:35.453Z",0.0
+ZooKeeper,current_epoch_rate,"2016-07-01T23:24:35.454Z",0.0
+ZooKeeper,current_epoch_rate,"2016-07-01T23:25:35.455Z",0.0
+ZooKeeper,current_epoch_rate,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv2.e8sec.com)",mem_rss,"2016-07-01T23:23:37.000Z",8.25335808E8
+"Server (cluster5-srv2.e8sec.com)",mem_rss,"2016-07-01T23:24:36.000Z",8.25315328E8
+"Server (cluster5-srv2.e8sec.com)",mem_rss,"2016-07-01T23:25:36.000Z",8.25348096E8
+"Server (cluster5-srv2.e8sec.com)",mem_rss,"2016-07-01T23:26:37.000Z",8.25348096E8
+"Server (cluster5-srv2.e8sec.com)",mem_rss,"2016-07-01T23:27:37.000Z",8.25348096E8
+"Server (cluster5-srv1.e8sec.com)",mem_rss,"2016-07-01T23:23:23.000Z",8.51116032E8
+"Server (cluster5-srv1.e8sec.com)",mem_rss,"2016-07-01T23:24:23.000Z",8.51349504E8
+"Server (cluster5-srv1.e8sec.com)",mem_rss,"2016-07-01T23:25:23.000Z",8.51349504E8
+"Server (cluster5-srv1.e8sec.com)",mem_rss,"2016-07-01T23:26:23.000Z",8.51349504E8
+"Server (cluster5-srv1.e8sec.com)",mem_rss,"2016-07-01T23:27:23.000Z",8.51349504E8
+"Server (cluster5-e8.e8sec.com)",mem_rss,"2016-07-01T23:23:08.000Z",8.98609152E8
+"Server (cluster5-e8.e8sec.com)",mem_rss,"2016-07-01T23:24:08.000Z",8.98609152E8
+"Server (cluster5-e8.e8sec.com)",mem_rss,"2016-07-01T23:25:08.000Z",8.98609152E8
+"Server (cluster5-e8.e8sec.com)",mem_rss,"2016-07-01T23:26:08.000Z",8.98613248E8
+"Server (cluster5-e8.e8sec.com)",mem_rss,"2016-07-01T23:27:08.000Z",8.98613248E8
+ZooKeeper,"mem_virtual_across_servers","2016-07-01T23:23:50.734Z",7.460764330666667E9
+ZooKeeper,"mem_virtual_across_servers","2016-07-01T23:24:50.734Z",7.460764330666667E9
+ZooKeeper,"mem_virtual_across_servers","2016-07-01T23:25:50.734Z",7.460764330666667E9
+ZooKeeper,"mem_virtual_across_servers","2016-07-01T23:26:50.734Z",7.460764330666667E9
+ZooKeeper,"mem_virtual_across_servers","2016-07-01T23:27:50.734Z",7.460764330666667E9
+ZooKeeper,"total_jvm_max_memory_mb_across_servers","2016-07-01T23:23:50.734Z",2967.0
+ZooKeeper,"total_jvm_max_memory_mb_across_servers","2016-07-01T23:24:50.734Z",2967.0
+ZooKeeper,"total_jvm_max_memory_mb_across_servers","2016-07-01T23:25:50.734Z",2967.0
+ZooKeeper,"total_jvm_max_memory_mb_across_servers","2016-07-01T23:26:50.734Z",2967.0
+ZooKeeper,"total_jvm_max_memory_mb_across_servers","2016-07-01T23:27:50.734Z",2967.0
+ZooKeeper,"events_critical_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"events_critical_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"events_critical_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"events_critical_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"events_critical_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"jvm_max_memory_mb_across_servers","2016-07-01T23:23:50.734Z",989.0
+ZooKeeper,"jvm_max_memory_mb_across_servers","2016-07-01T23:24:50.734Z",989.0
+ZooKeeper,"jvm_max_memory_mb_across_servers","2016-07-01T23:25:50.734Z",989.0
+ZooKeeper,"jvm_max_memory_mb_across_servers","2016-07-01T23:26:50.734Z",989.0
+ZooKeeper,"jvm_max_memory_mb_across_servers","2016-07-01T23:27:50.734Z",989.0
+ZooKeeper,"total_events_critical_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_events_critical_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_events_critical_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_events_critical_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_events_critical_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,canary_duration,"2016-07-01T23:24:05.539Z",85.0
+ZooKeeper,canary_duration,"2016-07-01T23:25:05.550Z",96.0
+ZooKeeper,canary_duration,"2016-07-01T23:26:05.548Z",93.0
+ZooKeeper,canary_duration,"2016-07-01T23:27:05.555Z",99.0
+ZooKeeper,"total_min_request_latency_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_min_request_latency_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_min_request_latency_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_min_request_latency_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_min_request_latency_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_jvm_blocked_threads_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_jvm_blocked_threads_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_jvm_blocked_threads_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_jvm_blocked_threads_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_jvm_blocked_threads_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)",last_queued_xid,"2016-07-01T23:23:35.453Z",267025.0
+"Server (cluster5-srv2.e8sec.com)",last_queued_xid,"2016-07-01T23:24:35.454Z",267046.0
+"Server (cluster5-srv2.e8sec.com)",last_queued_xid,"2016-07-01T23:25:35.455Z",267067.0
+"Server (cluster5-srv2.e8sec.com)",last_queued_xid,"2016-07-01T23:27:05.456Z",267091.0
+"Server (cluster5-srv1.e8sec.com)",last_queued_xid,"2016-07-01T23:23:35.453Z",267025.0
+"Server (cluster5-srv1.e8sec.com)",last_queued_xid,"2016-07-01T23:24:35.454Z",267046.0
+"Server (cluster5-srv1.e8sec.com)",last_queued_xid,"2016-07-01T23:25:35.455Z",267067.0
+"Server (cluster5-srv1.e8sec.com)",last_queued_xid,"2016-07-01T23:27:05.456Z",267096.0
+ZooKeeper,"jvm_blocked_threads_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"jvm_blocked_threads_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"jvm_blocked_threads_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"jvm_blocked_threads_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"jvm_blocked_threads_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"min_request_latency_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"min_request_latency_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"min_request_latency_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"min_request_latency_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"min_request_latency_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"events_informational_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"events_informational_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"events_informational_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"events_informational_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"events_informational_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:23:37.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:24:36.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:25:36.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:26:37.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:27:37.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:23:37.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:24:36.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:25:36.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:26:37.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity,"2016-07-01T23:27:37.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:23:23.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:24:23.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:25:23.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:26:23.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:27:23.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:23:08.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:24:08.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:25:08.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:26:08.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:27:08.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:23:08.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:24:08.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:25:08.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:26:08.000Z",8.3672915968E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity,"2016-07-01T23:27:08.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:23:23.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:24:23.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:25:23.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:26:23.000Z",8.3672915968E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity,"2016-07-01T23:27:23.000Z",8.3672915968E10
+ZooKeeper,"average_request_latency_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"average_request_latency_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"average_request_latency_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"average_request_latency_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"average_request_latency_across_servers","2016-07-01T23:27:50.734Z",0.0
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:23:37.000Z",2.2428684288E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:24:36.000Z",2.242869248E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:25:36.000Z",2.2418210816E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:26:37.000Z",2.2418219008E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:27:37.000Z",2.241824768E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:23:37.000Z",2.2428684288E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:24:36.000Z",2.242869248E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:25:36.000Z",2.2418210816E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:26:37.000Z",2.2418219008E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_used,"2016-07-01T23:27:37.000Z",2.241824768E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:23:23.000Z",6.6870652928E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:24:23.000Z",6.6870898688E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:25:23.000Z",6.6871078912E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:26:23.000Z",6.6871287808E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:27:23.000Z",6.6871484416E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:23:08.000Z",6.3040823296E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:24:08.000Z",6.304086016E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:25:08.000Z",6.3040856064E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:26:08.000Z",6.3040897024E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:27:08.000Z",6.3040925696E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:23:08.000Z",6.3040823296E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:24:08.000Z",6.304086016E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:25:08.000Z",6.3040856064E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:26:08.000Z",6.3040897024E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_used,"2016-07-01T23:27:08.000Z",6.3040925696E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:23:23.000Z",6.6870652928E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:24:23.000Z",6.6870898688E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:25:23.000Z",6.6871078912E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:26:23.000Z",6.6871287808E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_used,"2016-07-01T23:27:23.000Z",6.6871484416E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:23:37.000Z",5.698701312E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:24:36.000Z",5.6987004928E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:25:36.000Z",5.6997486592E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:26:37.000Z",5.69974784E10
+"/var/log/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:27:37.000Z",5.6997449728E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:23:37.000Z",5.698701312E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:24:36.000Z",5.6987004928E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:25:36.000Z",5.6997486592E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:26:37.000Z",5.69974784E10
+"/var/lib/zookeeper (cluster5-srv2.e8sec.com)",capacity_free,"2016-07-01T23:27:37.000Z",5.6997449728E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:23:23.000Z",1.254504448E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:24:23.000Z",1.254479872E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:25:23.000Z",1.2544618496E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:26:23.000Z",1.25444096E10
+"/var/lib/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:27:23.000Z",1.2544212992E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:23:08.000Z",1.6374874112E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:24:08.000Z",1.6374837248E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:25:08.000Z",1.6374841344E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:26:08.000Z",1.6374800384E10
+"/var/log/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:27:08.000Z",1.6374771712E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:23:08.000Z",1.6374874112E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:24:08.000Z",1.6374837248E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:25:08.000Z",1.6374841344E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:26:08.000Z",1.6374800384E10
+"/var/lib/zookeeper (cluster5-e8.e8sec.com)",capacity_free,"2016-07-01T23:27:08.000Z",1.6374771712E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:23:23.000Z",1.254504448E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:24:23.000Z",1.254479872E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:25:23.000Z",1.2544618496E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:26:23.000Z",1.25444096E10
+"/var/log/zookeeper (cluster5-srv1.e8sec.com)",capacity_free,"2016-07-01T23:27:23.000Z",1.2544212992E10
+ZooKeeper,"total_data_nodes_across_servers","2016-07-01T23:23:50.734Z",40332.0
+ZooKeeper,"total_data_nodes_across_servers","2016-07-01T23:24:50.734Z",40332.0
+ZooKeeper,"total_data_nodes_across_servers","2016-07-01T23:25:50.734Z",40332.0
+ZooKeeper,"total_data_nodes_across_servers","2016-07-01T23:26:50.734Z",40332.0
+ZooKeeper,"total_data_nodes_across_servers","2016-07-01T23:27:50.734Z",40338.0
+ZooKeeper,"data_nodes_across_servers","2016-07-01T23:23:50.734Z",13444.0
+ZooKeeper,"data_nodes_across_servers","2016-07-01T23:24:50.734Z",13444.0
+ZooKeeper,"data_nodes_across_servers","2016-07-01T23:25:50.734Z",13444.0
+ZooKeeper,"data_nodes_across_servers","2016-07-01T23:26:50.734Z",13444.0
+ZooKeeper,"data_nodes_across_servers","2016-07-01T23:27:50.734Z",13446.0
+ZooKeeper,"total_events_informational_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_events_informational_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_events_informational_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_events_informational_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_events_informational_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)",outstanding_requests,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv2.e8sec.com)",outstanding_requests,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv2.e8sec.com)",outstanding_requests,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv2.e8sec.com)",outstanding_requests,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv1.e8sec.com)",outstanding_requests,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv1.e8sec.com)",outstanding_requests,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv1.e8sec.com)",outstanding_requests,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv1.e8sec.com)",outstanding_requests,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-e8.e8sec.com)",outstanding_requests,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-e8.e8sec.com)",outstanding_requests,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-e8.e8sec.com)",outstanding_requests,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-e8.e8sec.com)",outstanding_requests,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv2.e8sec.com)",data_size,"2016-07-01T23:23:35.453Z",5.473111E7
+"Server (cluster5-srv2.e8sec.com)",data_size,"2016-07-01T23:24:35.454Z",5.473111E7
+"Server (cluster5-srv2.e8sec.com)",data_size,"2016-07-01T23:25:35.455Z",5.473111E7
+"Server (cluster5-srv2.e8sec.com)",data_size,"2016-07-01T23:27:05.456Z",5.473121E7
+"Server (cluster5-srv1.e8sec.com)",data_size,"2016-07-01T23:23:35.453Z",5.473111E7
+"Server (cluster5-srv1.e8sec.com)",data_size,"2016-07-01T23:24:35.454Z",5.473111E7
+"Server (cluster5-srv1.e8sec.com)",data_size,"2016-07-01T23:25:35.455Z",5.473111E7
+"Server (cluster5-srv1.e8sec.com)",data_size,"2016-07-01T23:27:05.456Z",5.4731714E7
+"Server (cluster5-e8.e8sec.com)",data_size,"2016-07-01T23:23:35.453Z",5.473111E7
+"Server (cluster5-e8.e8sec.com)",data_size,"2016-07-01T23:24:35.454Z",5.473111E7
+"Server (cluster5-e8.e8sec.com)",data_size,"2016-07-01T23:25:35.455Z",5.473111E7
+"Server (cluster5-e8.e8sec.com)",data_size,"2016-07-01T23:27:05.456Z",5.473111E7
+"Server (cluster5-srv2.e8sec.com)",data_watches,"2016-07-01T23:23:35.453Z",69.0
+"Server (cluster5-srv2.e8sec.com)",data_watches,"2016-07-01T23:24:35.454Z",69.0
+"Server (cluster5-srv2.e8sec.com)",data_watches,"2016-07-01T23:25:35.455Z",69.0
+"Server (cluster5-srv2.e8sec.com)",data_watches,"2016-07-01T23:27:05.456Z",69.0
+"Server (cluster5-srv1.e8sec.com)",data_watches,"2016-07-01T23:23:35.453Z",5328.0
+"Server (cluster5-srv1.e8sec.com)",data_watches,"2016-07-01T23:24:35.454Z",5328.0
+"Server (cluster5-srv1.e8sec.com)",data_watches,"2016-07-01T23:25:35.455Z",5328.0
+"Server (cluster5-srv1.e8sec.com)",data_watches,"2016-07-01T23:27:05.456Z",5331.0
+"Server (cluster5-e8.e8sec.com)",data_watches,"2016-07-01T23:23:35.453Z",2636.0
+"Server (cluster5-e8.e8sec.com)",data_watches,"2016-07-01T23:24:35.454Z",2636.0
+"Server (cluster5-e8.e8sec.com)",data_watches,"2016-07-01T23:25:35.455Z",2636.0
+"Server (cluster5-e8.e8sec.com)",data_watches,"2016-07-01T23:27:05.456Z",2636.0
+ZooKeeper,"events_important_rate","2016-07-01T23:23:20.133Z",0.0
+ZooKeeper,"events_important_rate","2016-07-01T23:24:20.132Z",0.0
+ZooKeeper,"events_important_rate","2016-07-01T23:25:20.132Z",0.0
+ZooKeeper,"events_important_rate","2016-07-01T23:26:20.133Z",0.0
+ZooKeeper,"events_important_rate","2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_important_rate","2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_important_rate","2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_important_rate","2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_important_rate","2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_important_rate","2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_important_rate","2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_important_rate","2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_important_rate","2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_important_rate","2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_important_rate","2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_important_rate","2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_important_rate","2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_important_rate","2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_important_rate","2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_important_rate","2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)","unexpected_exits_rate","2016-07-01T23:23:37.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)","unexpected_exits_rate","2016-07-01T23:24:36.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)","unexpected_exits_rate","2016-07-01T23:25:36.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)","unexpected_exits_rate","2016-07-01T23:26:37.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)","unexpected_exits_rate","2016-07-01T23:27:37.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)","unexpected_exits_rate","2016-07-01T23:23:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)","unexpected_exits_rate","2016-07-01T23:24:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)","unexpected_exits_rate","2016-07-01T23:25:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)","unexpected_exits_rate","2016-07-01T23:26:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)","unexpected_exits_rate","2016-07-01T23:27:23.000Z",0.0
+"Server (cluster5-e8.e8sec.com)","unexpected_exits_rate","2016-07-01T23:23:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)","unexpected_exits_rate","2016-07-01T23:24:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)","unexpected_exits_rate","2016-07-01T23:25:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)","unexpected_exits_rate","2016-07-01T23:26:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)","unexpected_exits_rate","2016-07-01T23:27:08.000Z",0.0
+ZooKeeper,"total_max_request_latency_across_servers","2016-07-01T23:23:50.734Z",18750.0
+ZooKeeper,"total_max_request_latency_across_servers","2016-07-01T23:24:50.734Z",18750.0
+ZooKeeper,"total_max_request_latency_across_servers","2016-07-01T23:25:50.734Z",18750.0
+ZooKeeper,"total_max_request_latency_across_servers","2016-07-01T23:26:50.734Z",18750.0
+ZooKeeper,"total_max_request_latency_across_servers","2016-07-01T23:27:50.734Z",18750.0
+ZooKeeper,health_unknown_rate,"2016-07-01T23:23:03.549Z",0.0
+ZooKeeper,health_unknown_rate,"2016-07-01T23:24:03.991Z",0.0
+ZooKeeper,health_unknown_rate,"2016-07-01T23:25:04.431Z",0.0
+ZooKeeper,health_unknown_rate,"2016-07-01T23:26:04.850Z",0.0
+ZooKeeper,health_unknown_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_unknown_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_unknown_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_unknown_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_unknown_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_unknown_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_unknown_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_unknown_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_unknown_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_unknown_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_unknown_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_unknown_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_unknown_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_unknown_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_unknown_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_unknown_rate,"2016-07-01T23:27:05.329Z",0.0
+ZooKeeper,"events_informational_rate","2016-07-01T23:23:20.133Z",0.0
+ZooKeeper,"events_informational_rate","2016-07-01T23:24:20.132Z",0.0
+ZooKeeper,"events_informational_rate","2016-07-01T23:25:20.132Z",0.0
+ZooKeeper,"events_informational_rate","2016-07-01T23:26:20.133Z",0.0
+ZooKeeper,"events_informational_rate","2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_informational_rate","2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_informational_rate","2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_informational_rate","2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_informational_rate","2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-srv2.e8sec.com)","events_informational_rate","2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_informational_rate","2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_informational_rate","2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_informational_rate","2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_informational_rate","2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-srv1.e8sec.com)","events_informational_rate","2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_informational_rate","2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_informational_rate","2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_informational_rate","2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_informational_rate","2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-e8.e8sec.com)","events_informational_rate","2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)",oom_exits_rate,"2016-07-01T23:23:37.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",oom_exits_rate,"2016-07-01T23:24:36.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",oom_exits_rate,"2016-07-01T23:25:36.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",oom_exits_rate,"2016-07-01T23:26:37.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",oom_exits_rate,"2016-07-01T23:27:37.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",oom_exits_rate,"2016-07-01T23:23:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",oom_exits_rate,"2016-07-01T23:24:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",oom_exits_rate,"2016-07-01T23:25:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",oom_exits_rate,"2016-07-01T23:26:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",oom_exits_rate,"2016-07-01T23:27:23.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",oom_exits_rate,"2016-07-01T23:23:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",oom_exits_rate,"2016-07-01T23:24:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",oom_exits_rate,"2016-07-01T23:25:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",oom_exits_rate,"2016-07-01T23:26:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",oom_exits_rate,"2016-07-01T23:27:08.000Z",0.0
+ZooKeeper,health_disabled_rate,"2016-07-01T23:23:03.549Z",0.0
+ZooKeeper,health_disabled_rate,"2016-07-01T23:24:03.991Z",0.0
+ZooKeeper,health_disabled_rate,"2016-07-01T23:25:04.431Z",0.0
+ZooKeeper,health_disabled_rate,"2016-07-01T23:26:04.850Z",0.0
+ZooKeeper,health_disabled_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_disabled_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_disabled_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_disabled_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_disabled_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_disabled_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_disabled_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_disabled_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_disabled_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_disabled_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_disabled_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_disabled_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_disabled_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_disabled_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_disabled_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_disabled_rate,"2016-07-01T23:27:05.329Z",0.0
+ZooKeeper,alerts_rate,"2016-07-01T23:23:20.133Z",0.0
+ZooKeeper,alerts_rate,"2016-07-01T23:24:20.132Z",0.0
+ZooKeeper,alerts_rate,"2016-07-01T23:25:20.132Z",0.0
+ZooKeeper,alerts_rate,"2016-07-01T23:26:20.133Z",0.0
+ZooKeeper,alerts_rate,"2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)",alerts_rate,"2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-srv2.e8sec.com)",alerts_rate,"2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)",alerts_rate,"2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)",alerts_rate,"2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-srv2.e8sec.com)",alerts_rate,"2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)",alerts_rate,"2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-srv1.e8sec.com)",alerts_rate,"2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)",alerts_rate,"2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)",alerts_rate,"2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-srv1.e8sec.com)",alerts_rate,"2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)",alerts_rate,"2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-e8.e8sec.com)",alerts_rate,"2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)",alerts_rate,"2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)",alerts_rate,"2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-e8.e8sec.com)",alerts_rate,"2016-07-01T23:27:20.132Z",0.0
+ZooKeeper,"max_request_latency_across_servers","2016-07-01T23:23:50.734Z",6250.0
+ZooKeeper,"max_request_latency_across_servers","2016-07-01T23:24:50.734Z",6250.0
+ZooKeeper,"max_request_latency_across_servers","2016-07-01T23:25:50.734Z",6250.0
+ZooKeeper,"max_request_latency_across_servers","2016-07-01T23:26:50.734Z",6250.0
+ZooKeeper,"max_request_latency_across_servers","2016-07-01T23:27:50.734Z",6250.0
+"Server (cluster5-srv2.e8sec.com)",mem_swap,"2016-07-01T23:23:37.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",mem_swap,"2016-07-01T23:24:36.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",mem_swap,"2016-07-01T23:25:36.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",mem_swap,"2016-07-01T23:26:37.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",mem_swap,"2016-07-01T23:27:37.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",mem_swap,"2016-07-01T23:23:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",mem_swap,"2016-07-01T23:24:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",mem_swap,"2016-07-01T23:25:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",mem_swap,"2016-07-01T23:26:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",mem_swap,"2016-07-01T23:27:23.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",mem_swap,"2016-07-01T23:23:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",mem_swap,"2016-07-01T23:24:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",mem_swap,"2016-07-01T23:25:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",mem_swap,"2016-07-01T23:26:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",mem_swap,"2016-07-01T23:27:08.000Z",0.0
+ZooKeeper,health_bad_rate,"2016-07-01T23:23:03.549Z",0.0
+ZooKeeper,health_bad_rate,"2016-07-01T23:24:03.991Z",0.0
+ZooKeeper,health_bad_rate,"2016-07-01T23:25:04.431Z",0.0
+ZooKeeper,health_bad_rate,"2016-07-01T23:26:04.850Z",0.0
+ZooKeeper,health_bad_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_bad_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_bad_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_bad_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_bad_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-srv2.e8sec.com)",health_bad_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_bad_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_bad_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_bad_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_bad_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-srv1.e8sec.com)",health_bad_rate,"2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_bad_rate,"2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_bad_rate,"2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_bad_rate,"2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_bad_rate,"2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-e8.e8sec.com)",health_bad_rate,"2016-07-01T23:27:05.329Z",0.0
+ZooKeeper,"health_concerning_rate","2016-07-01T23:23:03.549Z",0.0
+ZooKeeper,"health_concerning_rate","2016-07-01T23:24:03.991Z",0.0
+ZooKeeper,"health_concerning_rate","2016-07-01T23:25:04.431Z",0.0
+ZooKeeper,"health_concerning_rate","2016-07-01T23:26:04.850Z",0.0
+ZooKeeper,"health_concerning_rate","2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-srv2.e8sec.com)","health_concerning_rate","2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-srv2.e8sec.com)","health_concerning_rate","2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-srv2.e8sec.com)","health_concerning_rate","2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-srv2.e8sec.com)","health_concerning_rate","2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-srv2.e8sec.com)","health_concerning_rate","2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-srv1.e8sec.com)","health_concerning_rate","2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-srv1.e8sec.com)","health_concerning_rate","2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-srv1.e8sec.com)","health_concerning_rate","2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-srv1.e8sec.com)","health_concerning_rate","2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-srv1.e8sec.com)","health_concerning_rate","2016-07-01T23:27:05.329Z",0.0
+"Server (cluster5-e8.e8sec.com)","health_concerning_rate","2016-07-01T23:23:03.549Z",0.0
+"Server (cluster5-e8.e8sec.com)","health_concerning_rate","2016-07-01T23:24:03.991Z",0.0
+"Server (cluster5-e8.e8sec.com)","health_concerning_rate","2016-07-01T23:25:04.431Z",0.0
+"Server (cluster5-e8.e8sec.com)","health_concerning_rate","2016-07-01T23:26:04.850Z",0.0
+"Server (cluster5-e8.e8sec.com)","health_concerning_rate","2016-07-01T23:27:05.329Z",0.0
+ZooKeeper,health_good_rate,"2016-07-01T23:23:03.549Z",1.0000000000020353
+ZooKeeper,health_good_rate,"2016-07-01T23:24:03.991Z",0.999999999996795
+ZooKeeper,health_good_rate,"2016-07-01T23:25:04.431Z",0.9999999999990755
+ZooKeeper,health_good_rate,"2016-07-01T23:26:04.850Z",1.0000000000037612
+ZooKeeper,health_good_rate,"2016-07-01T23:27:05.329Z",0.9999999999969817
+"Server (cluster5-srv2.e8sec.com)",health_good_rate,"2016-07-01T23:23:03.549Z",1.0000000000020353
+"Server (cluster5-srv2.e8sec.com)",health_good_rate,"2016-07-01T23:24:03.991Z",0.999999999996795
+"Server (cluster5-srv2.e8sec.com)",health_good_rate,"2016-07-01T23:25:04.431Z",0.9999999999990755
+"Server (cluster5-srv2.e8sec.com)",health_good_rate,"2016-07-01T23:26:04.850Z",1.0000000000037612
+"Server (cluster5-srv2.e8sec.com)",health_good_rate,"2016-07-01T23:27:05.329Z",0.9999999999969817
+"Server (cluster5-srv1.e8sec.com)",health_good_rate,"2016-07-01T23:23:03.549Z",1.0000000000020353
+"Server (cluster5-srv1.e8sec.com)",health_good_rate,"2016-07-01T23:24:03.991Z",0.999999999996795
+"Server (cluster5-srv1.e8sec.com)",health_good_rate,"2016-07-01T23:25:04.431Z",0.9999999999990755
+"Server (cluster5-srv1.e8sec.com)",health_good_rate,"2016-07-01T23:26:04.850Z",1.0000000000037612
+"Server (cluster5-srv1.e8sec.com)",health_good_rate,"2016-07-01T23:27:05.329Z",0.9999999999969817
+"Server (cluster5-e8.e8sec.com)",health_good_rate,"2016-07-01T23:23:03.549Z",0.9999999999943264
+"Server (cluster5-e8.e8sec.com)",health_good_rate,"2016-07-01T23:24:03.991Z",1.0000000000044993
+"Server (cluster5-e8.e8sec.com)",health_good_rate,"2016-07-01T23:25:04.431Z",0.9999999999990755
+"Server (cluster5-e8.e8sec.com)",health_good_rate,"2016-07-01T23:26:04.850Z",0.9999999999960539
+"Server (cluster5-e8.e8sec.com)",health_good_rate,"2016-07-01T23:27:05.329Z",1.0000000000046814
+ZooKeeper,events_critical_rate,"2016-07-01T23:23:20.133Z",0.0
+ZooKeeper,events_critical_rate,"2016-07-01T23:24:20.132Z",0.0
+ZooKeeper,events_critical_rate,"2016-07-01T23:25:20.132Z",0.0
+ZooKeeper,events_critical_rate,"2016-07-01T23:26:20.133Z",0.0
+ZooKeeper,events_critical_rate,"2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)",events_critical_rate,"2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-srv2.e8sec.com)",events_critical_rate,"2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)",events_critical_rate,"2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-srv2.e8sec.com)",events_critical_rate,"2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-srv2.e8sec.com)",events_critical_rate,"2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)",events_critical_rate,"2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-srv1.e8sec.com)",events_critical_rate,"2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)",events_critical_rate,"2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-srv1.e8sec.com)",events_critical_rate,"2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-srv1.e8sec.com)",events_critical_rate,"2016-07-01T23:27:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)",events_critical_rate,"2016-07-01T23:23:20.133Z",0.0
+"Server (cluster5-e8.e8sec.com)",events_critical_rate,"2016-07-01T23:24:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)",events_critical_rate,"2016-07-01T23:25:20.132Z",0.0
+"Server (cluster5-e8.e8sec.com)",events_critical_rate,"2016-07-01T23:26:20.133Z",0.0
+"Server (cluster5-e8.e8sec.com)",events_critical_rate,"2016-07-01T23:27:20.132Z",0.0
+ZooKeeper,"alerts_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"alerts_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"alerts_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"alerts_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"alerts_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"jvm_runnable_threads_across_servers","2016-07-01T23:23:50.734Z",10.333333333333334
+ZooKeeper,"jvm_runnable_threads_across_servers","2016-07-01T23:24:50.734Z",10.333333333333334
+ZooKeeper,"jvm_runnable_threads_across_servers","2016-07-01T23:25:50.734Z",10.333333333333334
+ZooKeeper,"jvm_runnable_threads_across_servers","2016-07-01T23:26:50.734Z",10.333333333333334
+ZooKeeper,"jvm_runnable_threads_across_servers","2016-07-01T23:27:50.734Z",10.666666666666666
+ZooKeeper,"total_read_bytes_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_read_bytes_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_read_bytes_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_read_bytes_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_read_bytes_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"health_bad_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"health_bad_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"health_bad_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"health_bad_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"health_bad_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"mem_swap_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"mem_swap_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"mem_swap_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"mem_swap_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"mem_swap_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"jvm_gc_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"jvm_gc_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"jvm_gc_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"jvm_gc_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"jvm_gc_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"cpu_system_rate_across_servers","2016-07-01T23:23:50.734Z",0.001666666666666414
+ZooKeeper,"cpu_system_rate_across_servers","2016-07-01T23:24:50.734Z",0.0018964218455751894
+ZooKeeper,"cpu_system_rate_across_servers","2016-07-01T23:25:50.734Z",0.001555555555555404
+ZooKeeper,"cpu_system_rate_across_servers","2016-07-01T23:26:50.734Z",0.0016047358834242118
+ZooKeeper,"cpu_system_rate_across_servers","2016-07-01T23:27:50.734Z",0.0016111111111109088
+ZooKeeper,"read_bytes_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"read_bytes_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"read_bytes_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"read_bytes_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"read_bytes_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_health_bad_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_health_bad_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_health_bad_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_health_bad_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_health_bad_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_cpu_system_rate_across_servers","2016-07-01T23:23:50.734Z",0.004999999999999242
+ZooKeeper,"total_cpu_system_rate_across_servers","2016-07-01T23:24:50.734Z",0.005689265536725568
+ZooKeeper,"total_cpu_system_rate_across_servers","2016-07-01T23:25:50.734Z",0.004666666666666212
+ZooKeeper,"total_cpu_system_rate_across_servers","2016-07-01T23:26:50.734Z",0.004814207650272635
+ZooKeeper,"total_cpu_system_rate_across_servers","2016-07-01T23:27:50.734Z",0.004833333333332726
+ZooKeeper,"total_average_request_latency_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_average_request_latency_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_average_request_latency_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_average_request_latency_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_average_request_latency_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_packets_receive_rate_across_servers","2016-07-01T23:23:50.734Z",17.86636889385177
+ZooKeeper,"total_packets_receive_rate_across_servers","2016-07-01T23:24:50.734Z",30.73282111964801
+ZooKeeper,"total_packets_receive_rate_across_servers","2016-07-01T23:25:50.734Z",18.133031116148064
+ZooKeeper,"total_packets_receive_rate_across_servers","2016-07-01T23:26:50.734Z",18.133031116148064
+ZooKeeper,"total_packets_receive_rate_across_servers","2016-07-01T23:27:50.734Z",13.866512594304506
+"Server (cluster5-srv2.e8sec.com)",open_connections,"2016-07-01T23:23:35.453Z",13.0
+"Server (cluster5-srv2.e8sec.com)",open_connections,"2016-07-01T23:24:35.454Z",13.0
+"Server (cluster5-srv2.e8sec.com)",open_connections,"2016-07-01T23:25:35.455Z",13.0
+"Server (cluster5-srv2.e8sec.com)",open_connections,"2016-07-01T23:27:05.456Z",14.0
+"Server (cluster5-srv1.e8sec.com)",open_connections,"2016-07-01T23:23:35.453Z",23.0
+"Server (cluster5-srv1.e8sec.com)",open_connections,"2016-07-01T23:24:35.454Z",23.0
+"Server (cluster5-srv1.e8sec.com)",open_connections,"2016-07-01T23:25:35.455Z",23.0
+"Server (cluster5-srv1.e8sec.com)",open_connections,"2016-07-01T23:27:05.456Z",24.0
+"Server (cluster5-e8.e8sec.com)",open_connections,"2016-07-01T23:23:35.453Z",11.0
+"Server (cluster5-e8.e8sec.com)",open_connections,"2016-07-01T23:24:35.454Z",11.0
+"Server (cluster5-e8.e8sec.com)",open_connections,"2016-07-01T23:25:35.455Z",11.0
+"Server (cluster5-e8.e8sec.com)",open_connections,"2016-07-01T23:27:05.456Z",11.0
+ZooKeeper,"packets_receive_rate_across_servers","2016-07-01T23:23:50.734Z",5.95545629795059
+ZooKeeper,"packets_receive_rate_across_servers","2016-07-01T23:24:50.734Z",10.244273706549336
+ZooKeeper,"packets_receive_rate_across_servers","2016-07-01T23:25:50.734Z",6.044343705382688
+ZooKeeper,"packets_receive_rate_across_servers","2016-07-01T23:26:50.734Z",6.044343705382688
+ZooKeeper,"packets_receive_rate_across_servers","2016-07-01T23:27:50.734Z",4.622170864768169
+ZooKeeper,"total_packets_transmit_rate_across_servers","2016-07-01T23:23:50.734Z",17.96636722721288
+ZooKeeper,"total_packets_transmit_rate_across_servers","2016-07-01T23:24:50.734Z",30.89948500858319
+ZooKeeper,"total_packets_transmit_rate_across_servers","2016-07-01T23:25:50.734Z",18.29969500508325
+ZooKeeper,"total_packets_transmit_rate_across_servers","2016-07-01T23:26:50.734Z",18.29969500508325
+ZooKeeper,"total_packets_transmit_rate_across_servers","2016-07-01T23:27:50.734Z",14.022066421484205
+ZooKeeper,"total_jvm_runnable_threads_across_servers","2016-07-01T23:23:50.734Z",31.0
+ZooKeeper,"total_jvm_runnable_threads_across_servers","2016-07-01T23:24:50.734Z",31.0
+ZooKeeper,"total_jvm_runnable_threads_across_servers","2016-07-01T23:25:50.734Z",31.0
+ZooKeeper,"total_jvm_runnable_threads_across_servers","2016-07-01T23:26:50.734Z",31.0
+ZooKeeper,"total_jvm_runnable_threads_across_servers","2016-07-01T23:27:50.734Z",32.0
+ZooKeeper,"packets_transmit_rate_across_servers","2016-07-01T23:23:50.734Z",5.988789075737627
+ZooKeeper,"packets_transmit_rate_across_servers","2016-07-01T23:24:50.734Z",10.299828336194397
+ZooKeeper,"packets_transmit_rate_across_servers","2016-07-01T23:25:50.734Z",6.09989833502775
+ZooKeeper,"packets_transmit_rate_across_servers","2016-07-01T23:26:50.734Z",6.09989833502775
+ZooKeeper,"packets_transmit_rate_across_servers","2016-07-01T23:27:50.734Z",4.674022140494735
+ZooKeeper,"total_jvm_timed_waiting_threads_across_servers","2016-07-01T23:23:50.734Z",25.0
+ZooKeeper,"total_jvm_timed_waiting_threads_across_servers","2016-07-01T23:24:50.734Z",26.0
+ZooKeeper,"total_jvm_timed_waiting_threads_across_servers","2016-07-01T23:25:50.734Z",25.0
+ZooKeeper,"total_jvm_timed_waiting_threads_across_servers","2016-07-01T23:26:50.734Z",25.0
+ZooKeeper,"total_jvm_timed_waiting_threads_across_servers","2016-07-01T23:27:50.734Z",25.0
+ZooKeeper,"total_alerts_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_alerts_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_alerts_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_alerts_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_alerts_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"jvm_timed_waiting_threads_across_servers","2016-07-01T23:23:50.734Z",8.333333333333334
+ZooKeeper,"jvm_timed_waiting_threads_across_servers","2016-07-01T23:24:50.734Z",8.666666666666666
+ZooKeeper,"jvm_timed_waiting_threads_across_servers","2016-07-01T23:25:50.734Z",8.333333333333334
+ZooKeeper,"jvm_timed_waiting_threads_across_servers","2016-07-01T23:26:50.734Z",8.333333333333334
+ZooKeeper,"jvm_timed_waiting_threads_across_servers","2016-07-01T23:27:50.734Z",8.333333333333334
+ZooKeeper,"total_jvm_heap_committed_mb_across_servers","2016-07-01T23:23:50.734Z",3066.0
+ZooKeeper,"total_jvm_heap_committed_mb_across_servers","2016-07-01T23:24:50.734Z",3066.0
+ZooKeeper,"total_jvm_heap_committed_mb_across_servers","2016-07-01T23:25:50.734Z",3066.0
+ZooKeeper,"total_jvm_heap_committed_mb_across_servers","2016-07-01T23:26:50.734Z",3066.0
+ZooKeeper,"total_jvm_heap_committed_mb_across_servers","2016-07-01T23:27:50.734Z",3066.0
+"Server (cluster5-srv2.e8sec.com)",zk_server_mode,"2016-07-01T23:23:35.453Z",1.0
+"Server (cluster5-srv2.e8sec.com)",zk_server_mode,"2016-07-01T23:24:35.454Z",1.0
+"Server (cluster5-srv2.e8sec.com)",zk_server_mode,"2016-07-01T23:25:35.455Z",1.0
+"Server (cluster5-srv2.e8sec.com)",zk_server_mode,"2016-07-01T23:27:05.456Z",1.0
+"Server (cluster5-srv1.e8sec.com)",zk_server_mode,"2016-07-01T23:23:35.453Z",1.0
+"Server (cluster5-srv1.e8sec.com)",zk_server_mode,"2016-07-01T23:24:35.454Z",1.0
+"Server (cluster5-srv1.e8sec.com)",zk_server_mode,"2016-07-01T23:25:35.455Z",1.0
+"Server (cluster5-srv1.e8sec.com)",zk_server_mode,"2016-07-01T23:27:05.456Z",1.0
+"Server (cluster5-e8.e8sec.com)",zk_server_mode,"2016-07-01T23:23:35.453Z",2.0
+"Server (cluster5-e8.e8sec.com)",zk_server_mode,"2016-07-01T23:24:35.454Z",2.0
+"Server (cluster5-e8.e8sec.com)",zk_server_mode,"2016-07-01T23:25:35.455Z",2.0
+"Server (cluster5-e8.e8sec.com)",zk_server_mode,"2016-07-01T23:27:05.456Z",2.0
+ZooKeeper,"oom_exits_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"oom_exits_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"oom_exits_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"oom_exits_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"oom_exits_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"jvm_heap_committed_mb_across_servers","2016-07-01T23:23:50.734Z",1022.0
+ZooKeeper,"jvm_heap_committed_mb_across_servers","2016-07-01T23:24:50.734Z",1022.0
+ZooKeeper,"jvm_heap_committed_mb_across_servers","2016-07-01T23:25:50.734Z",1022.0
+ZooKeeper,"jvm_heap_committed_mb_across_servers","2016-07-01T23:26:50.734Z",1022.0
+ZooKeeper,"jvm_heap_committed_mb_across_servers","2016-07-01T23:27:50.734Z",1022.0
+"Server (cluster5-srv2.e8sec.com)",uptime,"2016-07-01T23:23:37.000Z",685982.3588359356
+"Server (cluster5-srv2.e8sec.com)",uptime,"2016-07-01T23:24:36.000Z",686041.4828429222
+"Server (cluster5-srv2.e8sec.com)",uptime,"2016-07-01T23:25:36.000Z",686102.2291519642
+"Server (cluster5-srv2.e8sec.com)",uptime,"2016-07-01T23:26:37.000Z",686162.4006640911
+"Server (cluster5-srv2.e8sec.com)",uptime,"2016-07-01T23:27:37.000Z",686222.3983719349
+"Server (cluster5-srv1.e8sec.com)",uptime,"2016-07-01T23:23:23.000Z",685967.967728138
+"Server (cluster5-srv1.e8sec.com)",uptime,"2016-07-01T23:24:23.000Z",686027.9259581566
+"Server (cluster5-srv1.e8sec.com)",uptime,"2016-07-01T23:25:23.000Z",686088.0297050476
+"Server (cluster5-srv1.e8sec.com)",uptime,"2016-07-01T23:26:23.000Z",686147.9219660759
+"Server (cluster5-srv1.e8sec.com)",uptime,"2016-07-01T23:27:23.000Z",686207.9723160267
+"Server (cluster5-e8.e8sec.com)",uptime,"2016-07-01T23:23:08.000Z",685953.9366109371
+"Server (cluster5-e8.e8sec.com)",uptime,"2016-07-01T23:24:08.000Z",686013.9331200123
+"Server (cluster5-e8.e8sec.com)",uptime,"2016-07-01T23:25:08.000Z",686073.8858511448
+"Server (cluster5-e8.e8sec.com)",uptime,"2016-07-01T23:26:08.000Z",686133.8874981403
+"Server (cluster5-e8.e8sec.com)",uptime,"2016-07-01T23:27:08.000Z",686193.889343977
+ZooKeeper,"total_oom_exits_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_oom_exits_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_oom_exits_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_oom_exits_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_oom_exits_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_data_watches_across_servers","2016-07-01T23:23:50.734Z",8033.0
+ZooKeeper,"total_data_watches_across_servers","2016-07-01T23:24:50.734Z",8033.0
+ZooKeeper,"total_data_watches_across_servers","2016-07-01T23:25:50.734Z",8033.0
+ZooKeeper,"total_data_watches_across_servers","2016-07-01T23:26:50.734Z",8033.0
+ZooKeeper,"total_data_watches_across_servers","2016-07-01T23:27:50.734Z",8036.0
+ZooKeeper,"jvm_terminated_threads_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"jvm_terminated_threads_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"jvm_terminated_threads_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"jvm_terminated_threads_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"jvm_terminated_threads_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_jvm_terminated_threads_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_jvm_terminated_threads_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_jvm_terminated_threads_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_jvm_terminated_threads_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_jvm_terminated_threads_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_data_size_across_servers","2016-07-01T23:23:50.734Z",1.6419333E8
+ZooKeeper,"total_data_size_across_servers","2016-07-01T23:24:50.734Z",1.6419333E8
+ZooKeeper,"total_data_size_across_servers","2016-07-01T23:25:50.734Z",1.6419333E8
+ZooKeeper,"total_data_size_across_servers","2016-07-01T23:26:50.734Z",1.6419333E8
+ZooKeeper,"total_data_size_across_servers","2016-07-01T23:27:50.734Z",1.64194034E8
+ZooKeeper,"total_fd_max_across_servers","2016-07-01T23:23:50.734Z",98304.0
+ZooKeeper,"total_fd_max_across_servers","2016-07-01T23:24:50.734Z",98304.0
+ZooKeeper,"total_fd_max_across_servers","2016-07-01T23:25:50.734Z",98304.0
+ZooKeeper,"total_fd_max_across_servers","2016-07-01T23:26:50.734Z",98304.0
+ZooKeeper,"total_fd_max_across_servers","2016-07-01T23:27:50.734Z",98304.0
+ZooKeeper,"data_watches_across_servers","2016-07-01T23:23:50.734Z",2677.6666666666665
+ZooKeeper,"data_watches_across_servers","2016-07-01T23:24:50.734Z",2677.6666666666665
+ZooKeeper,"data_watches_across_servers","2016-07-01T23:25:50.734Z",2677.6666666666665
+ZooKeeper,"data_watches_across_servers","2016-07-01T23:26:50.734Z",2677.6666666666665
+ZooKeeper,"data_watches_across_servers","2016-07-01T23:27:50.734Z",2678.6666666666665
+"Server (cluster5-srv2.e8sec.com)",fd_max,"2016-07-01T23:23:37.000Z",32768.0
+"Server (cluster5-srv2.e8sec.com)",fd_max,"2016-07-01T23:24:36.000Z",32768.0
+"Server (cluster5-srv2.e8sec.com)",fd_max,"2016-07-01T23:25:36.000Z",32768.0
+"Server (cluster5-srv2.e8sec.com)",fd_max,"2016-07-01T23:26:37.000Z",32768.0
+"Server (cluster5-srv2.e8sec.com)",fd_max,"2016-07-01T23:27:37.000Z",32768.0
+"Server (cluster5-srv1.e8sec.com)",fd_max,"2016-07-01T23:23:23.000Z",32768.0
+"Server (cluster5-srv1.e8sec.com)",fd_max,"2016-07-01T23:24:23.000Z",32768.0
+"Server (cluster5-srv1.e8sec.com)",fd_max,"2016-07-01T23:25:23.000Z",32768.0
+"Server (cluster5-srv1.e8sec.com)",fd_max,"2016-07-01T23:26:23.000Z",32768.0
+"Server (cluster5-srv1.e8sec.com)",fd_max,"2016-07-01T23:27:23.000Z",32768.0
+"Server (cluster5-e8.e8sec.com)",fd_max,"2016-07-01T23:23:08.000Z",32768.0
+"Server (cluster5-e8.e8sec.com)",fd_max,"2016-07-01T23:24:08.000Z",32768.0
+"Server (cluster5-e8.e8sec.com)",fd_max,"2016-07-01T23:25:08.000Z",32768.0
+"Server (cluster5-e8.e8sec.com)",fd_max,"2016-07-01T23:26:08.000Z",32768.0
+"Server (cluster5-e8.e8sec.com)",fd_max,"2016-07-01T23:27:08.000Z",32768.0
+ZooKeeper,"fd_max_across_servers","2016-07-01T23:23:50.734Z",32768.0
+ZooKeeper,"fd_max_across_servers","2016-07-01T23:24:50.734Z",32768.0
+ZooKeeper,"fd_max_across_servers","2016-07-01T23:25:50.734Z",32768.0
+ZooKeeper,"fd_max_across_servers","2016-07-01T23:26:50.734Z",32768.0
+ZooKeeper,"fd_max_across_servers","2016-07-01T23:27:50.734Z",32768.0
+"Server (cluster5-srv2.e8sec.com)",fd_open,"2016-07-01T23:23:37.000Z",51.0
+"Server (cluster5-srv2.e8sec.com)",fd_open,"2016-07-01T23:24:36.000Z",51.0
+"Server (cluster5-srv2.e8sec.com)",fd_open,"2016-07-01T23:25:36.000Z",51.0
+"Server (cluster5-srv2.e8sec.com)",fd_open,"2016-07-01T23:26:37.000Z",50.0
+"Server (cluster5-srv2.e8sec.com)",fd_open,"2016-07-01T23:27:37.000Z",50.0
+"Server (cluster5-srv1.e8sec.com)",fd_open,"2016-07-01T23:23:23.000Z",60.0
+"Server (cluster5-srv1.e8sec.com)",fd_open,"2016-07-01T23:24:23.000Z",60.0
+"Server (cluster5-srv1.e8sec.com)",fd_open,"2016-07-01T23:25:23.000Z",60.0
+"Server (cluster5-srv1.e8sec.com)",fd_open,"2016-07-01T23:26:23.000Z",60.0
+"Server (cluster5-srv1.e8sec.com)",fd_open,"2016-07-01T23:27:23.000Z",61.0
+"Server (cluster5-e8.e8sec.com)",fd_open,"2016-07-01T23:23:08.000Z",50.0
+"Server (cluster5-e8.e8sec.com)",fd_open,"2016-07-01T23:24:08.000Z",50.0
+"Server (cluster5-e8.e8sec.com)",fd_open,"2016-07-01T23:25:08.000Z",51.0
+"Server (cluster5-e8.e8sec.com)",fd_open,"2016-07-01T23:26:08.000Z",51.0
+"Server (cluster5-e8.e8sec.com)",fd_open,"2016-07-01T23:27:08.000Z",51.0
+ZooKeeper,current_xid,"2016-07-01T23:23:35.453Z",267025.0
+ZooKeeper,current_xid,"2016-07-01T23:24:35.454Z",267046.0
+ZooKeeper,current_xid,"2016-07-01T23:25:35.455Z",267067.0
+ZooKeeper,current_xid,"2016-07-01T23:27:05.456Z",267103.0
+"Server (cluster5-srv2.e8sec.com)",cpu_system_rate,"2016-07-01T23:23:37.000Z",0.0013333333333321207
+"Server (cluster5-srv2.e8sec.com)",cpu_system_rate,"2016-07-01T23:24:36.000Z",0.0013559322033885972
+"Server (cluster5-srv2.e8sec.com)",cpu_system_rate,"2016-07-01T23:25:36.000Z",0.0013333333333359102
+"Server (cluster5-srv2.e8sec.com)",cpu_system_rate,"2016-07-01T23:26:37.000Z",0.0011475409836055137
+"Server (cluster5-srv2.e8sec.com)",cpu_system_rate,"2016-07-01T23:27:37.000Z",0.0013333333333321207
+"Server (cluster5-srv1.e8sec.com)",cpu_system_rate,"2016-07-01T23:23:23.000Z",0.0011666666666656055
+"Server (cluster5-srv1.e8sec.com)",cpu_system_rate,"2016-07-01T23:24:23.000Z",0.00100000000000288
+"Server (cluster5-srv1.e8sec.com)",cpu_system_rate,"2016-07-01T23:25:23.000Z",0.0013333333333321207
+"Server (cluster5-srv1.e8sec.com)",cpu_system_rate,"2016-07-01T23:26:23.000Z",0.0011666666666656055
+"Server (cluster5-srv1.e8sec.com)",cpu_system_rate,"2016-07-01T23:27:23.000Z",0.0013333333333359102
+"Server (cluster5-e8.e8sec.com)",cpu_system_rate,"2016-07-01T23:23:08.000Z",0.0025000000000015158
+"Server (cluster5-e8.e8sec.com)",cpu_system_rate,"2016-07-01T23:24:08.000Z",0.003333333333334091
+"Server (cluster5-e8.e8sec.com)",cpu_system_rate,"2016-07-01T23:25:08.000Z",0.001999999999998181
+"Server (cluster5-e8.e8sec.com)",cpu_system_rate,"2016-07-01T23:26:08.000Z",0.0025000000000015158
+"Server (cluster5-e8.e8sec.com)",cpu_system_rate,"2016-07-01T23:27:08.000Z",0.002166666666664696
+"Server (cluster5-srv2.e8sec.com)",cpu_user_rate,"2016-07-01T23:23:37.000Z",0.0013333333333321207
+"Server (cluster5-srv2.e8sec.com)",cpu_user_rate,"2016-07-01T23:24:36.000Z",0.0013559322033885972
+"Server (cluster5-srv2.e8sec.com)",cpu_user_rate,"2016-07-01T23:25:36.000Z",0.0013333333333359102
+"Server (cluster5-srv2.e8sec.com)",cpu_user_rate,"2016-07-01T23:26:37.000Z",0.001475409836064232
+"Server (cluster5-srv2.e8sec.com)",cpu_user_rate,"2016-07-01T23:27:37.000Z",0.0013333333333321207
+"Server (cluster5-srv1.e8sec.com)",cpu_user_rate,"2016-07-01T23:23:23.000Z",0.0011666666666656055
+"Server (cluster5-srv1.e8sec.com)",cpu_user_rate,"2016-07-01T23:24:23.000Z",0.0015000000000024254
+"Server (cluster5-srv1.e8sec.com)",cpu_user_rate,"2016-07-01T23:25:23.000Z",0.0013333333333321207
+"Server (cluster5-srv1.e8sec.com)",cpu_user_rate,"2016-07-01T23:26:23.000Z",0.0014999999999986357
+"Server (cluster5-srv1.e8sec.com)",cpu_user_rate,"2016-07-01T23:27:23.000Z",0.0013333333333359102
+"Server (cluster5-e8.e8sec.com)",cpu_user_rate,"2016-07-01T23:23:08.000Z",0.0023333333333350006
+"Server (cluster5-e8.e8sec.com)",cpu_user_rate,"2016-07-01T23:24:08.000Z",0.002666666666668031
+"Server (cluster5-e8.e8sec.com)",cpu_user_rate,"2016-07-01T23:25:08.000Z",0.0024999999999977263
+"Server (cluster5-e8.e8sec.com)",cpu_user_rate,"2016-07-01T23:26:08.000Z",0.002166666666668486
+"Server (cluster5-e8.e8sec.com)",cpu_user_rate,"2016-07-01T23:27:08.000Z",0.0024999999999977263
+ZooKeeper,"total_jvm_new_threads_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_jvm_new_threads_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_jvm_new_threads_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_jvm_new_threads_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_jvm_new_threads_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)",role_start_time,"2016-07-01T23:23:03.875Z",1.46672943508E12
+"Server (cluster5-srv2.e8sec.com)",role_start_time,"2016-07-01T23:24:03.878Z",1.46672943508E12
+"Server (cluster5-srv2.e8sec.com)",role_start_time,"2016-07-01T23:25:03.890Z",1.46672943508E12
+"Server (cluster5-srv2.e8sec.com)",role_start_time,"2016-07-01T23:26:03.893Z",1.46672943508E12
+"Server (cluster5-srv2.e8sec.com)",role_start_time,"2016-07-01T23:27:03.896Z",1.46672943508E12
+"Server (cluster5-srv1.e8sec.com)",role_start_time,"2016-07-01T23:23:03.875Z",1.466729435068E12
+"Server (cluster5-srv1.e8sec.com)",role_start_time,"2016-07-01T23:24:03.878Z",1.466729435068E12
+"Server (cluster5-srv1.e8sec.com)",role_start_time,"2016-07-01T23:25:03.890Z",1.466729435068E12
+"Server (cluster5-srv1.e8sec.com)",role_start_time,"2016-07-01T23:26:03.893Z",1.466729435068E12
+"Server (cluster5-srv1.e8sec.com)",role_start_time,"2016-07-01T23:27:03.896Z",1.466729435068E12
+"Server (cluster5-e8.e8sec.com)",role_start_time,"2016-07-01T23:23:03.875Z",1.466729435088E12
+"Server (cluster5-e8.e8sec.com)",role_start_time,"2016-07-01T23:24:03.878Z",1.466729435088E12
+"Server (cluster5-e8.e8sec.com)",role_start_time,"2016-07-01T23:25:03.890Z",1.466729435088E12
+"Server (cluster5-e8.e8sec.com)",role_start_time,"2016-07-01T23:26:03.893Z",1.466729435088E12
+"Server (cluster5-e8.e8sec.com)",role_start_time,"2016-07-01T23:27:03.896Z",1.466729435088E12
+ZooKeeper,"jvm_new_threads_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"jvm_new_threads_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"jvm_new_threads_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"jvm_new_threads_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"jvm_new_threads_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"health_concerning_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"health_concerning_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"health_concerning_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"health_concerning_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"health_concerning_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)",write_bytes_rate,"2016-07-01T23:23:37.000Z",546.1333333333333
+"Server (cluster5-srv2.e8sec.com)",write_bytes_rate,"2016-07-01T23:24:36.000Z",1388.4745762711864
+"Server (cluster5-srv2.e8sec.com)",write_bytes_rate,"2016-07-01T23:25:36.000Z",1911.4666666666667
+"Server (cluster5-srv2.e8sec.com)",write_bytes_rate,"2016-07-01T23:26:37.000Z",1611.5409836065573
+"Server (cluster5-srv2.e8sec.com)",write_bytes_rate,"2016-07-01T23:27:37.000Z",1843.2
+"Server (cluster5-srv1.e8sec.com)",write_bytes_rate,"2016-07-01T23:23:23.000Z",1365.3333333333333
+"Server (cluster5-srv1.e8sec.com)",write_bytes_rate,"2016-07-01T23:24:23.000Z",1706.6666666666667
+"Server (cluster5-srv1.e8sec.com)",write_bytes_rate,"2016-07-01T23:25:23.000Z",1774.9333333333334
+"Server (cluster5-srv1.e8sec.com)",write_bytes_rate,"2016-07-01T23:26:23.000Z",1774.9333333333334
+"Server (cluster5-srv1.e8sec.com)",write_bytes_rate,"2016-07-01T23:27:23.000Z",1706.6666666666667
+"Server (cluster5-e8.e8sec.com)",write_bytes_rate,"2016-07-01T23:23:08.000Z",1774.9333333333334
+"Server (cluster5-e8.e8sec.com)",write_bytes_rate,"2016-07-01T23:24:08.000Z",2048.0
+"Server (cluster5-e8.e8sec.com)",write_bytes_rate,"2016-07-01T23:25:08.000Z",1774.9333333333334
+"Server (cluster5-e8.e8sec.com)",write_bytes_rate,"2016-07-01T23:26:08.000Z",1911.4666666666667
+"Server (cluster5-e8.e8sec.com)",write_bytes_rate,"2016-07-01T23:27:08.000Z",1774.9333333333334
+ZooKeeper,"jvm_waiting_threads_across_servers","2016-07-01T23:23:50.734Z",9.333333333333334
+ZooKeeper,"jvm_waiting_threads_across_servers","2016-07-01T23:24:50.734Z",9.333333333333334
+ZooKeeper,"jvm_waiting_threads_across_servers","2016-07-01T23:25:50.734Z",9.333333333333334
+ZooKeeper,"jvm_waiting_threads_across_servers","2016-07-01T23:26:50.734Z",9.333333333333334
+ZooKeeper,"jvm_waiting_threads_across_servers","2016-07-01T23:27:50.734Z",9.0
+"Server (cluster5-srv2.e8sec.com)",read_bytes_rate,"2016-07-01T23:23:37.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",read_bytes_rate,"2016-07-01T23:24:36.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",read_bytes_rate,"2016-07-01T23:25:36.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",read_bytes_rate,"2016-07-01T23:26:37.000Z",0.0
+"Server (cluster5-srv2.e8sec.com)",read_bytes_rate,"2016-07-01T23:27:37.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",read_bytes_rate,"2016-07-01T23:23:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",read_bytes_rate,"2016-07-01T23:24:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",read_bytes_rate,"2016-07-01T23:25:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",read_bytes_rate,"2016-07-01T23:26:23.000Z",0.0
+"Server (cluster5-srv1.e8sec.com)",read_bytes_rate,"2016-07-01T23:27:23.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",read_bytes_rate,"2016-07-01T23:23:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",read_bytes_rate,"2016-07-01T23:24:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",read_bytes_rate,"2016-07-01T23:25:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",read_bytes_rate,"2016-07-01T23:26:08.000Z",0.0
+"Server (cluster5-e8.e8sec.com)",read_bytes_rate,"2016-07-01T23:27:08.000Z",0.0
+ZooKeeper,"total_health_concerning_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_health_concerning_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_health_concerning_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_health_concerning_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_health_concerning_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_new_threads,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_new_threads,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_new_threads,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_new_threads,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_new_threads,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_new_threads,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_new_threads,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_new_threads,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_new_threads,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_new_threads,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_new_threads,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_new_threads,"2016-07-01T23:27:05.456Z",0.0
+ZooKeeper,"zk_server_mode_across_servers","2016-07-01T23:23:50.734Z",1.3333333333333333
+ZooKeeper,"zk_server_mode_across_servers","2016-07-01T23:24:50.734Z",1.3333333333333333
+ZooKeeper,"zk_server_mode_across_servers","2016-07-01T23:25:50.734Z",1.3333333333333333
+ZooKeeper,"zk_server_mode_across_servers","2016-07-01T23:26:50.734Z",1.3333333333333333
+ZooKeeper,"zk_server_mode_across_servers","2016-07-01T23:27:50.734Z",1.3333333333333333
+ZooKeeper,"health_disabled_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"health_disabled_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"health_disabled_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"health_disabled_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"health_disabled_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:23:35.453Z",9.0
+"Server (cluster5-srv2.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:24:35.454Z",9.0
+"Server (cluster5-srv2.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:25:35.455Z",9.0
+"Server (cluster5-srv2.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:27:05.456Z",9.0
+"Server (cluster5-srv1.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:23:35.453Z",10.0
+"Server (cluster5-srv1.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:24:35.454Z",10.0
+"Server (cluster5-srv1.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:25:35.455Z",10.0
+"Server (cluster5-srv1.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:27:05.456Z",11.0
+"Server (cluster5-e8.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:23:35.453Z",12.0
+"Server (cluster5-e8.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:24:35.454Z",12.0
+"Server (cluster5-e8.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:25:35.455Z",12.0
+"Server (cluster5-e8.e8sec.com)",jvm_runnable_threads,"2016-07-01T23:27:05.456Z",12.0
+ZooKeeper,"total_zk_server_mode_across_servers","2016-07-01T23:23:50.734Z",4.0
+ZooKeeper,"total_zk_server_mode_across_servers","2016-07-01T23:24:50.734Z",4.0
+ZooKeeper,"total_zk_server_mode_across_servers","2016-07-01T23:25:50.734Z",4.0
+ZooKeeper,"total_zk_server_mode_across_servers","2016-07-01T23:26:50.734Z",4.0
+ZooKeeper,"total_zk_server_mode_across_servers","2016-07-01T23:27:50.734Z",4.0
+"Server (cluster5-srv2.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_blocked_threads,"2016-07-01T23:27:05.456Z",0.0
+ZooKeeper,"total_jvm_waiting_threads_across_servers","2016-07-01T23:23:50.734Z",28.0
+ZooKeeper,"total_jvm_waiting_threads_across_servers","2016-07-01T23:24:50.734Z",28.0
+ZooKeeper,"total_jvm_waiting_threads_across_servers","2016-07-01T23:25:50.734Z",28.0
+ZooKeeper,"total_jvm_waiting_threads_across_servers","2016-07-01T23:26:50.734Z",28.0
+ZooKeeper,"total_jvm_waiting_threads_across_servers","2016-07-01T23:27:50.734Z",27.0
+"Server (cluster5-srv2.e8sec.com)",jvm_total_threads,"2016-07-01T23:23:35.453Z",26.0
+"Server (cluster5-srv2.e8sec.com)",jvm_total_threads,"2016-07-01T23:24:35.454Z",27.0
+"Server (cluster5-srv2.e8sec.com)",jvm_total_threads,"2016-07-01T23:25:35.455Z",26.0
+"Server (cluster5-srv2.e8sec.com)",jvm_total_threads,"2016-07-01T23:27:05.456Z",26.0
+"Server (cluster5-srv1.e8sec.com)",jvm_total_threads,"2016-07-01T23:23:35.453Z",26.0
+"Server (cluster5-srv1.e8sec.com)",jvm_total_threads,"2016-07-01T23:24:35.454Z",26.0
+"Server (cluster5-srv1.e8sec.com)",jvm_total_threads,"2016-07-01T23:25:35.455Z",26.0
+"Server (cluster5-srv1.e8sec.com)",jvm_total_threads,"2016-07-01T23:27:05.456Z",26.0
+"Server (cluster5-e8.e8sec.com)",jvm_total_threads,"2016-07-01T23:23:35.453Z",32.0
+"Server (cluster5-e8.e8sec.com)",jvm_total_threads,"2016-07-01T23:24:35.454Z",32.0
+"Server (cluster5-e8.e8sec.com)",jvm_total_threads,"2016-07-01T23:25:35.455Z",32.0
+"Server (cluster5-e8.e8sec.com)",jvm_total_threads,"2016-07-01T23:27:05.456Z",32.0
+"Server (cluster5-srv2.e8sec.com)",packets_receive_rate,"2016-07-01T23:23:35.453Z",2.03329944500925
+"Server (cluster5-srv2.e8sec.com)",packets_receive_rate,"2016-07-01T23:24:35.454Z",1.9333011116481393
+"Server (cluster5-srv2.e8sec.com)",packets_receive_rate,"2016-07-01T23:25:35.455Z",2.0499658339027684
+"Server (cluster5-srv2.e8sec.com)",packets_receive_rate,"2016-07-01T23:27:05.456Z",1.9555338274019176
+"Server (cluster5-srv1.e8sec.com)",packets_receive_rate,"2016-07-01T23:23:35.453Z",1.5333077782036966
+"Server (cluster5-srv1.e8sec.com)",packets_receive_rate,"2016-07-01T23:24:35.454Z",1.5333077782036966
+"Server (cluster5-srv1.e8sec.com)",packets_receive_rate,"2016-07-01T23:25:35.455Z",1.5166413893101782
+"Server (cluster5-srv1.e8sec.com)",packets_receive_rate,"2016-07-01T23:27:05.456Z",1.8777569138120687
+"Server (cluster5-e8.e8sec.com)",packets_receive_rate,"2016-07-01T23:23:35.453Z",14.299761670638823
+"Server (cluster5-e8.e8sec.com)",packets_receive_rate,"2016-07-01T23:24:35.454Z",27.26621222979617
+"Server (cluster5-e8.e8sec.com)",packets_receive_rate,"2016-07-01T23:25:35.455Z",14.566423892935118
+"Server (cluster5-e8.e8sec.com)",packets_receive_rate,"2016-07-01T23:27:05.456Z",10.03322185309052
+ZooKeeper,"total_jvm_gc_time_ms_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_time_ms_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_time_ms_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_time_ms_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_jvm_gc_time_ms_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:23:35.453Z",405.0
+"Server (cluster5-srv2.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:24:35.454Z",406.0
+"Server (cluster5-srv2.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:25:35.455Z",408.0
+"Server (cluster5-srv2.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:27:05.456Z",409.0
+"Server (cluster5-srv1.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:23:35.453Z",251.0
+"Server (cluster5-srv1.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:24:35.454Z",253.0
+"Server (cluster5-srv1.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:25:35.455Z",254.0
+"Server (cluster5-srv1.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:27:05.456Z",255.0
+"Server (cluster5-e8.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:23:35.453Z",393.0
+"Server (cluster5-e8.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:24:35.454Z",400.0
+"Server (cluster5-e8.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:25:35.455Z",408.0
+"Server (cluster5-e8.e8sec.com)",jvm_heap_used_mb,"2016-07-01T23:27:05.456Z",410.0
+"Server (cluster5-srv2.e8sec.com)","packets_transmit_rate","2016-07-01T23:23:35.453Z",2.083298611689805
+"Server (cluster5-srv2.e8sec.com)","packets_transmit_rate","2016-07-01T23:24:35.454Z",1.9833002783286946
+"Server (cluster5-srv2.e8sec.com)","packets_transmit_rate","2016-07-01T23:25:35.455Z",2.1166313894768423
+"Server (cluster5-srv2.e8sec.com)","packets_transmit_rate","2016-07-01T23:27:05.456Z",1.9999777780246886
+"Server (cluster5-srv1.e8sec.com)","packets_transmit_rate","2016-07-01T23:23:35.453Z",1.583306944884252
+"Server (cluster5-srv1.e8sec.com)","packets_transmit_rate","2016-07-01T23:24:35.454Z",1.583306944884252
+"Server (cluster5-srv1.e8sec.com)","packets_transmit_rate","2016-07-01T23:25:35.455Z",1.5666405559907335
+"Server (cluster5-srv1.e8sec.com)","packets_transmit_rate","2016-07-01T23:27:05.456Z",1.9222008644348396
+"Server (cluster5-e8.e8sec.com)","packets_transmit_rate","2016-07-01T23:23:35.453Z",14.299761670638823
+"Server (cluster5-e8.e8sec.com)","packets_transmit_rate","2016-07-01T23:24:35.454Z",27.332877785370243
+"Server (cluster5-e8.e8sec.com)","packets_transmit_rate","2016-07-01T23:25:35.455Z",14.616423059615673
+"Server (cluster5-e8.e8sec.com)","packets_transmit_rate","2016-07-01T23:27:05.456Z",10.099887779024677
+"Server (cluster5-srv2.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:23:35.453Z",9.0
+"Server (cluster5-srv2.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:24:35.454Z",9.0
+"Server (cluster5-srv2.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:25:35.455Z",9.0
+"Server (cluster5-srv2.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:27:05.456Z",9.0
+"Server (cluster5-srv1.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:23:35.453Z",8.0
+"Server (cluster5-srv1.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:24:35.454Z",8.0
+"Server (cluster5-srv1.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:25:35.455Z",8.0
+"Server (cluster5-srv1.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:27:05.456Z",7.0
+"Server (cluster5-e8.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:23:35.453Z",11.0
+"Server (cluster5-e8.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:24:35.454Z",11.0
+"Server (cluster5-e8.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:25:35.455Z",11.0
+"Server (cluster5-e8.e8sec.com)",jvm_waiting_threads,"2016-07-01T23:27:05.456Z",11.0
+"Server (cluster5-srv2.e8sec.com)","jvm_terminated_threads","2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv2.e8sec.com)","jvm_terminated_threads","2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv2.e8sec.com)","jvm_terminated_threads","2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv2.e8sec.com)","jvm_terminated_threads","2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv1.e8sec.com)","jvm_terminated_threads","2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv1.e8sec.com)","jvm_terminated_threads","2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv1.e8sec.com)","jvm_terminated_threads","2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv1.e8sec.com)","jvm_terminated_threads","2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-e8.e8sec.com)","jvm_terminated_threads","2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-e8.e8sec.com)","jvm_terminated_threads","2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-e8.e8sec.com)","jvm_terminated_threads","2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-e8.e8sec.com)","jvm_terminated_threads","2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv2.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:23:35.453Z",8.0
+"Server (cluster5-srv2.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:24:35.454Z",9.0
+"Server (cluster5-srv2.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:25:35.455Z",8.0
+"Server (cluster5-srv2.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:27:05.456Z",8.0
+"Server (cluster5-srv1.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:23:35.453Z",8.0
+"Server (cluster5-srv1.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:24:35.454Z",8.0
+"Server (cluster5-srv1.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:25:35.455Z",8.0
+"Server (cluster5-srv1.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:27:05.456Z",8.0
+"Server (cluster5-e8.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:23:35.453Z",9.0
+"Server (cluster5-e8.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:24:35.454Z",9.0
+"Server (cluster5-e8.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:25:35.455Z",9.0
+"Server (cluster5-e8.e8sec.com)","jvm_timed_waiting_threads","2016-07-01T23:27:05.456Z",9.0
+ZooKeeper,"mem_rss_across_servers","2016-07-01T23:23:50.734Z",8.58353664E8
+ZooKeeper,"mem_rss_across_servers","2016-07-01T23:24:50.734Z",8.584246613333334E8
+ZooKeeper,"mem_rss_across_servers","2016-07-01T23:25:50.734Z",8.58435584E8
+ZooKeeper,"mem_rss_across_servers","2016-07-01T23:26:50.734Z",8.584369493333334E8
+ZooKeeper,"mem_rss_across_servers","2016-07-01T23:27:50.734Z",8.584369493333334E8
+ZooKeeper,"total_mem_rss_across_servers","2016-07-01T23:23:50.734Z",2.575060992E9
+ZooKeeper,"total_mem_rss_across_servers","2016-07-01T23:24:50.734Z",2.575273984E9
+ZooKeeper,"total_mem_rss_across_servers","2016-07-01T23:25:50.734Z",2.575306752E9
+ZooKeeper,"total_mem_rss_across_servers","2016-07-01T23:26:50.734Z",2.575310848E9
+ZooKeeper,"total_mem_rss_across_servers","2016-07-01T23:27:50.734Z",2.575310848E9
+ZooKeeper,"jvm_gc_time_ms_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"jvm_gc_time_ms_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"jvm_gc_time_ms_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"jvm_gc_time_ms_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"jvm_gc_time_ms_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_health_disabled_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_health_disabled_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_health_disabled_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_health_disabled_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_health_disabled_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_mem_swap_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_mem_swap_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_mem_swap_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_mem_swap_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_mem_swap_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"unexpected_exits_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"unexpected_exits_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"unexpected_exits_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"unexpected_exits_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"unexpected_exits_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"health_good_rate_across_servers","2016-07-01T23:23:50.734Z",0.9999999999994656
+ZooKeeper,"health_good_rate_across_servers","2016-07-01T23:24:50.734Z",0.9999999999993632
+ZooKeeper,"health_good_rate_across_servers","2016-07-01T23:25:50.734Z",0.9999999999990755
+ZooKeeper,"health_good_rate_across_servers","2016-07-01T23:26:50.734Z",1.0000000000011922
+ZooKeeper,"health_good_rate_across_servers","2016-07-01T23:27:50.734Z",0.9999999999995483
+ZooKeeper,"total_unexpected_exits_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_unexpected_exits_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_unexpected_exits_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_unexpected_exits_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_unexpected_exits_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"write_bytes_rate_across_servers","2016-07-01T23:23:50.734Z",1228.8
+ZooKeeper,"write_bytes_rate_across_servers","2016-07-01T23:24:50.734Z",1714.3804143126179
+ZooKeeper,"write_bytes_rate_across_servers","2016-07-01T23:25:50.734Z",1820.4444444444446
+ZooKeeper,"write_bytes_rate_across_servers","2016-07-01T23:26:50.734Z",1765.9803278688523
+ZooKeeper,"write_bytes_rate_across_servers","2016-07-01T23:27:50.734Z",1774.9333333333334
+ZooKeeper,"fd_open_across_servers","2016-07-01T23:23:50.734Z",53.666666666666664
+ZooKeeper,"fd_open_across_servers","2016-07-01T23:24:50.734Z",53.666666666666664
+ZooKeeper,"fd_open_across_servers","2016-07-01T23:25:50.734Z",54.0
+ZooKeeper,"fd_open_across_servers","2016-07-01T23:26:50.734Z",53.666666666666664
+ZooKeeper,"fd_open_across_servers","2016-07-01T23:27:50.734Z",54.0
+"Server (cluster5-srv2.e8sec.com)",max_request_latency,"2016-07-01T23:23:35.453Z",6243.0
+"Server (cluster5-srv2.e8sec.com)",max_request_latency,"2016-07-01T23:24:35.454Z",6243.0
+"Server (cluster5-srv2.e8sec.com)",max_request_latency,"2016-07-01T23:25:35.455Z",6243.0
+"Server (cluster5-srv2.e8sec.com)",max_request_latency,"2016-07-01T23:27:05.456Z",6243.0
+"Server (cluster5-srv1.e8sec.com)",max_request_latency,"2016-07-01T23:23:35.453Z",6712.0
+"Server (cluster5-srv1.e8sec.com)",max_request_latency,"2016-07-01T23:24:35.454Z",6712.0
+"Server (cluster5-srv1.e8sec.com)",max_request_latency,"2016-07-01T23:25:35.455Z",6712.0
+"Server (cluster5-srv1.e8sec.com)",max_request_latency,"2016-07-01T23:27:05.456Z",6712.0
+"Server (cluster5-e8.e8sec.com)",max_request_latency,"2016-07-01T23:23:35.453Z",5795.0
+"Server (cluster5-e8.e8sec.com)",max_request_latency,"2016-07-01T23:24:35.454Z",5795.0
+"Server (cluster5-e8.e8sec.com)",max_request_latency,"2016-07-01T23:25:35.455Z",5795.0
+"Server (cluster5-e8.e8sec.com)",max_request_latency,"2016-07-01T23:27:05.456Z",5795.0
+ZooKeeper,"jvm_heap_used_mb_across_servers","2016-07-01T23:23:50.734Z",349.6666666666667
+ZooKeeper,"jvm_heap_used_mb_across_servers","2016-07-01T23:24:50.734Z",353.0
+ZooKeeper,"jvm_heap_used_mb_across_servers","2016-07-01T23:25:50.734Z",356.6666666666667
+ZooKeeper,"jvm_heap_used_mb_across_servers","2016-07-01T23:26:50.734Z",356.6666666666667
+ZooKeeper,"jvm_heap_used_mb_across_servers","2016-07-01T23:27:50.734Z",358.0
+ZooKeeper,"total_health_good_rate_across_servers","2016-07-01T23:23:50.734Z",2.999999999998397
+ZooKeeper,"total_health_good_rate_across_servers","2016-07-01T23:24:50.734Z",2.9999999999980895
+ZooKeeper,"total_health_good_rate_across_servers","2016-07-01T23:25:50.734Z",2.9999999999972267
+ZooKeeper,"total_health_good_rate_across_servers","2016-07-01T23:26:50.734Z",3.0000000000035763
+ZooKeeper,"total_health_good_rate_across_servers","2016-07-01T23:27:50.734Z",2.9999999999986446
+"Server (cluster5-srv2.e8sec.com)",min_request_latency,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv2.e8sec.com)",min_request_latency,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv2.e8sec.com)",min_request_latency,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv2.e8sec.com)",min_request_latency,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv1.e8sec.com)",min_request_latency,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv1.e8sec.com)",min_request_latency,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv1.e8sec.com)",min_request_latency,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv1.e8sec.com)",min_request_latency,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-e8.e8sec.com)",min_request_latency,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-e8.e8sec.com)",min_request_latency,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-e8.e8sec.com)",min_request_latency,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-e8.e8sec.com)",min_request_latency,"2016-07-01T23:27:05.456Z",0.0
+ZooKeeper,"total_jvm_heap_used_mb_across_servers","2016-07-01T23:23:50.734Z",1049.0
+ZooKeeper,"total_jvm_heap_used_mb_across_servers","2016-07-01T23:24:50.734Z",1059.0
+ZooKeeper,"total_jvm_heap_used_mb_across_servers","2016-07-01T23:25:50.734Z",1070.0
+ZooKeeper,"total_jvm_heap_used_mb_across_servers","2016-07-01T23:26:50.734Z",1070.0
+ZooKeeper,"total_jvm_heap_used_mb_across_servers","2016-07-01T23:27:50.734Z",1074.0
+"Server (cluster5-srv2.e8sec.com)",scm_role_state,"2016-07-01T23:23:03.875Z",3.0
+"Server (cluster5-srv2.e8sec.com)",scm_role_state,"2016-07-01T23:24:03.878Z",3.0
+"Server (cluster5-srv2.e8sec.com)",scm_role_state,"2016-07-01T23:25:03.890Z",3.0
+"Server (cluster5-srv2.e8sec.com)",scm_role_state,"2016-07-01T23:26:03.893Z",3.0
+"Server (cluster5-srv2.e8sec.com)",scm_role_state,"2016-07-01T23:27:03.896Z",3.0
+"Server (cluster5-srv1.e8sec.com)",scm_role_state,"2016-07-01T23:23:03.875Z",3.0
+"Server (cluster5-srv1.e8sec.com)",scm_role_state,"2016-07-01T23:24:03.878Z",3.0
+"Server (cluster5-srv1.e8sec.com)",scm_role_state,"2016-07-01T23:25:03.890Z",3.0
+"Server (cluster5-srv1.e8sec.com)",scm_role_state,"2016-07-01T23:26:03.893Z",3.0
+"Server (cluster5-srv1.e8sec.com)",scm_role_state,"2016-07-01T23:27:03.896Z",3.0
+"Server (cluster5-e8.e8sec.com)",scm_role_state,"2016-07-01T23:23:03.875Z",3.0
+"Server (cluster5-e8.e8sec.com)",scm_role_state,"2016-07-01T23:24:03.878Z",3.0
+"Server (cluster5-e8.e8sec.com)",scm_role_state,"2016-07-01T23:25:03.890Z",3.0
+"Server (cluster5-e8.e8sec.com)",scm_role_state,"2016-07-01T23:26:03.893Z",3.0
+"Server (cluster5-e8.e8sec.com)",scm_role_state,"2016-07-01T23:27:03.896Z",3.0
+"Server (cluster5-srv2.e8sec.com)",data_nodes,"2016-07-01T23:23:35.453Z",13444.0
+"Server (cluster5-srv2.e8sec.com)",data_nodes,"2016-07-01T23:24:35.454Z",13444.0
+"Server (cluster5-srv2.e8sec.com)",data_nodes,"2016-07-01T23:25:35.455Z",13444.0
+"Server (cluster5-srv2.e8sec.com)",data_nodes,"2016-07-01T23:27:05.456Z",13445.0
+"Server (cluster5-srv1.e8sec.com)",data_nodes,"2016-07-01T23:23:35.453Z",13444.0
+"Server (cluster5-srv1.e8sec.com)",data_nodes,"2016-07-01T23:24:35.454Z",13444.0
+"Server (cluster5-srv1.e8sec.com)",data_nodes,"2016-07-01T23:25:35.455Z",13444.0
+"Server (cluster5-srv1.e8sec.com)",data_nodes,"2016-07-01T23:27:05.456Z",13448.0
+"Server (cluster5-e8.e8sec.com)",data_nodes,"2016-07-01T23:23:35.453Z",13444.0
+"Server (cluster5-e8.e8sec.com)",data_nodes,"2016-07-01T23:24:35.454Z",13444.0
+"Server (cluster5-e8.e8sec.com)",data_nodes,"2016-07-01T23:25:35.455Z",13444.0
+"Server (cluster5-e8.e8sec.com)",data_nodes,"2016-07-01T23:27:05.456Z",13445.0
+ZooKeeper,"total_fd_open_across_servers","2016-07-01T23:23:50.734Z",161.0
+ZooKeeper,"total_fd_open_across_servers","2016-07-01T23:24:50.734Z",161.0
+ZooKeeper,"total_fd_open_across_servers","2016-07-01T23:25:50.734Z",162.0
+ZooKeeper,"total_fd_open_across_servers","2016-07-01T23:26:50.734Z",161.0
+ZooKeeper,"total_fd_open_across_servers","2016-07-01T23:27:50.734Z",162.0
+"Server (cluster5-srv2.e8sec.com)","average_request_latency","2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv2.e8sec.com)","average_request_latency","2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv2.e8sec.com)","average_request_latency","2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv2.e8sec.com)","average_request_latency","2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv1.e8sec.com)","average_request_latency","2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv1.e8sec.com)","average_request_latency","2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv1.e8sec.com)","average_request_latency","2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv1.e8sec.com)","average_request_latency","2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-e8.e8sec.com)","average_request_latency","2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-e8.e8sec.com)","average_request_latency","2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-e8.e8sec.com)","average_request_latency","2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-e8.e8sec.com)","average_request_latency","2016-07-01T23:27:05.456Z",0.0
+ZooKeeper,"total_write_bytes_rate_across_servers","2016-07-01T23:23:50.734Z",3686.4
+ZooKeeper,"total_write_bytes_rate_across_servers","2016-07-01T23:24:50.734Z",5143.141242937853
+ZooKeeper,"total_write_bytes_rate_across_servers","2016-07-01T23:25:50.734Z",5461.333333333334
+ZooKeeper,"total_write_bytes_rate_across_servers","2016-07-01T23:26:50.734Z",5297.940983606557
+ZooKeeper,"total_write_bytes_rate_across_servers","2016-07-01T23:27:50.734Z",5324.8
+ZooKeeper,"cpu_user_rate_across_servers","2016-07-01T23:23:50.734Z",0.0016111111111109088
+ZooKeeper,"cpu_user_rate_across_servers","2016-07-01T23:24:50.734Z",0.0018408662900196845
+ZooKeeper,"cpu_user_rate_across_servers","2016-07-01T23:25:50.734Z",0.0017222222222219193
+ZooKeeper,"cpu_user_rate_across_servers","2016-07-01T23:26:50.734Z",0.0017140255009104512
+ZooKeeper,"cpu_user_rate_across_servers","2016-07-01T23:27:50.734Z",0.0017222222222219193
+ZooKeeper,"total_cpu_user_rate_across_servers","2016-07-01T23:23:50.734Z",0.004833333333332726
+ZooKeeper,"total_cpu_user_rate_across_servers","2016-07-01T23:24:50.734Z",0.0055225988700590535
+ZooKeeper,"total_cpu_user_rate_across_servers","2016-07-01T23:25:50.734Z",0.005166666666665758
+ZooKeeper,"total_cpu_user_rate_across_servers","2016-07-01T23:26:50.734Z",0.005142076502731354
+ZooKeeper,"total_cpu_user_rate_across_servers","2016-07-01T23:27:50.734Z",0.005166666666665758
+ZooKeeper,"jvm_total_threads_across_servers","2016-07-01T23:23:50.734Z",28.0
+ZooKeeper,"jvm_total_threads_across_servers","2016-07-01T23:24:50.734Z",28.333333333333332
+ZooKeeper,"jvm_total_threads_across_servers","2016-07-01T23:25:50.734Z",28.0
+ZooKeeper,"jvm_total_threads_across_servers","2016-07-01T23:26:50.734Z",28.0
+ZooKeeper,"jvm_total_threads_across_servers","2016-07-01T23:27:50.734Z",28.0
+ZooKeeper,"total_jvm_total_threads_across_servers","2016-07-01T23:23:50.734Z",84.0
+ZooKeeper,"total_jvm_total_threads_across_servers","2016-07-01T23:24:50.734Z",85.0
+ZooKeeper,"total_jvm_total_threads_across_servers","2016-07-01T23:25:50.734Z",84.0
+ZooKeeper,"total_jvm_total_threads_across_servers","2016-07-01T23:26:50.734Z",84.0
+ZooKeeper,"total_jvm_total_threads_across_servers","2016-07-01T23:27:50.734Z",84.0
+ZooKeeper,"health_unknown_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"health_unknown_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"health_unknown_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"health_unknown_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"health_unknown_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_gc_time_ms_rate,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_gc_rate,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_gc_rate,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_gc_rate,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv2.e8sec.com)",jvm_gc_rate,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_gc_rate,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_gc_rate,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_gc_rate,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-srv1.e8sec.com)",jvm_gc_rate,"2016-07-01T23:27:05.456Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_gc_rate,"2016-07-01T23:23:35.453Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_gc_rate,"2016-07-01T23:24:35.454Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_gc_rate,"2016-07-01T23:25:35.455Z",0.0
+"Server (cluster5-e8.e8sec.com)",jvm_gc_rate,"2016-07-01T23:27:05.456Z",0.0
+ZooKeeper,"total_health_unknown_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_health_unknown_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_health_unknown_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_health_unknown_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_health_unknown_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+"Server (cluster5-srv2.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:23:35.453Z",1022.0
+"Server (cluster5-srv2.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:24:35.454Z",1022.0
+"Server (cluster5-srv2.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:25:35.455Z",1022.0
+"Server (cluster5-srv2.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:27:05.456Z",1022.0
+"Server (cluster5-srv1.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:23:35.453Z",1022.0
+"Server (cluster5-srv1.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:24:35.454Z",1022.0
+"Server (cluster5-srv1.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:25:35.455Z",1022.0
+"Server (cluster5-srv1.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:27:05.456Z",1022.0
+"Server (cluster5-e8.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:23:35.453Z",1022.0
+"Server (cluster5-e8.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:24:35.454Z",1022.0
+"Server (cluster5-e8.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:25:35.455Z",1022.0
+"Server (cluster5-e8.e8sec.com)","jvm_heap_committed_mb","2016-07-01T23:27:05.456Z",1022.0
+"Server (cluster5-srv2.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:23:35.453Z",989.0
+"Server (cluster5-srv2.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:24:35.454Z",989.0
+"Server (cluster5-srv2.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:25:35.455Z",989.0
+"Server (cluster5-srv2.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:27:05.456Z",989.0
+"Server (cluster5-srv1.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:23:35.453Z",989.0
+"Server (cluster5-srv1.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:24:35.454Z",989.0
+"Server (cluster5-srv1.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:25:35.455Z",989.0
+"Server (cluster5-srv1.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:27:05.456Z",989.0
+"Server (cluster5-e8.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:23:35.453Z",989.0
+"Server (cluster5-e8.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:24:35.454Z",989.0
+"Server (cluster5-e8.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:25:35.455Z",989.0
+"Server (cluster5-e8.e8sec.com)",jvm_max_memory_mb,"2016-07-01T23:27:05.456Z",989.0
+ZooKeeper,"events_important_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"events_important_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"events_important_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"events_important_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"events_important_rate_across_servers","2016-07-01T23:27:50.734Z",0.0
+ZooKeeper,"total_open_connections_across_servers","2016-07-01T23:23:50.734Z",47.0
+ZooKeeper,"total_open_connections_across_servers","2016-07-01T23:24:50.734Z",47.0
+ZooKeeper,"total_open_connections_across_servers","2016-07-01T23:25:50.734Z",47.0
+ZooKeeper,"total_open_connections_across_servers","2016-07-01T23:26:50.734Z",47.0
+ZooKeeper,"total_open_connections_across_servers","2016-07-01T23:27:50.734Z",49.0
+ZooKeeper,"open_connections_across_servers","2016-07-01T23:23:50.734Z",15.666666666666666
+ZooKeeper,"open_connections_across_servers","2016-07-01T23:24:50.734Z",15.666666666666666
+ZooKeeper,"open_connections_across_servers","2016-07-01T23:25:50.734Z",15.666666666666666
+ZooKeeper,"open_connections_across_servers","2016-07-01T23:26:50.734Z",15.666666666666666
+ZooKeeper,"open_connections_across_servers","2016-07-01T23:27:50.734Z",16.333333333333332
+ZooKeeper,"total_events_important_rate_across_servers","2016-07-01T23:23:50.734Z",0.0
+ZooKeeper,"total_events_important_rate_across_servers","2016-07-01T23:24:50.734Z",0.0
+ZooKeeper,"total_events_important_rate_across_servers","2016-07-01T23:25:50.734Z",0.0
+ZooKeeper,"total_events_important_rate_across_servers","2016-07-01T23:26:50.734Z",0.0
+ZooKeeper,"total_events_important_rate_across_servers","2016-07-01T23:27:50.734Z",0.0

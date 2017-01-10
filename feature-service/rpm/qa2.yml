@@ -1,0 +1,6 @@
+# These are variables for templates.
+# someday, they'll live in ansible.
+E8_ENVIRONMENT: qa2
+ZK_QUORUM: cluster4-srv1,cluster4-e8,cluster4-srv4:2181
+IMPALA_HOST: cluster4-srv1
+

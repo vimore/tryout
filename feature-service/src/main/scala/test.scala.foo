@@ -1,0 +1,61 @@
+// Run me with: scala -classpath target/feature-service-1.0.0-SNAPSHOT.jar
+import javax.ws.rs.{QueryParam, GET, Produces, Path}
+import scala.Array
+import javax.ws.rs.core.{Response, MediaType}
+import org.slf4j.{LoggerFactory, Logger}
+import org.joda.time.format.{ISODateTimeFormat, DateTimeFormatter}
+import org.joda.time.DateTimeZone
+
+import com.securityx.modelfeature.dao.BeaconsDao
+import com.securityx.modelfeature.dao.HttpTimeSeriesDao
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.fasterxml.jackson.module.scala.DefaultScalaModule
+import com.securityx.modelfeature.FeatureServiceConfiguration
+import com.sun.corba.se.spi.activation._ActivatorImplBase
+
+import org.joda.time.MutableDateTime
+import collection.mutable.ListBuffer
+import collection.parallel.mutable
+
+val conf = new FeatureServiceConfiguration
+conf.setZkQuorum("hiveapp1,hiveapp2,hiveapp3")
+conf.setEnvironment("DEV")
+
+val beaconsDao = new BeaconsDao(conf)
+
+val dateStr = "2014-06-15T00:00:00.000Z"
+val periodSecondsInt = 3600
+val buf = beaconsDao.getBeacons(dateStr, periodSecondsInt)
+
+val mapper = new ObjectMapper
+mapper.registerModule(DefaultScalaModule)
+val json = mapper.writeValueAsString(buf)
+println(json)
+
+val httpTimeSeriesDao = new HttpTimeSeriesDao(conf)
+
+val startDateStr="2014-07-15"
+val endDateStr="2014-07-16"
+val typeStr="sourceNameOrIp"
+val periodInt=600
+
+val buf = httpTimeSeriesDao.getTimeSeriesForAllGroups(startDateStr, endDateStr, typeStr, periodInt)
+
+val timeEntries = buf.map(x => scala.collection.mutable.Map[String,Any](
+    "type" -> x.get("type"),
+    "groupField" -> x.get("groupField"),
+    "periodSeconds" -> x.get("periodSeconds"),
+    "dateTime" -> x.get("dateTime"),
+    "bitsInPerSecond" -> scala.math.BigDecimal(x.get("bitsInPerSecond").get.asInstanceOf[Double]).setScale(4, scala.math.BigDecimal.RoundingMode.HALF_UP).toDouble,
+    "bitsOutPerSeconds" ->scala.math.BigDecimal(x.get("bitsOutPerSecond").get.asInstanceOf[Double]).setScale(4, scala.math.BigDecimal.RoundingMode.HALF_UP).toDouble,
+    "connectionsPerSecond" -> scala.math.BigDecimal(x.get("connectionsPerSecond").get.asInstanceOf[Double]).setScale(4, scala.math.BigDecimal.RoundingMode.HALF_UP).toDouble
+  ))
+
+val groups = timeEntries.groupBy(x=> scala.collection.immutable.Map[String, Option[Any]](
+  "type" -> x.get("type"),
+  "groupField" -> x.get("groupField"),
+  "periodSeconds" -> x.get("periodSeconds")
+))
+
+
+ 

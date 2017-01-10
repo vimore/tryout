@@ -1,0 +1,111 @@
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Running execid:1574 flow:hourly-pipeline project:1 version:20
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Update active reference
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Updating initial flow directory.
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Fetching job and shared properties.
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Starting flows
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Running flow 'hourly-pipeline'.
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Submitting job 'back-two-weeks' to run.
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Job back-two-weeks finished with status SUCCEEDED in 0 seconds
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Running flow 'hourly-pipeline'.
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - No attachment file for job back-two-weeks written.
+02-08-2016 20:06:23 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:flume-to-avro-morphline' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Job hourly-pipeline:flume-to-avro-morphline finished with status SUCCEEDED in 79 seconds
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:rawlog-web-proxy-mef-hourly-to-hbase' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:ad-time-series' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:solr-index-iam-mef' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - No attachment file for job flume-to-avro-morphline written.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:solr-index-web-proxy-mef' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:ingested-data-counter' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:entity-fusion-hourly' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:global-features-hourly' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:http-time-series-hourly' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:solr-index-uet-mef' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:solr-index-het-mef' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:solr-index-host-info-mef' to run.
+02-08-2016 20:07:43 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:alert-overlay-hourly' to run.
+02-08-2016 20:08:18 GMT hourly-pipeline INFO - Job hourly-pipeline:rawlog-web-proxy-mef-hourly-to-hbase finished with status SUCCEEDED in 35 seconds
+02-08-2016 20:08:18 GMT hourly-pipeline INFO - No attachment file for job rawlog-web-proxy-mef-hourly-to-hbase written.
+02-08-2016 20:08:29 GMT hourly-pipeline INFO - Job hourly-pipeline:ad-time-series finished with status SUCCEEDED in 46 seconds
+02-08-2016 20:08:29 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:ad-time-series-to-hbase' to run.
+02-08-2016 20:08:29 GMT hourly-pipeline INFO - No attachment file for job ad-time-series written.
+02-08-2016 20:08:31 GMT hourly-pipeline INFO - Job hourly-pipeline:solr-index-het-mef finished with status SUCCEEDED in 47 seconds
+02-08-2016 20:08:31 GMT hourly-pipeline INFO - No attachment file for job solr-index-het-mef written.
+02-08-2016 20:08:34 GMT hourly-pipeline INFO - Job hourly-pipeline:solr-index-uet-mef finished with status SUCCEEDED in 51 seconds
+02-08-2016 20:08:34 GMT hourly-pipeline INFO - No attachment file for job solr-index-uet-mef written.
+02-08-2016 20:08:45 GMT hourly-pipeline INFO - Job hourly-pipeline:solr-index-web-proxy-mef finished with status SUCCEEDED in 62 seconds
+02-08-2016 20:08:45 GMT hourly-pipeline INFO - No attachment file for job solr-index-web-proxy-mef written.
+02-08-2016 20:08:45 GMT hourly-pipeline INFO - Job hourly-pipeline:global-features-hourly finished with status SUCCEEDED in 62 seconds
+02-08-2016 20:08:45 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:global-features-hourly-to-hbase' to run.
+02-08-2016 20:08:45 GMT hourly-pipeline INFO - No attachment file for job global-features-hourly written.
+02-08-2016 20:08:46 GMT hourly-pipeline INFO - Job hourly-pipeline:solr-index-iam-mef finished with status SUCCEEDED in 63 seconds
+02-08-2016 20:08:46 GMT hourly-pipeline INFO - No attachment file for job solr-index-iam-mef written.
+02-08-2016 20:08:56 GMT hourly-pipeline INFO - Job hourly-pipeline:http-time-series-hourly finished with status SUCCEEDED in 73 seconds
+02-08-2016 20:08:56 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:http-time-series-hourly-to-hbase' to run.
+02-08-2016 20:08:56 GMT hourly-pipeline INFO - No attachment file for job http-time-series-hourly written.
+02-08-2016 20:08:58 GMT hourly-pipeline INFO - Job hourly-pipeline:ad-time-series-to-hbase finished with status SUCCEEDED in 27 seconds
+02-08-2016 20:08:58 GMT hourly-pipeline INFO - No attachment file for job ad-time-series-to-hbase written.
+02-08-2016 20:09:05 GMT hourly-pipeline INFO - Job hourly-pipeline:solr-index-host-info-mef finished with status SUCCEEDED in 47 seconds
+02-08-2016 20:09:05 GMT hourly-pipeline INFO - No attachment file for job solr-index-host-info-mef written.
+02-08-2016 20:09:12 GMT hourly-pipeline INFO - Job hourly-pipeline:global-features-hourly-to-hbase finished with status SUCCEEDED in 26 seconds
+02-08-2016 20:09:12 GMT hourly-pipeline INFO - No attachment file for job global-features-hourly-to-hbase written.
+02-08-2016 20:09:22 GMT hourly-pipeline INFO - Job hourly-pipeline:http-time-series-hourly-to-hbase finished with status SUCCEEDED in 26 seconds
+02-08-2016 20:09:22 GMT hourly-pipeline INFO - No attachment file for job http-time-series-hourly-to-hbase written.
+02-08-2016 20:09:28 GMT hourly-pipeline INFO - Job hourly-pipeline:alert-overlay-hourly finished with status SUCCEEDED in 58 seconds
+02-08-2016 20:09:28 GMT hourly-pipeline INFO - No attachment file for job alert-overlay-hourly written.
+02-08-2016 20:09:30 GMT hourly-pipeline INFO - Job hourly-pipeline:ingested-data-counter finished with status SUCCEEDED in 106 seconds
+02-08-2016 20:09:30 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:ingested-data-counter-to-hbase' to run.
+02-08-2016 20:09:30 GMT hourly-pipeline INFO - No attachment file for job ingested-data-counter written.
+02-08-2016 20:10:01 GMT hourly-pipeline INFO - Job hourly-pipeline:ingested-data-counter-to-hbase finished with status SUCCEEDED in 31 seconds
+02-08-2016 20:10:01 GMT hourly-pipeline INFO - No attachment file for job ingested-data-counter-to-hbase written.
+02-08-2016 20:11:46 GMT hourly-pipeline INFO - Job hourly-pipeline:entity-fusion-hourly finished with status SUCCEEDED in 243 seconds
+02-08-2016 20:11:46 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:entity-fusion-hourly-to-hbase' to run.
+02-08-2016 20:11:46 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:alert-overlay-hourly-to-hbase' to run.
+02-08-2016 20:11:46 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:web-preprocess-hourly' to run.
+02-08-2016 20:11:46 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:ad-preprocess-hourly' to run.
+02-08-2016 20:11:46 GMT hourly-pipeline INFO - No attachment file for job entity-fusion-hourly written.
+02-08-2016 20:12:17 GMT hourly-pipeline INFO - Job hourly-pipeline:entity-fusion-hourly-to-hbase finished with status SUCCEEDED in 30 seconds
+02-08-2016 20:12:17 GMT hourly-pipeline INFO - No attachment file for job entity-fusion-hourly-to-hbase written.
+02-08-2016 20:12:18 GMT hourly-pipeline INFO - Job hourly-pipeline:alert-overlay-hourly-to-hbase finished with status SUCCEEDED in 32 seconds
+02-08-2016 20:12:18 GMT hourly-pipeline INFO - No attachment file for job alert-overlay-hourly-to-hbase written.
+02-08-2016 20:12:42 GMT hourly-pipeline INFO - Job hourly-pipeline:ad-preprocess-hourly finished with status SUCCEEDED in 55 seconds
+02-08-2016 20:12:42 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:ad-features-hourly' to run.
+02-08-2016 20:12:42 GMT hourly-pipeline INFO - No attachment file for job ad-preprocess-hourly written.
+02-08-2016 20:14:35 GMT hourly-pipeline INFO - Job hourly-pipeline:ad-features-hourly finished with status SUCCEEDED in 113 seconds
+02-08-2016 20:14:35 GMT hourly-pipeline INFO - No attachment file for job ad-features-hourly written.
+02-08-2016 20:15:48 GMT hourly-pipeline INFO - Job hourly-pipeline:web-preprocess-hourly finished with status SUCCEEDED in 242 seconds
+02-08-2016 20:15:48 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:web-features-hourly' to run.
+02-08-2016 20:15:48 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:beacon-features-hourly' to run.
+02-08-2016 20:15:48 GMT hourly-pipeline INFO - No attachment file for job web-preprocess-hourly written.
+02-08-2016 20:18:17 GMT hourly-pipeline INFO - Job hourly-pipeline:beacon-features-hourly finished with status SUCCEEDED in 148 seconds
+02-08-2016 20:18:17 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:beacon-model-hourly' to run.
+02-08-2016 20:18:17 GMT hourly-pipeline INFO - No attachment file for job beacon-features-hourly written.
+02-08-2016 20:19:04 GMT hourly-pipeline INFO - Job hourly-pipeline:web-features-hourly finished with status SUCCEEDED in 195 seconds
+02-08-2016 20:19:04 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:features-hourly-to-hbase' to run.
+02-08-2016 20:19:04 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:behavior-scoring-hourly' to run.
+02-08-2016 20:19:04 GMT hourly-pipeline INFO - No attachment file for job web-features-hourly written.
+02-08-2016 20:19:31 GMT hourly-pipeline INFO - Job hourly-pipeline:features-hourly-to-hbase finished with status SUCCEEDED in 27 seconds
+02-08-2016 20:19:31 GMT hourly-pipeline INFO - No attachment file for job features-hourly-to-hbase written.
+02-08-2016 20:20:14 GMT hourly-pipeline INFO - Job hourly-pipeline:behavior-scoring-hourly finished with status SUCCEEDED in 69 seconds
+02-08-2016 20:20:14 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:behavior-scoring-hourly-to-hbase' to run.
+02-08-2016 20:20:14 GMT hourly-pipeline INFO - No attachment file for job behavior-scoring-hourly written.
+02-08-2016 20:20:40 GMT hourly-pipeline INFO - Job hourly-pipeline:behavior-scoring-hourly-to-hbase finished with status SUCCEEDED in 26 seconds
+02-08-2016 20:20:40 GMT hourly-pipeline INFO - No attachment file for job behavior-scoring-hourly-to-hbase written.
+02-08-2016 20:21:31 GMT hourly-pipeline INFO - Job hourly-pipeline:beacon-model-hourly finished with status SUCCEEDED in 194 seconds
+02-08-2016 20:21:31 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:combine-hourly' to run.
+02-08-2016 20:21:31 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:beacons-hourly-to-hbase' to run.
+02-08-2016 20:21:31 GMT hourly-pipeline INFO - No attachment file for job beacon-model-hourly written.
+02-08-2016 20:22:03 GMT hourly-pipeline INFO - Job hourly-pipeline:beacons-hourly-to-hbase finished with status SUCCEEDED in 32 seconds
+02-08-2016 20:22:03 GMT hourly-pipeline INFO - No attachment file for job beacons-hourly-to-hbase written.
+02-08-2016 20:24:39 GMT hourly-pipeline INFO - Job hourly-pipeline:combine-hourly finished with status SUCCEEDED in 187 seconds
+02-08-2016 20:24:39 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:combine-to-hbase' to run.
+02-08-2016 20:24:39 GMT hourly-pipeline INFO - No attachment file for job combine-hourly written.
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - Job hourly-pipeline:combine-to-hbase finished with status SUCCEEDED in 37 seconds
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - Submitting job 'hourly-pipeline:hourly-terminate' to run.
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - No attachment file for job combine-to-hbase written.
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - Job hourly-pipeline:hourly-terminate finished with status SUCCEEDED in 0 seconds
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - Flow 'hourly-pipeline' is set to SUCCEEDED in 1133 seconds
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - No attachment file for job hourly-terminate written.
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - Flow '' is set to SUCCEEDED in 1133 seconds
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - Finishing up flow. Awaiting Termination
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - Finished Flow
+02-08-2016 20:25:17 GMT hourly-pipeline INFO - Setting end time for flow 1574 to 1470169517324

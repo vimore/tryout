@@ -1,0 +1,15 @@
+{
+  "namespace": "com.securityx.log.parsed.avro",
+  "type" : "record",
+  "name" : "ParsedOutput",
+  "fields" : [
+  {"name": "rawLog", "type": "string"},
+  {"name": "outputFormat", "type": "string"},
+  {
+    "name" : "values",
+    "type" : {
+      "type" : "map",
+      "values" : "string"
+    }
+  } ]
+}

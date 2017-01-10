@@ -1,0 +1,23 @@
+Master Event Format (MEF)
+This project contains all the fun bits around the mef format.
+
+
+
+AvroParser class 
+args : <morphline file> <morphlineId> <avro file> <ouput result file > 
+output files will be prefixed by for format they contain
+
+java -jar -Dlog4j.configuration=file:"src\main\resources\log4j.properties" \target\log-mef-tip-executable.jar logcollection-script-selector-command-list.conf  logcollectionselector  src/test/resources/security1.linux.1381871826251  ./outfile
+
+to debug : -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5555
+
+
+
+
+AvroFileParser class 
+
+args example : 
+ mvn exec:java -Dexec.mainClass="com.securityx.logcollection.parser.avro.AvroFileParser" -Dexec.args="./src/main/resources/morphlineconf.conf src/test/resources/anavrofile ./outut.file"
+ 
+ to be investigated : on hivedev1 need explicite mojo plugin name :
+mvn org.codehaus.mojo:exec-maven-plugin:java -Dexec.mainClass="com.securityx.logcollection.parser.avro.AvroFileParser" -Dexec.args="./src/main/resources/morphlineconf.conf src/test/resources/security1.syslog.1384693202191 ./outut.file"

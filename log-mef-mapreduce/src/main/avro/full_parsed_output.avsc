@@ -1,0 +1,29 @@
+{
+  "namespace": "com.securityx.log.parsed.avro",
+  "type" : "record",
+  "name" : "FullParsedOutput",
+  "fields" : [
+  {"name": "rawLog", "type": {
+                               "namespace": "com.securityx.flume.log.avro",
+                               "type" : "record",
+                               "name" : "Event",
+                               "fields" : [ {
+                                 "name" : "headers",
+                                 "type" : {
+                                   "type" : "map",
+                                   "values" : "string"
+                                 }
+                               }, {
+                                 "name" : "body",
+                                 "type" : "bytes"
+                               } ]
+                             }},
+  {"name": "outputFormat", "type": "string"},
+  {
+    "name" : "values",
+    "type" : {
+      "type" : "map",
+      "values" : "string"
+    }
+  } ]
+}

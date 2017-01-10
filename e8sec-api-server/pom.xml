@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+      <groupId>com.securityx</groupId>
+      <artifactId>steel-thread</artifactId>
+      <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <groupId>com.securityx</groupId>
+    <artifactId>e8sec-api-server</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>rpm</packaging>
+
+  <repositories>
+    <repository>
+      <id>public</id>
+      <url>http://10.10.30.224:8081/nexus/content/groups/public/</url>
+    </repository>
+  </repositories>
+
+    <dependencies>
+      <dependency>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>rpm-maven-plugin</artifactId>
+        <version>2.1.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>ant-contrib</groupId>
+        <artifactId>ant-contrib</artifactId>
+        <version>1.0b3</version>
+        <exclusions>
+          <exclusion>
+            <groupId>ant</groupId>
+            <artifactId>ant</artifactId>
+          </exclusion>
+        </exclusions>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>ant</groupId>
+        <artifactId>ant-nodeps</artifactId>
+        <version>1.6.5</version>
+        <scope>provided</scope>
+      </dependency>
+   </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.number>1</project.build.number>
+        <maven.rpm.plugin.version>2.1.2</maven.rpm.plugin.version>
+        <e8.basedir>/opt/e8sec/e8sec-api-server</e8.basedir>
+        <e8.versioninfo>/etc/e8-configs</e8.versioninfo>
+    </properties>
+
+    <build>
+
+     <resources>
+       <resource>
+         <directory>properties</directory>
+         <filtering>true</filtering>
+       </resource>
+     </resources>
+
+     <plugins>
+            <plugin>
+              <groupId>org.codehaus.mojo</groupId>
+              <artifactId>rpm-maven-plugin</artifactId>
+              <version>2.1.2</version>
+              <extensions>true</extensions>
+              <executions>
+                <execution>
+                  <id>generate-rpm</id>
+                  <goals>
+                    <goal>rpm</goal>
+                  </goals>
+                  <phase>package</phase>
+                </execution>
+              </executions>
+              <configuration>
+                <license>Copyright 2015,2016  E8 Security</license>
+                <name>e8sec-api-server</name>
+                <version>${project.version}</version>
+		<release>${project.build.number}</release>
+                <distribution>E8 API Server</distribution>
+		<url>http://www.e8security.com/</url>
+                <packager>E8Security BuildSystem http://www.e8security.com</packager>
+                <needarch>x86_64</needarch>
+                <prefix>${e8.basedir}</prefix>
+                <group>APIServer/Jars</group>
+                <vendor>E8 Security</vendor>
+                <summary>E8 Security API Server</summary>
+                <description>Provides E8 Security API server</description>
+                <defineStatements>
+                  <defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
+                </defineStatements>
+                <mappings>
+                  <mapping>
+                    <directory>${e8.versioninfo}/e8sec-api-server/</directory>
+                    <sources>
+                      <source>
+                        <location>../feature-service/target/classes/application.properties</location>
+                      </source>
+                    </sources>
+                  </mapping>
+                  <mapping>
+                    <directory>${e8.basedir}/lib</directory>
+                    <username>root</username>
+                    <groupname>root</groupname>
+                    <sources>
+                      <source>
+                        <location>../feature-service/lib/joda-time-2.3.jar</location>
+                      </source>
+                      <source>
+                        <location>../feature-service/lib/phoenix-4.2.2-client-without-hbase.jar</location>
+                      </source>
+                      <source>
+                        <location>../feature-service/target/feature-service-2.0.0.jar</location>
+                      </source>
+                    </sources>
+                  </mapping>
+                </mappings>
+                <postinstallScriptlet>
+                  <scriptFile>post-install.sh</scriptFile>
+                  <fileEncoding>utf-8</fileEncoding>
+                </postinstallScriptlet>
+                <preinstallScriptlet>
+                  <scriptFile>pre-install.sh</scriptFile>
+                  <fileEncoding>utf-8</fileEncoding>
+                </preinstallScriptlet>
+              </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
+      <repository>
+         <id>e8-api-server-release</id>
+         <name>e8api-server-release</name>
+         <url>http://192.168.12.13:8081/nexus/content/repositories/e8-api-server-release/</url>
+      </repository>
+      <snapshotRepository>
+         <id>e8-api-server</id>
+         <name>e8-api-server</name>
+         <url>http://192.168.12.13:8081/nexus/content/repositories/e8-api-server/</url>
+      </snapshotRepository>
+   </distributionManagement>
+
+</project>

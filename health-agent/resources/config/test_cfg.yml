@@ -1,0 +1,170 @@
+template: Hello, %s!
+
+defaultName: ${DW_DEFAULT_NAME:-Stranger}
+
+# use the simple server factory if you only want to run on a single port
+#server:
+#  type: simple
+#  connector:
+#    type: http
+#    port: 8080
+
+server:
+  gzip:
+    bufferSize: 8KiB
+  #softNofileLimit: 1000
+  #hardNofileLimit: 1000
+
+  applicationContextPath: /api
+  adminContextPath: /admin
+
+  applicationConnectors:
+    - type: http
+      port: 9090
+    #- type: https
+    #  port: 8443
+    #  keyStorePath: example.keystore
+    #  keyStorePassword: example
+    #  validateCerts: false
+
+    # this requires the alpn-boot library on the JVM's boot classpath
+    #- type: spdy3
+    #  port: 8445
+    #  keyStorePath: example.keystore
+    #  keyStorePassword: example
+    #  validateCerts: false
+
+  adminConnectors:
+    - type: http
+      port: 9091
+      #- type: https
+      #  port: 8443
+      #  keyStorePath: example.keystore
+      #  keyStorePassword: example
+      #  validateCerts: false
+
+  requestLog:
+    timeZone: UTC
+    appenders:
+      - type: console
+      - type: file
+        threshold: INFO
+        logFormat: "%-6level [%d{HH:mm:ss.SSS}] [%t] %logger{5} - %X{code} %msg %n"
+        currentLogFilename: logs/health-agent-request.log
+        archivedLogFilenamePattern: /tmp/health-agent-request-%d{yyyy-MM-dd}-%i.log.gz
+        archivedFileCount: 7
+        timeZone: UTC
+        maxFileSize: 10MB
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  # Logger-specific levels.
+  loggers:
+
+    # Sets the level for 'com.example.app' to DEBUG.
+    com.example.app: DEBUG
+
+# Logback's Time Based Rolling Policy - archivedLogFilenamePattern: /tmp/application-%d{yyyy-MM-dd}.log.gz
+# Logback's Size and Time Based Rolling Policy -  archivedLogFilenamePattern: /tmp/application-%d{yyyy-MM-dd}-%i.log.gz
+# Logback's Fixed Window Rolling Policy -  archivedLogFilenamePattern: /tmp/application-%i.log.gz
+
+  appenders:
+    - type: console
+    - type: file
+      threshold: INFO
+      logFormat: "%-6level [%d{HH:mm:ss.SSS}] [%t] %logger{5} - %X{code} %msg %n"
+      currentLogFilename: logs/health-agent.log
+      archivedLogFilenamePattern: logs/health-agent-%d{yyyy-MM-dd}-%i.log.gz
+      archivedFileCount: 7
+      timeZone: UTC
+      maxFileSize: 10MB
+
+cluster_info:
+  tag: cluster1
+  track.directory: "target/metrics/track-resource/"
+  hosts:
+    - type: e8_cloudera # DO NOT EDIT
+      #default value of scheme is http
+      scheme: http
+      host: 127.0.0.1
+      port: 7180
+      user: admin
+      pass: admin
+      # NOTE: This has to be a full absolute path
+      directory: "target/metrics/e8_cdh/"
+    - type: e8_api # DO NOT EDIT
+      scheme: http
+      host: 127.0.0.1
+      port: 9081
+      path: "/prometheusMetrics"
+      # NOTE: This has to be a full absolute path
+      directory: "target/metrics/e8_api/"
+    - type: e8_ui # DO NOT EDIT
+      scheme: http
+      host: 127.0.0.1
+      port: 9082
+      # NOTE: This has to be a full absolute path
+      directory: "target/metrics/e8_ui/"
+    - type: e8_monitor # DO NOT EDIT
+      directory: "/opt/executions/"
+      filter_pattern: "blean" #FIXME the file pattern to upload
+
+#### WARNING WARNING WARNING
+## DONOT USE %path% for everything!!!
+## CURRENTLY ONLY WORKS FOR CloudChamber Config
+####
+push_gateways:
+  proxy_host: '%cloudchamber.PROXY_HOST%'
+  proxy_port: '%cloudchamber.PROXY_PORT%'
+  proxy_user: '%cloudchamber.PROXY_USER%'
+  proxy_pass: '%cloudchamber.PROXY_PASSWORD%'
+  hosts:
+    - type: prometheus # DO NOT EDIT
+      host: 127.0.0.1
+      port: 9083
+    - type: cloud-chamber # DO NOT EDIT
+      scheme: http
+      host: 127.0.0.1
+      port: 9084
+      path: /report/upload
+      query: tag=%s&name=%s&append=%s&user=%s&email=%s
+      user: '%cloudchamber.userId%'
+      pass: '%cloudchamber.emailId%'
+      headers:
+        - name: "Authorization"
+          value: '%cloudchamber.WHOIS_AUTHORIZATION%'
+        - name: 'X-HMAC-Nonce'
+          value: '%cloudchamber.WHOIS_X_HMAC_NONCE%'
+
+#### WARNING WARNING WARNING
+## This is a hack to satisfy DevOps.
+## CURRENTLY ONLY WORKS FOR CloudChamber Config
+####
+cloudchamber:
+    host: cloudchamber.e8security.com
+    userId: user2
+    emailId: user2@auth.com
+    X_HMAC_NONCE: 'X-HMAC-Nonce'
+    AUTHORIZATION: 'Authorization'
+    GEO_X_HMAC_NONCE: '1398322270633'
+    GEO_AUTHORIZATION: '3a57d231604f567b029184e28d3944c50f6ce4a1'
+    WHOIS_X_HMAC_NONCE: '1398322270633'
+    WHOIS_AUTHORIZATION: '3a57d231604f567b029184e28d3944c50f6ce4a1'
+    PROXY_HOST: 127.0.0.1
+    PROXY_PORT: 9080
+    PROXY_USER: proxyUser
+    PROXY_PASSWORD: proxyPass
+    PROXY_SCHEME: 'http'
+
+sundial:
+  thread-pool-size: 10
+  shutdown-on-unload: true
+  wait-on-shutdown: false
+  start-delay-seconds: 0
+  start-scheduler-on-load: true
+  global-lock-on-load: false
+  annotated-jobs-package-name: com.securityx.health.agent.jobs

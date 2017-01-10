@@ -1,0 +1,208 @@
+#!/bin/bash
+#
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# Starts a E8 API Server
+#
+# chkconfig: 2345 90 15
+# description: E8 API Server
+#
+### BEGIN INIT INFO
+# Provides:          e8-health-agent
+# Short-Description: E8 API Server
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Required-Start:    $syslog
+# Required-Stop:     $syslog
+# Should-Start:
+# Should-Stop:
+### END INIT INFO
+
+. /etc/init.d/functions
+
+DESC="E8 Health Agent"
+NAME=e8sec-health-agent
+
+E8_DEFAULTS_DIR=${E8_DEFAULTS_DIR:-/etc/default}
+[ -n "${E8_DEFAULTS_DIR}" -a -r ${E8_DEFAULTS_DIR}/e8sec-health-agent ] && . ${E8_DEFAULTS_DIR}/e8sec-health-agent
+
+# no java home, use /usr/java/default
+JAVA_HOME=${JAVA_HOME:-/usr/java/default}
+
+RETVAL_SUCCESS=0
+
+STATUS_RUNNING=0
+STATUS_DEAD=1
+STATUS_DEAD_AND_LOCK=2
+STATUS_NOT_RUNNING=3
+STATUS_OTHER_ERROR=102
+
+ERROR_PROGRAM_NOT_INSTALLED=5
+ERROR_PROGRAM_NOT_CONFIGURED=6
+
+RETVAL=0
+SLEEP_TIME=5
+PROC_NAME="$JAVA_HOME/bin/java -jar $E8_HEALTH_AGENT_SERVER_JAR_PATH $PROC_NAME server $E8_HEALTH_AGENT_CONF_FILE"
+
+LOCKDIR="/var/lock/subsys"
+LOCKFILE=${LOCKFILE:-$LOCKDIR/$NAME}
+
+PIDFILE=${PIDFILE:-/var/run/$NAME.pid}
+E8_HEALTH_AGENT_LOG_DIR=${E8_HEALTH_AGENT_LOG_DIR:-/var/log/$NAME}
+
+[ -d "$LOCKDIR" ] || install -d -m 0755 $LOCKDIR 1>/dev/null 2>&1 || :
+[ -d "$E8_HEALTH_AGENT_LOG_DIR" ] || install -d -m 1755 $E8_HEALTH_AGENT_LOG_DIR 1>/dev/null 2>&1 || :
+
+# this was using some lsb library that doesn't exist. fake the funcs.
+log_success_msg() {
+  echo $@
+}
+
+log_failure_msg() {
+  echo $@
+}
+
+start() {
+    [ -r $E8_HEALTH_AGENT_SERVER_JAR_PATH ] || exit $ERROR_PROGRAM_NOT_INSTALLED
+    [ -r $E8_HEALTH_AGENT_CONF_FILE ] || exit $ERROR_PROGRAM_NOT_CONFIGURED
+
+    checkstatusofproc
+    status=$?
+    if [ "$status" -eq "$STATUS_RUNNING" ]; then
+        log_success_msg "${DESC} is running"
+        exit 0
+    fi
+
+    [ -w $E8_HEALTH_AGENT_LOG_DIR ] || mkdir $E8_HEALTH_AGENT_LOG_DIR
+    chown $E8_HEALTH_AGENT_SERVER_USER:$E8_HEALTH_AGENT_SERVER_USER $E8_HEALTH_AGENT_LOG_DIR
+    # you dunnae like the if's?  Ok then...
+    [[ ! -h "$E8_HEALTH_AGENT_SERVER_HOME/logs" ]] || ln -s "$E8_HEALTH_AGENT_LOG_DIR" "$E8_HEALTH_AGENT_SERVER_HOME/logs"
+
+
+#   start_daemon -u $E8_HEALTH_AGENT_SERVER_USER -p $PIDFILE $PROC_NAME
+    echo "`date` Starting $NAME on `hostname -f`"
+    echo "`ulimit -a`" > $E8_HEALTH_AGENT_LOG_DIR/start.out
+    echo "Trying to run  nice -n $E8_HEALTH_AGENT_SERVER_NICENESS $PROC_NAME >> $E8_HEALTH_AGENT_LOG_DIR/start.out"
+#   su -s /bin/bash - $E8_HEALTH_AGENT_SERVER_USER -c nice -n $E8_HEALTH_AGENT_SERVER_NICENESS $PROC_NAME >> $E8_HEALTH_AGENT_LOG_DIR/start.out 2>&1 < /dev/null &
+    nice -n $E8_HEALTH_AGENT_SERVER_NICENESS $PROC_NAME >> $E8_HEALTH_AGENT_LOG_DIR/start.out 2>&1 < /dev/null &
+    echo $! > $PIDFILE
+
+    checkstatusofproc
+    RETVAL=$?
+
+    if [[ "$RETVAL" -eq "$STATUS_RUNNING" ]] && touch $LOCKFILE; then
+      log_success_msg "${DESC} is running"
+      exit 0
+    else
+      log_failure_msg "Failed to start ${DESC}. Return value: $RETVAL"
+    fi
+
+    return $RETVAL
+}
+
+stop() {
+    killproc -p $PIDFILE -d $SLEEP_TIME
+    RETVAL=$?
+
+    if [ $RETVAL -eq $RETVAL_SUCCESS ]; then
+      log_success_msg "Stopped ${DESC}: "
+        if [ -f "$LOCKFILE" ] ; then
+            rm -f $LOCKFILE
+        fi
+        rm -f $PIDFILE
+    else
+      log_failure_msg "Failure to stop ${DESC}. Return value: $RETVAL"
+    fi
+
+    return $RETVAL
+}
+
+restart() {
+  stop
+  start
+}
+
+checkstatusofproc(){
+  pidofproc -p $PIDFILE $PROC_NAME > /dev/null
+}
+
+checkstatus(){
+  checkstatusofproc
+  status=$?
+
+  case "$status" in
+    $STATUS_RUNNING)
+      log_success_msg "${DESC} is running"
+      ;;
+    $STATUS_DEAD)
+      log_failure_msg "${DESC} is dead and pid file exists"
+      ;;
+    $STATUS_DEAD_AND_LOCK)
+      log_failure_msg "${DESC} is dead and lock file exists"
+      ;;
+    $STATUS_NOT_RUNNING)
+      log_failure_msg "${DESC} is not running"
+      ;;
+    *)
+      log_failure_msg "${DESC} status is unknown"
+      ;;
+  esac
+  return $status
+}
+
+condrestart(){
+  [ -e $LOCKFILE ] && restart || :
+}
+
+check_for_root() {
+  if [ $(id -ur) -ne 0 ]; then
+    echo 'Error: root user required'
+    echo
+    exit 1
+  fi
+}
+
+service() {
+  case "$1" in
+    start)
+      check_for_root
+      start
+      ;;
+    stop)
+      check_for_root
+      stop
+      ;;
+    status)
+      checkstatus
+      RETVAL=$?
+      ;;
+    restart)
+      check_for_root
+      restart
+      ;;
+    condrestart|try-restart)
+      check_for_root
+      condrestart
+      ;;
+    *)
+      echo $"Usage: $0 {start|stop|status|restart|try-restart|condrestart}"
+      exit 1
+  esac
+}
+
+service "$@"
+
+exit $RETVAL

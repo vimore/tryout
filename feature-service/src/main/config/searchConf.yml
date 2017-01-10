@@ -1,0 +1,86 @@
+webSearchSummary:
+-
+  field: sourceUserName
+  name: Source User Name
+-
+  field: sourceNameOrIp
+  name: Source Name or Ip
+-
+  field: destinationNameOrIp
+  name: Destination Name Or Ip
+-
+  field: responseContentType
+  name: Http Content Type
+-
+  field: requestScheme
+  name: Web Connection Type
+-
+  field: requestMethod
+  name: Http Request Method
+-
+  field: devicePolicyAction
+  name: Proxy Policy Action
+-
+  field: cefSignatureId
+  name: Http Response Codes
+-
+  field: requestClientApplication
+  name: User Agent
+
+adSearchSummary:
+-
+  field: sourceUserName
+  name: Source User Name
+-
+  field: sourceAddress
+  name: Source Address
+-
+  field: sourceNameOrIp
+  name: Source Name Or Ip
+-
+  field: sourceNtDomain
+  name: Source Domain
+-
+  field: sourceProcessName
+  name: Source Process Name
+-
+  field: destinationNameOrIp
+  name: Destination Name or Ip
+-
+  field: destinationNtDomain
+  name: Destination Domain
+-
+  field: destinationUserName
+  name: Destination User Name
+-
+  field: destinationServiceName
+  name: Destination Service Name
+-
+  field: cefSignatureId
+  name: Message type
+-
+  field: status
+  name: Status
+-
+  field: subStatus
+  name: Sub-status
+-
+  field: destinationDnsDomain
+  name: Destination DNS Domain
+
+taniumHostInfoMefSummary:
+-
+  field: externalLogSourceType
+  name: External Log Source Type
+-
+  field: logSourceType
+  name: Log Source Type
+
+# Defaults used in search queries
+searchDefault:
+ facetLimit: 5
+ sortField: startTimeISO
+ sortOrder: asc
+ startRow: 0
+ numRows: 100
+

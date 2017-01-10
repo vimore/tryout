@@ -1,0 +1,19 @@
+Mapreduce tools to deal with flume raw data and parser output
+
+
+
+
+LogParsingJob Class:
+
+  Pre requisite:
+    parsing configuration file : usually /opt/e8sec/logparsing/conf/logparsingjob.conf (can be found in log-mef/conf)
+
+    Some properties such as com.e8sec.cluster can be defined in hadoop configuration:
+       - on CDH : edit MapReduce Service Advanced Configuration Snippet and MapReduce Client Advanced Configuration Snippet
+       - in config files : add entries in mapred-site.xml
+
+
+
+/usr/bin/hadoop jar log-mef-mapreduce-jyr-1.0.0-SNAPSHOT.jar  com.securityx.mef.log.mapreduce.LogParsingJob   -files /opt/e8sec/logparsing/conf/logparsingjob.conf /opt/cloudera/parcels/CDH/lib/avro/avro-mapred.jar     -Dcom.e8sec.cluster=cluster5-srv1:8020 -Dcom.e8sec.logparsingjob.basedir=/user/jyria/validationInput/ -Dcom.e8sec.logparsingjob.year=2015 -Dcom.e8sec.logparsingjob.month=8 -Dcom.e8sec.logparsingjob.day=3 -Dcom.e8sec.logparsingjob.hour=09 -Dcom.e8sec.logparsingjob.output=validationOutput
+
+

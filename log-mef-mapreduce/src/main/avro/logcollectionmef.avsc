@@ -1,0 +1,54 @@
+{
+  "namespace": "com.securityx.log.parsed.avro",
+  "type" : "record",
+  "name" : "LogCollectionMef",
+  "fields" : [
+    {
+          "name":"eventsPerFormat",
+          "type":[
+             "null",
+             {
+                 "type" : "map",
+                 "values" : "int"
+             }
+          ],
+          "default": null
+     },
+     {
+         "name":"uuid",
+         "type":[
+            "null",
+            "string"
+         ],
+         "default": null
+    },
+    {
+      "name":"logSourceType",
+      "type":[
+         "null",
+         "string"
+      ],
+      "default": null
+    },    {
+      "name":"logCollectionHost",
+      "type":[
+         "null",
+         "string"
+      ],
+      "default": null
+    },
+    {
+         "name":"logBytes",
+         "type": "int",
+         "default": 0
+    },
+    {
+             "name":"receiptTime",
+             "type":[
+                "null",
+                "long"
+             ],
+             "default": null
+    }
+]
+}

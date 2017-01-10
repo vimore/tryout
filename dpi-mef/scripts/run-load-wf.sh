@@ -1,0 +1,1 @@
+oozie job -oozie http://hivedev1:11000/oozie -config load-dpi-workflow/job.properties -run

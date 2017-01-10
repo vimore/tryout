@@ -1,0 +1,2 @@
+c2_botnet_model1.py builds the graph
+botnet_features_2.py botnetByBeaconing() uses that graph to do detection.

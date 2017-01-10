@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+Alert with Risk-score greater than $riskScore has been seen for these Entities:
+<br><br>
+</p>
+
+
+<table frame="box"  border = "2" rules="all" cellpadding="8">
+
+<thead>
+<tr>
+    <td  align="center"><font face="arial">$ip </td>
+    <td  align="center"><font face="arial">$userName </td>
+    <td  align="center"><font face="arial">$hostName </td>
+    <td  align="left"><font face="arial">$behavior </td>
+     <td  align="center"><font face="arial">$risk </td>
+</tr>
+</thead>
+<tbody>
+#foreach( $entity in $entityInfoList )
+    <tr><td align="right"><font face="arial" nowrap>$entity.ipAddress</font></td>
+    <td nowrap><font face="arial">$entity.userName</font></td>
+    <td nowrap><font face="arial">$entity.hostName</font></td>
+    <td nowrap><font face="arial">$entity.behavior</td></font></td>
+    <td nowrap><font face="arial">$entity.risk</td></font></tr>
+#end
+</tbody>
+
+</table>
+
+<br>
+<p>
+If you would like to adjust this threshold, you can do so here: <a href="https://cluster1-srv6/entityalertselection"/>Alert</a>
+<br><br>
+
+Regards,
+<br>
+ The E8 Security Team 
+
+</p>
+
+
+</body>
+</html>

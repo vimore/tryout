@@ -1,0 +1,133 @@
+haiku:
+  Lakes on the foreshore
+  Low tide sings those muddy smells
+  For motionless boats
+
+# Environment values are DEV or PROD
+environment: QA2
+zkQuorum: cluster4-srv1.e8sec.com
+solrQuorum: cluster4-srv1.e8sec.com:2181,cluster4-e8.e8sec.com:2181,cluster4-srv4.e8sec.com:2181/solr
+
+phoenix:
+  hbaseRpcTimeout: 720000
+  queryTimeoutMs: 720000
+
+graphite:
+ enabled: true
+ host: graphite.server.name
+ port: 2003
+ outputPeriod: 1m
+
+#Entity Fusion Defaults:
+entityFusion:
+ backoffPeriodHours: 48
+
+# HTTP-specific options.
+server:
+#  softNofileLimit: 1000
+#  hardNofileLimit: 1000
+  applicationConnectors:
+    - type: http
+      port: 9080
+#    - type: https
+#      port: 8443
+#      keyStorePath: example.keystore
+#      keyStorePassword: example
+#      validateCerts: false
+# this requires the alpn-boot library on the JVM's boot classpath
+#    - type: spdy3
+#      port: 8445
+#      keyStorePath: example.keystore
+#      keyStorePassword: example
+#      validateCerts: false
+  adminConnectors:
+    - type: http
+      port: 9091
+#    - type: https
+#      port: 8444
+#      keyStorePath: example.keystore
+#      keyStorePassword: example
+#      validateCerts: false
+  requestLog:
+      appenders:
+         - type: console
+         - type: file
+           archive: true
+           archivedFileCount: 5
+           currentLogFilename: ./logs/request.log
+           archivedLogFilenamePattern: /var/test/http-test-%d.log
+           timeZone: UTC
+
+
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  # Logger-specific levels.
+  loggers:
+    level: ALL
+    # Sets the level
+    com.securityx: ALL
+    org.apache.hadoop.ipc: INFO
+    org.apache.zookeeper: INFO
+    org.eclipse.jetty.io: INFO
+    io.dropwizard: ALL
+
+  appenders:
+    - type: console
+      threshold: ALL
+      target: stderr
+
+    - type: file
+      # The file to which current statements will be logged.
+      currentLogFilename: ./logs/e8apiserver.log
+
+      # When the log file rotates, the archived log will be renamed to this and gzipped. The
+      # %d is replaced with the previous day (yyyy-MM-dd). Custom rolling windows can be created
+      # by passing a SimpleDateFormat-compatible format as an argument: "%d{yyyy-MM-dd-hh}".
+      archivedLogFilenamePattern: ./logs/e8apiserver-%d.log.gz
+
+      # The number of archived files to keep.
+      archivedFileCount: 5
+
+      # The timezone used to format dates. HINT: USE THE DEFAULT, UTC.
+      timeZone: UTC
+
+    - type: syslog
+      # The hostname of the syslog server to which statements will be sent.
+      # N.B.: If this is the local host, the local syslog instance will need to be configured to
+      # listen on an inet socket, not just a Unix socket.
+      host: localhost
+
+      # The syslog facility to which statements will be sent.
+      facility: local0
+
+
+# Settings for the CloudChamber service.
+cloudchamber:
+    host: cloudchamber.e8security.com
+    userId: user2
+    emailId: user2@auth.com
+    X_HMAC_NONCE: 'X-HMAC-Nonce'
+    AUTHORIZATION: 'Authorization'
+    GEO_X_HMAC_NONCE: '1398322270633'
+    GEO_AUTHORIZATION: '3a57d231604f567b029184e28d3944c50f6ce4a1'
+    WHOIS_X_HMAC_NONCE: '1398322270633'
+    WHOIS_AUTHORIZATION: '3a57d231604f567b029184e28d3944c50f6ce4a1'
+
+# Settings for Impala Configuration.
+impala:
+    host: 10.10.80.71
+    port: 21050
+    connectionUrl: 'jdbc:hive2://%s:%s/;auth=noSasl'
+    jdbcDriver: 'org.apache.hive.jdbc.HiveDriver'
+
+# File paths for other configuration files
+configurationConstants:
+   timeSeriesFilePath: src/main/config/timeSeries.yml
+   webAnomalyProfileNamesFilePath: src/main/config/webAnomalyProfiles.yml
+   securityEventTypesFilePath: src/main/config/securityEvents.yml
+   searchConfFilePath: src/main/config/searchConf.yml

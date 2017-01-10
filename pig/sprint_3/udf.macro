@@ -1,0 +1,149 @@
+/* Compute bits in/out per second and connections per second */
+DEFINE ten_minute_bits_in_out_series(in_relation, group_field, time_field) RETURNS out_relation {
+    series = FOREACH (GROUP $in_relation BY ($group_field, $time_field)) GENERATE 
+        FLATTEN(group) AS ($group_field, $time_field),
+        (double)SUM($in_relation.bitsIn)/600.0 AS bitsInPerSecond:double,
+        (double)SUM($in_relation.bitsOut)/600.0 AS bitsOutPerSecond:double,
+        (double)COUNT_STAR($in_relation)/600.0 AS connectionsPerSecond:double;       
+    $out_relation = FOREACH series GENERATE
+        (chararray)'$group_field' AS type:chararray,
+        (chararray)$group_field AS groupField:chararray,
+        (int)600 AS periodSeconds:int,
+        (chararray)$time_field AS $time_field:chararray,
+        (double)bitsInPerSecond AS bitsInPerSecond:double,
+        (double)bitsOutPerSecond AS bitsOutPerSecond:double,
+        (double)connectionsPerSecond AS connectionsPerSecond:double;
+};
+
+DEFINE count_destination_host_bins(in_relation, group_field, time_field) RETURNS out_relation {
+    counts = FOREACH (GROUP $in_relation BY ($group_field, sourceNameOrIp, $time_field)) GENERATE
+            FLATTEN(group) AS ($group_field, sourceNameOrIp, $time_field),
+            (int)COUNT_STAR($in_relation) AS total:int;
+    bin_counts = FOREACH counts GENERATE 
+        (chararray)'$group_field' AS type:chararray,
+        (int)3600 AS periodSeconds:int,
+        (chararray)$group_field AS groupField:chararray,
+        (chararray)sourceNameOrIp AS sourceNameOrIp:chararray,
+        (chararray)$time_field AS $time_field:chararray,
+        (int)total AS total:int;
+    bin_bags = GROUP bin_counts BY (type, periodSeconds, groupField, $time_field);
+    bin_bags = FOREACH bin_bags GENERATE group, bin_counts.(total);
+    
+    /* Stream through */
+    DEFINE calculate_entropy_command `calculate_entropy.py` SHIP('calculate_entropy.py');
+    entropies = STREAM bin_bags THROUGH calculate_entropy_command AS (type:chararray, 
+                                                                      groupField:chararray, 
+                                                                      periodSeconds:int, 
+                                                                      $time_field:chararray, 
+                                                                      entropy:double);
+    $out_relation = FILTER entropies BY entropy IS NOT NULL;
+};
+
+DEFINE count_destination_host_bins_2(in_relation, group_field, bin_field, time_field, period_seconds) RETURNS out_relation {
+    counts = FOREACH (GROUP $in_relation BY ($group_field, $bin_field, $time_field)) GENERATE
+            FLATTEN(group) AS ($group_field, $bin_field, $time_field),
+            (int)COUNT_STAR($in_relation) AS total:int;
+    bin_counts = FOREACH counts GENERATE 
+        (chararray)'$group_field' AS type:chararray,
+        (int)$period_seconds AS periodSeconds:int,
+        (chararray)$group_field AS $group_field:chararray,
+        (chararray)$bin_field AS $bin_field:chararray,
+        (chararray)$time_field AS $time_field:chararray,
+        (int)total AS total:int;
+    bin_bags = GROUP bin_counts BY (type, periodSeconds, $time_field, $group_field);
+    bin_bags = FOREACH bin_bags GENERATE group, bin_counts.(total);
+    
+    /* Stream through */
+    DEFINE calculate_entropy_command `calculate_entropy.py` SHIP('calculate_entropy.py');
+    entropies = STREAM bin_bags THROUGH calculate_entropy_command AS (type:chararray, 
+                                                                      $group_field:chararray, 
+                                                                      periodSeconds:int, 
+                                                                      $time_field:chararray, 
+                                                                      entropy:double);
+    $out_relation = FILTER entropies BY entropy IS NOT NULL;
+};
+
+DEFINE hour_bytes_feature(in_relation, group_field, time_field, period_seconds) RETURNS out_relation {
+    $out_relation = FOREACH (GROUP $in_relation BY ($group_field, $time_field)) GENERATE
+        FLATTEN(group) AS (groupField, $time_field),
+        '$group_field' AS seriesType,
+        (int)$period_seconds AS periodSeconds:int,
+        (int)SUM($in_relation.bytesIn) AS bytesIn:int,
+        (int)SUM($in_relation.bytesOut) AS bytesOut:int,
+        (int)COUNT_STAR($in_relation) AS connections:int;
+};
+
+DEFINE hour_relative_feature(in_relation, time_field, period_seconds) RETURNS out_relation {
+    maxes = FOREACH (GROUP $in_relation BY $time_field) GENERATE
+         FLATTEN(group) AS TimeField,
+	 MAX($in_relation.bytesIn) AS maxBytesIn,
+	 MAX($in_relation.bytesOut) AS maxBytesOut,
+	 MAX($in_relation.connections) AS maxConnections;
+
+    joined = JOIN $in_relation BY $time_field, maxes BY TimeField;
+
+    $out_relation = FOREACH joined GENERATE
+         TimeField as $time_field,
+         groupField AS groupField,
+         $period_seconds AS periodSeconds,
+	     seriesType AS seriesType,
+	     (maxes::maxBytesIn IS NULL OR maxes::maxBytesIn == 0 ? 0.0 : (double)$in_relation::bytesIn / (double)maxes::maxBytesIn) as bytesIn,
+	     (maxes::maxBytesOut == 0 OR maxes::maxBytesIn IS NULL ? 0.0 : (double)$in_relation::bytesOut / (double)maxes::maxBytesOut) as bytesOut,
+	     (maxes::maxConnections == 0 OR maxes::maxConnections IS NULL ? 0.0 : (double)$in_relation::connections / (double)maxes::maxConnections) as connections;
+};
+
+DEFINE entropy_by_sum(in_relation, group_field, bin_field, sum_field, time_field, period_seconds) RETURNS out_relation {
+    counts = FOREACH (GROUP $in_relation BY ($group_field, $bin_field, $time_field)) GENERATE
+            FLATTEN(group) AS ($group_field, $bin_field, $time_field),
+            (int)SUM($in_relation.$sum_field) AS total:int;
+    bin_counts = FOREACH counts GENERATE 
+        (chararray)'$group_field' AS type:chararray,
+        (int)$period_seconds AS periodSeconds:int,
+        (chararray)$group_field AS $group_field:chararray,
+        (chararray)$bin_field AS $bin_field:chararray,
+        (chararray)$time_field AS $time_field:chararray,
+        (int)total AS total:int;
+    bin_bags = GROUP bin_counts BY (type, periodSeconds, $time_field, $group_field);
+    bin_bags = FOREACH bin_bags GENERATE group, bin_counts.(total);
+    
+    -- Stream through 
+    DEFINE calculate_entropy_command `calculate_entropy.py` SHIP('calculate_entropy.py');
+    entropies = STREAM bin_bags THROUGH calculate_entropy_command AS (type:chararray, $group_field:chararray, periodSeconds:int, $time_field:chararray, entropy:double);
+    $out_relation = FILTER entropies BY entropy IS NOT NULL;
+};
+
+DEFINE calculate_entropies(in_relation, field_name, time_field, period_seconds) RETURNS entropies {
+  source_request_entropy = count_destination_host_bins_2(
+      $in_relation, $field_name, sourceNameOrIp, $time_field, $period_seconds);
+  source_bytesIn_entropy = entropy_by_sum(
+    $in_relation, $field_name, sourceNameOrIp, bytesIn, $time_field, $period_seconds);
+  source_bytesOut_entropy = entropy_by_sum(
+    $in_relation, $field_name, sourceNameOrIp, bytesOut, $time_field, $period_seconds);
+  dest_request_entropy = count_destination_host_bins_2(
+      $in_relation, $field_name, destinationNameOrIp, $time_field, $period_seconds);
+  dest_bytesIn_entropy = entropy_by_sum(
+    $in_relation, $field_name, destinationNameOrIp, bytesIn, $time_field, $period_seconds);
+  dest_bytesOut_entropy = entropy_by_sum(
+    $in_relation, $field_name, destinationNameOrIp, bytesOut, $time_field, $period_seconds);
+
+  joined = JOIN
+    dest_request_entropy BY ($field_name, $time_field),
+    dest_bytesIn_entropy BY ($field_name, $time_field),
+    dest_bytesOut_entropy BY ($field_name, $time_field),
+    source_request_entropy BY ($field_name, $time_field),
+    source_bytesIn_entropy BY ($field_name, $time_field),
+    source_bytesOut_entropy by ($field_name, $time_field);
+
+  -- Fields in joined are (0:type, 1:groupField, 2:periodSeconds, 3:$time_field, ...)
+  $entropies = FOREACH joined GENERATE
+    '$field_name' as seriesType,
+    $period_seconds AS periodSeconds,
+    $1 AS groupField,
+    $3 AS $time_field,
+    dest_request_entropy::entropy as destConnectionEntropy,
+    dest_bytesIn_entropy::entropy as destBytesInEntropy,
+    dest_bytesOut_entropy::entropy as destBytesOutEntropy,
+    source_request_entropy::entropy as sourceConnectionEntropy,
+    source_bytesIn_entropy::entropy as sourceBytesInEntropy,
+    source_bytesOut_entropy::entropy as sourceBytesOutEntropy;
+};

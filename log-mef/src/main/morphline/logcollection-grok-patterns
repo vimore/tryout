@@ -1,0 +1,48 @@
+####################
+#DATE TIME
+# Months: January, Feb, 3, 03, 12, December
+MONTH \b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\b
+MONTHNUM (?:0?[1-9]|1[0-2])
+MONTHDAY (?:(?:0[1-9])|(?:[12][0-9])|(?:3[01])|[1-9]) 
+# Years?
+YEAR (?>\d\d){1,2}
+# Time: HH:MM:SS
+HOUR (?:2[0123]|[01]?[0-9])
+MINUTE (?:[0-5][0-9])
+# '60' is a leap second in most time standards and thus is valid.
+SECOND (?:(?:[0-5][0-9]|60)(?:[:.,][0-9]+)?)
+TIME (?!<[0-9])%{HOUR}:%{MINUTE}(?::%{SECOND})(?![0-9]) 
+
+#Syslog date : Aug 15 11:02:57
+SYSLOGDATE %{MONTH}\s%{MONTHDAY}\s%{TIME}
+
+#ISO 8601 date : 2013-09-01T12:00:00-07:00
+# Some formats don't use a "T" separator, and some don't have a colon
+# in the time zone designator.
+HOUROFFSET (?:0[0-9]|1[0-2])
+MINOFFSET (?:[0-5][0-9])
+TZD (?:Z|(?:[+-])%{HOUROFFSET}[:]?%{MINOFFSET})
+ISODATE %{YEAR}-%{MONTH}-%{MONTHDAY}[ T]?%{TIME}%{TZD}
+
+####################
+# Hostname and IP
+IP (?<![0-9])(?:(?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]{1,2})[.](?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]{1,2})[.](?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]{1,2})[.](?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]{1,2}))(?![0-9])
+HOSTNAME \b(?:[0-9A-Za-z][0-9A-Za-z-]{0,62})(?:\.(?:[0-9A-Za-z][0-9A-Za-z-]{0,62}))*(\.?|\b)
+HOST %{HOSTNAME}
+IPORHOST (?:%{HOSTNAME}|%{IP})
+
+#######################
+# CEF format
+CEF_HDRPREFIX CEF
+CEF_HDRVERSION \d+
+CEF_DEVVENDOR (?:(?:[^\|]*\\\|)*|[^\|]+)*
+CEF_DEVPRODUCT (?:(?:[^\|]*\\\|)*|[^\|]+)*
+CEF_DEVVERSION (?:(?:[^\|]*\\\|)*|[^\|]+)*
+CEF_SIGNATURE (?:(?:[^\|]*\\\|)*|[^\|]+)*
+CEF_NAME (?:(?:[^\|]*\\\|)*|[^\|]+)*
+CEF_SEVERITY \d+
+CEF_EXTENSION .*
+
+##################
+# GENERIC
+DATAGREEDY .*

@@ -1,0 +1,56 @@
+webAnomalyProfiles:
+-
+  type: full
+  anomalyProfile: DEFAULT
+  anomalyProfileName: Web behavior anomaly
+  anomalyProfileCategory: Exploit
+-
+  type: full
+  anomalyProfile: deviceEventCategory+ requestMethod+
+  anomalyProfileName: Unusual browsing
+  anomalyProfileCategory: Exploit
+-
+  type: full
+  anomalyProfile: deviceEventCategory+ requestMethod+ sld+
+  anomalyProfileName: Unusual browsing to domain
+  anomalyProfileCategory: Exploit
+-
+  type: full
+  anomalyProfile: requestClientApplication+ requestMethod+
+  anomalyProfileName: Unusual web agent active
+  anomalyProfileCategory: Control
+-
+  type: single
+  anomalyProfile: cefSignatureId
+  anomalyProfileName: Http response code
+  anomalyProfileCategory:
+-
+  type: single
+  anomalyProfile: deviceEventCategory
+  anomalyProfileName: Destination category
+  anomalyProfileCategory:
+-
+  type: single
+  anomalyProfile: devicePolicyAction
+  anomalyProfileName: Policy action
+  anomalyProfileCategory:
+-
+  type: single
+  anomalyProfile: requestClientApplication
+  anomalyProfileName: User agent
+  anomalyProfileCategory:
+-
+  type: single
+  anomalyProfile: requestMethod
+  anomalyProfileName: Http request method
+  anomalyProfileCategory:
+-
+  type: single
+  anomalyProfile: responseContentType
+  anomalyProfileName: Content type
+  anomalyProfileCategory:
+-
+  type: single
+  anomalyProfile: sld
+  anomalyProfileName: Second-level domain
+  anomalyProfileCategory:

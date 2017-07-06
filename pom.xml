@@ -158,6 +158,7 @@
          </profile>
     </profiles>
   <distributionManagement>
+        <!-- nexus repo to publish to -->
     <repository>
       <id>steel-thread-release</id>
       <name>steel-thread-release</name>
